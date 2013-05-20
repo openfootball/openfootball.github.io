@@ -1,0 +1,124 @@
+/* todo: use lesser vor color variables such as @ruby
+*/
+
+body
+{
+  font-family:  Helvetica,Arial,sans-serif; 
+}
+
+h1
+{
+  border-bottom: 1px solid black;   
+}
+
+h2
+{
+  border-bottom: 1px solid black;
+  font-weight: bold; 
+}
+
+
+ul { list-style-type: square; }
+
+span.highlight { background-color: yellow;
+                 font-weight:bold;
+               }
+
+#header {
+   padding: 0.25em;
+}
+
+#header .small
+{
+  font-size: 120%;
+  color: gray;
+  padding-left: 15px;
+}
+
+#header .big
+{
+  font-size: 200%;
+  font-weight: bold;
+}
+
+
+#nav {
+  padding: 0.5em;
+}
+
+a, a:visited {
+  color: green;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 2px dotted green;
+  background-color: yellow;
+}
+
+#nav a, #nav a:visited {
+   text-decoration: none;
+}
+
+#nav a:hover {
+  border-bottom: 2px dotted yellow;
+}
+
+
+#content {
+  padding: 0.5em; 
+}
+
+
+/* fix: use javascript?? jquery to add .programlisting class
+  to pre tags followed by code e.g. <pre><code> => <pre class='programlisting'><code>
+
+   for now assume all pres are programlistings
+*/ 
+pre,
+.programlisting
+{
+  padding: 4px 4px 4px 4px;
+  border-top: #bbb 1px solid;
+  border-bottom: #bbb 1px solid;
+  background: #f3f3f3;
+}
+
+/*
+.programlisting
+{
+   color: white;
+   background-color: black;
+   padding: 0.5em;
+}
+*/
+
+.toc
+{
+   width: 35%;
+   float: right;
+   /* border: silver solid 1pt; */
+   border: #bbb solid 1pt;
+   background-color: #eeeeee;
+   font-size: 80%;
+}
+
+.toc p  /* first paragraph in toc is toc-title;
+           use prediciate too to make sure we only get the first one??
+           e.g. p:first-child ?? 
+          */
+{
+   text-align: center;
+   font-weight: bold;
+}
+
+
+.editme
+{
+   display: inline-block;
+   padding-left: 10px;
+   padding-right: 10px;
+   border: #bbb solid 1pt;
+   background-color: #eeeeee;
+   font-size: 80%;
+}
