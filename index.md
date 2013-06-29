@@ -68,7 +68,7 @@ osasuna,   Osasuna|CA Osasuna|Club Atlético Osasuna, OSA, city:pamplona
 ...
 ~~~
 
-Source: [`es/teams.txt`](https://github.com/openfootball/world/blob/master/es/teams.txt)
+Source: [`es/teams.txt`](https://github.com/openfootball/es-espana/blob/master/teams.txt)
 
 
 
@@ -94,7 +94,7 @@ Source: [`es/teams.txt`](https://github.com/openfootball/world/blob/master/es/te
 ...
 ~~~
 
-Source: [`club/europe/2012_13/cl_ii.txt`](https://github.com/openfootball/world/blob/master/club/europe/2012_13/cl_ii.txt)
+Source: [`club/europe/2012_13/cl_ii.txt`](https://github.com/openfootball/europe-clubs/blob/master/2012_13/cl_ii.txt)
 
 
 
@@ -143,7 +143,7 @@ Matchday 1 / Group A
 ...
 ~~~
 
-Source: [`world/2010/cup.txt`](https://github.com/openfootball/world/blob/master/world/2010/cup.txt)
+Source: [`world/2010/cup.txt`](https://github.com/openfootball/world/blob/master/2010/cup.txt)
 
 
 
@@ -268,8 +268,7 @@ for more.
 
 [sport.db Web Admin](https://github.com/geraldb/sport.db.admin) - `sport.db` Web Admin Tool in Ruby on Rails (version 3.2 and up).
 
-[Sportbook](http://geraldb.github.com/sportbook) - A free, open source sports betting pool
-in Ruby on Rails (version 3.2 and up). 
+[Sportbook](https://github.com/geraldb/sportbook) - A free, open source sports betting pool in Ruby on Rails (version 3.2 and up). 
 
 
 ## Alternatives
