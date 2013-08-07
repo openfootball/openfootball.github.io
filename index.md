@@ -9,13 +9,15 @@ title: Welcome
 Contents:
 
 * [What's `football.db`?](#whatis)
-* [Web Admin App](#webadmin)
-* [Web Service / HTTP JSON API](#webservice)
-* [Leagues and Tournaments / National Teams](#national-teams)
-* [Intn'l Club Tournaments (Champions Leagues & Co.)](#clubs-intnl)
-* [National Club Leagues & Cups](#clubs)
+* [Web Admin Site](#webadmin)
+* [Leaguges and Tournaments]
+    * [National Teams](#national-teams)
+        * [World Cup]()
+        * [Copa América]()
+        * [Copa Oro / Gold Cup]()
+        * [European Football Championship (Euro)]()
+    * [Football Clubs](#clubs)
 * [Tables, Schema](#schema)
-* [Command Line Tool - Build Your Own `football.db` Copy](#build)
 * [Talks - Slide Decks](#talks)
 * [About, License - Questions? Comments?](#license)
 </div>
@@ -40,6 +42,16 @@ barcelona, Barcelona|FC Barcelona|Fútbol Club Barcelona, BAR, city:barcelona
 2013-03-12 20:45  Barcelona  4-0  Milan
 ~~~
 
+
+
+## Web Admin Site {#webadmin}
+
+Try the `football.db` web admin app running
+on Heroku [`footballdb.herokuapp.com`](http://footballdb.herokuapp.com).
+
+
+
+## More Examples
 
 ### Teams Example - `es/teams.txt`
 
@@ -94,26 +106,42 @@ Source: [`es/teams.txt`](https://github.com/openfootball/es-espana/blob/master/t
 ...
 ~~~
 
-Source: [`club/europe/2012_13/cl_ii.txt`](https://github.com/openfootball/europe-clubs/blob/master/2012_13/cl_ii.txt)
+Source: [`europe/2012_13/cl_finals.txt`](https://github.com/openfootball/europe/blob/master/2012_13/cl_finals.txt)
 
 
 
-## Leagues and Tournaments / National Teams  {#national-teams}
+## National Teams / Leagues and Tournaments   {#national-teams}
 
 ### World
 
-- FIFA World Cup 2010, 2014
-- FIFA World Cup Quali 2014
-- FIFA Confederations Cup 2009, 2013
+- FIFA World Cup
+- FIFA World Cup Quali
+- FIFA Confederations Cup
 
-### America (North/Central America and the Caribeans, South America)
+[More »](https://github.com/openfootball/world-cup)
 
-- CONCACAF Copa Oro / Gold Cup 2011, 2013
-- CONMEBOL Copa América 2011, 2015
+### America (South America; North America, Central America and the Caribbeans)
+
+- CONMEBOL [^1] Copa América
+- CONCACAF [^2] Copa Oro / Gold Cup
+
+[^1]: CONMEBOL = South America
+[^2]: CONCACAF = North America, Central America and the Caribbeans
+
+[More »](https://github.com/openfootball/america-cup)
+
+
+### Africa
+
+- CAF Africa Cup of Nations
+
+[More »](https://github.com/openfootball/africa-cup)
 
 ### Europe
 
-- UEFA European Football Championship (Euro) 2012, 2008
+- UEFA European Football Championship (Euro)
+
+[More »](https://github.com/openfootball/euro-cup)
 
 
 Example - FIFA World Cup 2010:
@@ -143,86 +171,50 @@ Matchday 1 / Group A
 ...
 ~~~
 
-Source: [`world/2010/cup.txt`](https://github.com/openfootball/world/blob/master/2010/cup.txt)
+Source: [`world-cup/2010/cup.txt`](https://github.com/openfootball/world-cup/blob/master/2010/cup.txt)
 
 
+## Football Clubs / Leagues and Tournaments  {#clubs}
 
-## Intn'l Club Tournaments (Champions Leagues & Friends) {#clubs-intnl}
+### Intn'l Club Tournaments (Champions Leagues & Friends) 
 
-### Amercia (North/Central America and the Caribeans, South America)
+#### Amercia (South America; North America, Central America and the Caribbeans)
 
-- CONCACAF Champions League 2011/12, 2012/13
-- CONMEBOL Copa Sudamericana 2012
-- CONMEBOL Copa Libertadores 2012, 2013
+- CONMEBOL Copa Libertadores
+- CONMEBOL Copa Sudamericana
+- CONCACAF Champions League 
 
-### Europe
-
-- UEFA Champions League 2011/12, 2012/13
-- UEFA Europa League 2011/12
+[More »](https://github.com/openfootball/america)
 
 
+#### Europe
 
-## National Club Leagues & Cups  {#clubs}
+- UEFA Champions League
+- UEFA Europa League
 
-### Europe
+[More »](https://github.com/openfootball/europe)
 
-- Österreichische Bundesliga 2011/12, 2012/13
-- ÖFB Cup 2011/12, 2012/13
-- English Permier League 2012/13
-- Deutsche Bundesliga 2012/13
-- Romania Liga 1 2012/13
 
-### North America
+### National Leagues & Cups
 
-- México Primera División Apertura 2012, Clausura 2013
+#### Europe
 
-### South America
+- Österreichische Bundesliga + ÖFB Cup
+- English Permier League
+- Deutsche Bundesliga
+- Spanish La Liga
+- Romania Liga 1
+
+#### North America
+
+- México Primera División Apertura + Clausura
+
+#### South America
 
 - Campeonato Brasileiro Série A
 
-Anything missing? Add your leagues, teams, fixtures and more.
+and more.
 
-
-
-## Web Admin App {#webadmin}
-
-Try the `football.db` Web Admin app running
-on Heroku [`footballdb.herokuapp.com`](http://footballdb.herokuapp.com).
-
-
-## Web Service / HTTP JSON API    {#webservice}
-
-Try the `football.db` HTTP JSON API running
-on Heroku [`footballdb.herokuapp.com/api`](http://footballdb.herokuapp.com/api).
-
-Example - List all games in a round for an event `/event/:key/round/:pos`:
-
-~~~
-GET /event/euro.2012/round/6
-
-{
-  "event": { "key":"euro.2012", "title":"Euro 2012" },
-  "round": { pos": 6, "title": "Final" },
-  "games":
-  [
-    {
-    "team1_key": "esp",
-    "team1_title": "Spain",
-    "team1_code": "ESP",
-    "team2_key": "ita",
-    "team2_title": "Italy",
-    "team2_code": "ITA",
-    "play_at": "2012/07/01",
-    "score1": 4,
-    "score2": 0,
-    "score1ot": null,
-    "score2ot": null,
-    "score1p": null,
-    "score2p": null
-    }
-  ]
-}
-~~~
 
 
 ## Tables, Schema  {#schema}
@@ -232,35 +224,18 @@ The `football.db` includes the following tables:
 * teams
 * games
 * events
-  * events_teams (join table)
+    * events_teams (join table)
 * rounds
 * groups
-  * groups_teams (join table)
-
+    * groups_teams (join table)
+* leagues
+* seasons
+* players
+* rosters (join table)
+* goals
 
 (add schema pic here)
 
-
-
-## Command Line Tool - Build Your Own `football.db` Copy {#build}
-
-To build your own `football.db` copy from the plain text fixtures
-use the sportdb command line tool. Example:
-
-Step 1:  Get a copy of the `world.db` fixtures
-
-    $ git clone git://github.com/geraldb/world.db.git
-
-Step 2:  Get a copy the `at-austria` fixtures
-
-    $ git clone git://github.com/openfootball/at-austria.git
-
-Step 3:  Let's build the `football.db`
-
-    $ sportdb setup --include ./at-austria --worldinclude ./world.db
-
-That's it. For more see the [`sportdb` command line tool project](https://github.com/geraldb/sport.db.ruby)
-for more.
 
 
 
@@ -268,15 +243,21 @@ for more.
 
 [sport.db Web Admin](https://github.com/geraldb/sport.db.admin) - `sport.db` Web Admin Tool in Ruby on Rails (version 3.2 and up).
 
-[Sportbook](https://github.com/geraldb/sportbook) - A free, open source sports betting pool in Ruby on Rails (version 3.2 and up). 
+[Sportbook](https://github.com/geraldb/sportbook) - Free, open source sports betting pool in Ruby on Rails (version 3.2 and up). 
+
+[football.js](https://github.com/geraldb/football.js) - Free, open source football widgets - matchday, today's rounds, team of the day, etc.
+
+Any others? Let us know on the [mailing list/forum](http://groups.google.com/group/opensport). Thanks!
 
 
 ## Alternatives
 
-[SportsDB](http://www.sportsdb.org)  - open database schema for sports information (formerly known as XTOSS: The XML Team Open Sports Schema.)
+[openLigaDB](http://www.openligadb.de) -  free community-contributed sport results available via XML/SOAP HTTP web service; data/database not available for download
 
-[openLigaDB](http://www.openligadb.de) -  community-based sport results
+[SportsDB](http://www.sportsdb.org)  - archive (no more activity); open database schema for sports data (formerly known as XTOSS: The XML Team Open Sports Schema.)
 
+
+Any others? Let us know on the [mailing list/forum](http://groups.google.com/group/opensport). Thanks!
 
 
 ## License {#license}
