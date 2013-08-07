@@ -105,16 +105,13 @@ Source: [`world-cup/2010/cup.txt`](https://github.com/openfootball/world-cup/blo
 
 ### America (South America; North America, Central America and the Caribbeans)
 
-- CONMEBOL Copa América
-- CONCACAF Copa Oro / Gold Cup
+- CONMEBOL¹ Copa América
+- CONCACAF² Copa Oro / Gold Cup
 
-<!-- todo check footnotes - do they work w/ fallback?
+<!-- use "handmade" footnotes; always work no fallback needed -->
 
-Notes:
-
-CONMEBOL = South America
-CONCACAF = North America, Central America and the Caribbeans
--->
+¹ CONMEBOL = South America; 
+² CONCACAF = North America, Central America and the Caribbeans
 
 [More »](https://github.com/openfootball/america-cup)
 
@@ -139,9 +136,15 @@ CONCACAF = North America, Central America and the Caribbeans
 
 #### Amercia (South America; North America, Central America and the Caribbeans)
 
-- CONMEBOL Copa Libertadores
-- CONMEBOL Copa Sudamericana
-- CONCACAF Champions League 
+- CONMEBOL¹ Copa Libertadores
+- CONMEBOL¹ Copa Sudamericana
+- CONCACAF² Champions League 
+
+<!-- use "handmade" footnotes; always work no fallback needed -->
+
+¹ CONMEBOL = South America; 
+² CONCACAF = North America, Central America and the Caribbeans
+
 
 [More »](https://github.com/openfootball/america)
 
@@ -154,7 +157,7 @@ CONCACAF = North America, Central America and the Caribbeans
 [More »](https://github.com/openfootball/europe)
 
 
-Matches Example - `club/europe/2012_13/cl_ii.txt`
+Example - Champions League 2012/13
 
 ~~~
 ####################################
@@ -236,7 +239,7 @@ Any others? Let us know on the [mailing list/forum](http://groups.google.com/gro
 
 ## Alternatives
 
-[openLigaDB](http://www.openligadb.de) -  free community-contributed sport results available via XML/SOAP HTTP web service; data/database not available for download
+[openLigaDB](http://www.openligadb.de) -  free community-contributed sport results available via XML/SOAP HTTP web service; database not available for download
 
 [SportsDB](http://www.sportsdb.org)  - archive (no more activity); open database schema for sports data (formerly known as XTOSS: The XML Team Open Sports Schema.)
 
