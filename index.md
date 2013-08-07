@@ -23,7 +23,8 @@ Contents:
         * [Europa League](#clubs)
 * [Tables, Schema](#schema)
 * [Talks - Slide Decks](#talks)
-* [About, License - Questions? Comments?](#license)
+* [About, License](#license)
+* [Questions? Comments?](#questions)
 </div>
 
 
@@ -37,8 +38,8 @@ for use in any (programming) language
 ### Teams
 
 barcelona, Barcelona|FC Barcelona|Fútbol Club Barcelona, BAR, city:barcelona
-madrid,    Real Madrid|Real Madrid CF, RMD, city:madrid
-malaga,    Málaga|FC Málaga|Málaga CF|CF Málaga,   MAG, city:malaga
+madrid,    Real Madrid|Real Madrid CF,                   RMD, city:madrid
+malaga,    Málaga|FC Málaga|Málaga CF|CF Málaga,         MAG, city:malaga
 ...
 ~~~
 
@@ -93,9 +94,8 @@ Group H  |  Spain           Switzerland         Honduras         Chile
 
 Matchday 1 / Group A
 
-(1) Fr  2010-06-11 16:00    South Africa - Mexico     1-1
-(2) Fr  2010-06-11 20:30    Uruguay - France   0-0
-
+(1) Fr  2010-06-11 16:00    South Africa  1-1  Mexico
+(2) Fr  2010-06-11 20:30    Uruguay       0-0  France
 ...
 ~~~
 
@@ -108,7 +108,8 @@ Source: [`world-cup/2010/cup.txt`](https://github.com/openfootball/world-cup/blo
 - CONMEBOL Copa América
 - CONCACAF Copa Oro / Gold Cup
 
-<!-- todo check footnotes - do they work w/ fallback? 
+<!-- todo check footnotes - do they work w/ fallback?
+
 Notes:
 
 CONMEBOL = South America
@@ -161,17 +162,17 @@ Matches Example - `club/europe/2012_13/cl_ii.txt`
 
 (8)  Achtelfinale Rückspiele  // Di./Mi., 5.+6./12.+13. Mär 2013
 
-2013-03-05 20:45  Manchester United  1-2  Real Madrid
-2013-03-05 20:45  Borussia Dortmund  3-0  Schachtar Donezk
+2013-03-05 20:45  Manchester United    1-2  Real Madrid
+2013-03-05 20:45  Borussia Dortmund    3-0  Schachtar Donezk
 
 2013-03-06 20:45  Paris Saint-Germain  1-1  Valencia
 2013-03-06 20:45  Juventus             2-0  Celtic Glasgow
 
-2013-03-12 20:45  Schalke 04  2-3  Galatasaray
-2013-03-12 20:45  Barcelona  4-0  Milan
+2013-03-12 20:45  Schalke 04           2-3  Galatasaray
+2013-03-12 20:45  Barcelona            4-0  Milan
 
-2013-03-13 20:45  Málaga  2-0  Porto
-2013-03-13 20:45  Bayern München  0-2  Arsenal
+2013-03-13 20:45  Málaga               2-0  Porto
+2013-03-13 20:45  Bayern München       0-2  Arsenal
 ...
 ~~~
 
@@ -247,6 +248,5 @@ Any others? Let us know on the [mailing list/forum](http://groups.google.com/gro
 
 The `football.db` schema, data and scripts are dedicated to the public domain.
 Use it as you please with no restrictions whatsoever.
-
 
 {% include questions.md %}

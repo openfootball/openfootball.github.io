@@ -9,7 +9,7 @@ title: How To Build Your Own Copy
 Contents:
 
 * [Build Your Own `football.db` Copy](#build)
-* [About, License - Questions? Comments?](#license)
+* [Questions? Comments?](#questions)
 </div>
 
 

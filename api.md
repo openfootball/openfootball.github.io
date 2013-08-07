@@ -9,7 +9,7 @@ title: Web Service / HTTP JSON API
 Contents:
 
 * [Web Service / HTTP JSON API](#webservice)
-* [About, License - Questions? Comments?](#license)
+* [Questions? Comments?](#questions)
 </div>
 
 
