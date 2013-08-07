@@ -31,15 +31,14 @@ Step 3:  Let's build the `football.db`
 
     $ sportdb setup --include ./at-austria --worldinclude ./world.db
 
-That's it For more see the [`sportdb` command line tool project](https://github.com/geraldb/sport.db.ruby)
-for more.
+That's it For more see the [`sportdb` command line tool project](https://github.com/geraldb/sport.db.ruby).
 
 
-### Use Build Script (Rakefile)
+### Use Build Script (`Rakefile`)
 
-As an alternative you can use a build script (Rakefile) to build your own `football.db` copy.
+As an alternative you can use a build script (`Rakefile`) to build your own `football.db` copy.
 
-Example - Rakefile:
+Example - `Rakefile`:
 
 ~~~
 BUILD_DIR = "./build"
@@ -96,14 +95,14 @@ end
 
 ### Error "sportdb: command not found"
 
-If you get the error "sportdb: command not found" double check if you have the `spordb` command line tool installed.
+If you get the error "sportdb: command not found" double check if you have the `sportdb` command line tool installed.
 Use the `gem` command; issue:
 
-    gem list sportdb
+    $ gem list sportdb
     
 If not listed install the gem; issue:
 
-    gem install sportdb
+    $ gem install sportdb
 
 
 
