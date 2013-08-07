@@ -80,6 +80,7 @@ task :importworld => :env do
 end
 
 task :importsport => :env do
+  SportDb.read_builtin
   SportDb.read_setup( 'setups/all', '../openfootball/at-austria' )
   # SportDb.stats
 end
@@ -93,13 +94,10 @@ end
 
 ## Troubleshooting
 
-### Error - `sportdb: command not found`
+### Error "sportdb: command not found"
 
-If you get the error:
-
-    sportdb: command not found
-
-Double check if you have the `spordb` command line tool installed. Use the `gem` command; issue:
+If you get the error "sportdb: command not found" double check if you have the `spordb` command line tool installed.
+Use the `gem` command; issue:
 
     gem list sportdb
     
