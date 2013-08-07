@@ -1,6 +1,6 @@
 ---
 layout: default
-title: How To Build Your Own football.db Copy
+title: How To Build Your Own Copy
 ---
 
 # {{ page.title }}

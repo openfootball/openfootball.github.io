@@ -10,13 +10,17 @@ Contents:
 
 * [What's `football.db`?](#whatis)
 * [Web Admin Site](#webadmin)
-* [Leaguges and Tournaments]
+* [Leaguges and Tournaments](#national-teams)
     * [National Teams](#national-teams)
-        * [World Cup]()
-        * [Copa América]()
-        * [Copa Oro / Gold Cup]()
-        * [European Football Championship (Euro)]()
+        * [World Cup](#national-teams)
+        * [Copa América](#national-teams)
+        * [Copa Oro / Gold Cup](#national-teams)
+        * [European Football Championship (Euro)](#national-teams)
     * [Football Clubs](#clubs)
+        * [Copa Libertadores](#clubs)
+        * [Copa Sudamericana](#clubs)
+        * [Champions League](#clubs)
+        * [Europa League](#clubs)
 * [Tables, Schema](#schema)
 * [Talks - Slide Decks](#talks)
 * [About, License - Questions? Comments?](#license)
@@ -33,13 +37,20 @@ for use in any (programming) language
 ### Teams
 
 barcelona, Barcelona|FC Barcelona|Fútbol Club Barcelona, BAR, city:barcelona
+madrid,    Real Madrid|Real Madrid CF, RMD, city:madrid
+malaga,    Málaga|FC Málaga|Málaga CF|CF Málaga,   MAG, city:malaga
+...
 ~~~
-
 
 ~~~
 ### Matches
 
-2013-03-12 20:45  Barcelona  4-0  Milan
+2013-03-12 20:45  Schalke 04      2-3  Galatasaray
+2013-03-12 20:45  Barcelona       4-0  Milan
+
+2013-03-13 20:45  Málaga          2-0  Porto
+2013-03-13 20:45  Bayern München  0-2  Arsenal
+...
 ~~~
 
 
@@ -48,65 +59,6 @@ barcelona, Barcelona|FC Barcelona|Fútbol Club Barcelona, BAR, city:barcelona
 
 Try the `football.db` web admin app running
 on Heroku [`footballdb.herokuapp.com`](http://footballdb.herokuapp.com).
-
-
-
-## More Examples
-
-### Teams Example - `es/teams.txt`
-
-~~~
-################################
-# Primera División de España - La Liga
-
-barcelona, Barcelona|FC Barcelona|Fútbol Club Barcelona,  BAR, city:barcelona
-espanyol,  Espanyol Barcelona|Real CD Espanyol,  ESP, city:barcelona
-
-madrid,    Real Madrid|Real Madrid CF, RMD, city:madrid
-atletico,  Atlético Madrid|Club Atlético de Madrid,   ATL, city:madrid
-getafe,    Getafe|Getafe CF|Getafe Club de Fútbol,    GET, city:madrid 
-rayo,      Rayo Vallecano|Rayo Vallecano de Madrid, RAY, city:madrid
-
-realbetis, Real Betis Sevilla|Real Betis|Real Betis Balompié, BET, city:sevilla
-sevilla,   Sevilla|Sevilla FC|Sevilla Fútbol Club, SEV, city:sevilla
-
-valencia,  Valencia|FC Valencia|CF Valencia|Valencia CF, VAL, city:valencia
-levante,   Levante|Levante UD|Levante Unión Deportiva, LEV, city:valencia
-
-malaga,    Málaga|FC Málaga|Málaga CF|CF Málaga,   MAG, city:malaga
-athletic,  Athletic Bilbao,              ATH,   city:bilbao
-granada,   Granada|Granada CF|Granada Club de Fútbol, GRA, city:granada
-osasuna,   Osasuna|CA Osasuna|Club Atlético Osasuna, OSA, city:pamplona
-...
-~~~
-
-Source: [`es/teams.txt`](https://github.com/openfootball/es-espana/blob/master/teams.txt)
-
-
-
-### Matches Example - `club/europe/2012_13/cl_ii.txt`
-
-~~~
-####################################
-# Champions League 2012/13 - Finalrunden
-
-(8)  Achtelfinale Rückspiele  // Di./Mi., 5.+6./12.+13. Mär 2013
-
-2013-03-05 20:45  Manchester United  1-2  Real Madrid
-2013-03-05 20:45  Borussia Dortmund  3-0  Schachtar Donezk
-
-2013-03-06 20:45  Paris Saint-Germain  1-1  Valencia
-2013-03-06 20:45  Juventus             2-0  Celtic Glasgow
-
-2013-03-12 20:45  Schalke 04  2-3  Galatasaray
-2013-03-12 20:45  Barcelona  4-0  Milan
-
-2013-03-13 20:45  Málaga  2-0  Porto
-2013-03-13 20:45  Bayern München  0-2  Arsenal
-...
-~~~
-
-Source: [`europe/2012_13/cl_finals.txt`](https://github.com/openfootball/europe/blob/master/2012_13/cl_finals.txt)
 
 
 
@@ -119,30 +71,6 @@ Source: [`europe/2012_13/cl_finals.txt`](https://github.com/openfootball/europe/
 - FIFA Confederations Cup
 
 [More »](https://github.com/openfootball/world-cup)
-
-### America (South America; North America, Central America and the Caribbeans)
-
-- CONMEBOL [^1] Copa América
-- CONCACAF [^2] Copa Oro / Gold Cup
-
-[^1]: CONMEBOL = South America
-[^2]: CONCACAF = North America, Central America and the Caribbeans
-
-[More »](https://github.com/openfootball/america-cup)
-
-
-### Africa
-
-- CAF Africa Cup of Nations
-
-[More »](https://github.com/openfootball/africa-cup)
-
-### Europe
-
-- UEFA European Football Championship (Euro)
-
-[More »](https://github.com/openfootball/euro-cup)
-
 
 Example - FIFA World Cup 2010:
 
@@ -174,6 +102,35 @@ Matchday 1 / Group A
 Source: [`world-cup/2010/cup.txt`](https://github.com/openfootball/world-cup/blob/master/2010/cup.txt)
 
 
+
+### America (South America; North America, Central America and the Caribbeans)
+
+- CONMEBOL [^1] Copa América
+- CONCACAF [^2] Copa Oro / Gold Cup
+
+<!-- todo check footnotes - do they work w/ fallback? -->
+
+[^1]: CONMEBOL = South America
+[^2]: CONCACAF = North America, Central America and the Caribbeans
+
+
+[More »](https://github.com/openfootball/america-cup)
+
+
+### Africa
+
+- CAF Africa Cup of Nations
+
+[More »](https://github.com/openfootball/africa-cup)
+
+### Europe
+
+- UEFA European Football Championship (Euro)
+
+[More »](https://github.com/openfootball/euro-cup)
+
+
+
 ## Football Clubs / Leagues and Tournaments  {#clubs}
 
 ### Intn'l Club Tournaments (Champions Leagues & Friends) 
@@ -193,6 +150,31 @@ Source: [`world-cup/2010/cup.txt`](https://github.com/openfootball/world-cup/blo
 - UEFA Europa League
 
 [More »](https://github.com/openfootball/europe)
+
+
+Matches Example - `club/europe/2012_13/cl_ii.txt`
+
+~~~
+####################################
+# Champions League 2012/13 - Finalrunden
+
+(8)  Achtelfinale Rückspiele  // Di./Mi., 5.+6./12.+13. Mär 2013
+
+2013-03-05 20:45  Manchester United  1-2  Real Madrid
+2013-03-05 20:45  Borussia Dortmund  3-0  Schachtar Donezk
+
+2013-03-06 20:45  Paris Saint-Germain  1-1  Valencia
+2013-03-06 20:45  Juventus             2-0  Celtic Glasgow
+
+2013-03-12 20:45  Schalke 04  2-3  Galatasaray
+2013-03-12 20:45  Barcelona  4-0  Milan
+
+2013-03-13 20:45  Málaga  2-0  Porto
+2013-03-13 20:45  Bayern München  0-2  Arsenal
+...
+~~~
+
+Source: [`europe/2012_13/cl_finals.txt`](https://github.com/openfootball/europe/blob/master/2012_13/cl_finals.txt)
 
 
 ### National Leagues & Cups
