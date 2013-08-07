@@ -15,7 +15,7 @@ Contents:
         * [World Cup](#national-teams)
         * [Copa América](#national-teams)
         * [Copa Oro / Gold Cup](#national-teams)
-        * [European Football Championship (Euro)](#national-teams)
+        * [Euro / European Football Championship](#national-teams)
     * [Football Clubs](#clubs)
         * [Copa Libertadores](#clubs)
         * [Copa Sudamericana](#clubs)
@@ -105,14 +105,15 @@ Source: [`world-cup/2010/cup.txt`](https://github.com/openfootball/world-cup/blo
 
 ### America (South America; North America, Central America and the Caribbeans)
 
-- CONMEBOL [^1] Copa América
-- CONCACAF [^2] Copa Oro / Gold Cup
+- CONMEBOL Copa América
+- CONCACAF Copa Oro / Gold Cup
 
-<!-- todo check footnotes - do they work w/ fallback? -->
+<!-- todo check footnotes - do they work w/ fallback? 
+Notes:
 
-[^1]: CONMEBOL = South America
-[^2]: CONCACAF = North America, Central America and the Caribbeans
-
+CONMEBOL = South America
+CONCACAF = North America, Central America and the Caribbeans
+-->
 
 [More »](https://github.com/openfootball/america-cup)
 
