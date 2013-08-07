@@ -124,7 +124,7 @@ Source: [`world-cup/2010/cup.txt`](https://github.com/openfootball/world-cup/blo
 
 ### Europe
 
-- UEFA European Football Championship (Euro)
+- UEFA Euro / European Football Championship
 
 [More »](https://github.com/openfootball/euro-cup)
 
@@ -157,7 +157,7 @@ Source: [`world-cup/2010/cup.txt`](https://github.com/openfootball/world-cup/blo
 [More »](https://github.com/openfootball/europe)
 
 
-Example - Champions League 2012/13
+Example - Champions League 2012/13:
 
 ~~~
 ####################################
