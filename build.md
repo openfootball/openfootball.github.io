@@ -16,8 +16,8 @@ Contents:
 
 ## Build Your Own `football.db` Copy {#build}
 
-To build your own `football.db` copy from the plain text fixtures
-use the sportdb command line tool. Example:
+Use the `sportdb` command line tool to build your own `football.db` copy from plain text fixtures.
+Example:
 
 Step 1:  Get a copy of the `world.db` fixtures
 
