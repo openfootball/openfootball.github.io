@@ -46,7 +46,7 @@ BUILD_DIR = "./build"
 FOOTBALL_DB_PATH = "#{BUILD_DIR}/football.db"
 
 DB_CONFIG = {
-  :adapter   =>  'mysql',
+  :adapter   =>  'sqlite3',
   :database  =>  FOOTBALL_DB_PATH
 }
 
