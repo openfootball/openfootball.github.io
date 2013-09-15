@@ -21,7 +21,7 @@ Example:
 
 Step 1:  Get a copy of the `world.db` fixtures
 
-    $ git clone git://github.com/geraldb/world.db.git
+    $ git clone git://github.com/openmundi/world.db.git
 
 Step 2:  Get a copy of the `at-austria` fixtures
 
