@@ -475,9 +475,13 @@ var footballdb_widget_new = function( widget_id, api_path_prefix ) {
 
 ### Links 
 
-- [github.com/geraldb/football.db](https://github.com/geraldb/football.db)
-- [github.com/geraldb/beer.db](https://github.com/geraldb/beer.db)
-- [github.com/geraldb/world.db](https://github.com/geraldb/world.db)
+- [github.com/openfootball](https://github.com/openfootball)
+
+More Open Data Projects
+
+- [github.com/openbeer](https://github.com/openbeer)
+- [github.com/openwine](https://github.com/openwine)
+- [github.com/openmundi](https://github.com/openmundi)
 
 ### Questions? Comments?
 
