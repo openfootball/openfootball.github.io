@@ -34,14 +34,17 @@ pre {
 # World Cup in Brazil 2014 - The World's Biggest (Sport) Event
 
 When:
+
 - 25 (match)days  -- 12 June - 13 July
 
 Where:
+
 - 12 cities  -- Rio de Janeiro, São Paulo, Brasília, Fortaleza,
   Belo Horizonte, Porto Alegre, Salvador, Recife,
   Cuiabá, Manaus, Natal, Curitiba
 
 Teams:
+
 - 32 teams --  Australia, Iran, Japan, South Korea,
    Algeria, Cameroon, Ghana, Ivory Coast, Nigeria,
    Costa Rica, Honduras, Mexico, United States,
@@ -52,6 +55,7 @@ Teams:
    Russia, Spain, Switzerland
 
 Matches:
+
 - 64 matches -- Groups stage (8x4): (Group A, Group B
    Group C, Group D, Group E, Group F, Group G
    Group H); Knockout stage: Round of 16, 
@@ -83,7 +87,7 @@ Nothing. Nada. Nichts. Niente. Zilch. Zero.
 # The State of Open Data - World Cup in Brazil 2014 (Cont.)
 
 
-### Official FIFA Site ([`fifa.com/worldcup`](http://www.fifa.com/worldcup)):
+### Official FIFA Site ([`fifa.com/worldcup`](http://www.fifa.com/worldcup))
 
 => No open data. Offers a booklet¹ (PDF) for download for match schedule.
 
@@ -91,7 +95,7 @@ Nothing. Nada. Nichts. Niente. Zilch. Zero.
 and another six National Supporters.
 
 
-### Wikipedia ([`en.wikipedia.org/wiki/2014_FIFA_World_Cup`](http://en.wikipedia.org/wiki/2014_FIFA_World_Cup)):
+### Wikipedia ([`en.wikipedia.org/wiki/2014_FIFA_World_Cup`](http://en.wikipedia.org/wiki/2014_FIFA_World_Cup))
 
 Pro: Best source; open text license or public domain (license-free);
 everything available for download (page dumps, etc).

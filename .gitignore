@@ -7,4 +7,7 @@ _site/
 
 *.kpf
 
+## ignore generated talks
+
+talks/o
 
