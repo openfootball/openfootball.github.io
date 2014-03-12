@@ -138,16 +138,18 @@ Why Git?
 - Distributed is the new centralized (everything is local, any workflow, many backups, and so on)
 - Free and open source; small and fast version tracker
 
-Learn more @ [git-scm.com](`http://git-scm.com`)
+Learn more @ [`git-scm.com`](http://git-scm.com)
 
 
 Why GitHub?
 
 - Build <del>software</del> data better, together. 
 
-Learn more @ [github.com](`http://github.com`)
+Learn more @ [`github.com`](http://github.com)
 
-xxx add screenshot here xxx
+
+![](i/github-openfootball-worldcup.png)
+
 
 
 
@@ -451,7 +453,23 @@ GET /event/world.2014/round/1
 Any Example Web Apps?
 
 - `sport.db.admim` - Open Source Rails Engine; see [`github.com/geraldb/sport.db.admin`](https://github.com/geraldb/sport.db.admin)
+
+![](i/sport-db-admin.png)
+
+
+# More Goodies - Examples Web Apps and Books (Cont.)
+
+Any Example Web Apps?
+
 - Sportbook -  Football Betting (Prediction, Picks) Pool Manager; Open Source Rails Web App; see [`github.com/openbookie`](https://github.com/openbookie)
+
+![](i/sportbook.png)
+
+
+# More Goodies - Examples Web Apps and Books (Cont.)
+
+Any Example Web Apps?
+
 - `football.js` - Open Source JavaScript Matchday Widget - still early stage; see [`github.com/geraldb/football.js`](https://github.com/geraldb/football.js)
 - The Free World Football Almanac - Free public domain e-book - still early stage; see [`github.com/openfootball/book`](https://github.com/openfootball/book)
 
