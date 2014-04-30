@@ -5,12 +5,32 @@ title:  Using Open Football Data - Get Ready for the World Cup in Brazil 2014 w/
 
 ### Agenda
 
+Let's Build A World Cup Widget in JavaScript
+
+- Part I: Basics
+    - World Cup in Brazil 2014 - The World's Biggest (Sport) Event
+    - Let's Use an HTTP JSON API
+    - What's `football.db?`
+    - What's Open Data? - Terms of Use
+        - Public Domain. No Rights Reserved. vs. © FIFA 2014. All Rights Reserved.
+    - What's Structured Data?
+        - Ex. FIFA - Free-Form Text vs. Structured Data
+        - Ex. Wikipedia - Free-Form Text vs. Structured Data
+        - Football Match Schedule Mini Language - New Structured Data Format Example
+- Part II: Code, Code, Code
+    - Matchday Widget Example - `footballdb.widget.js` - v1.0
+    - Matchday Widget Example - `footballdb.widget.js` - v2.0
+    - Web Components Machinery - New Web Standard Building Blocks
+    - Matchday Widget Example - `<football-js>` - v3.0
+
 
 # World Cup in Brazil 2014 - The World's Biggest (Sport) Event
 
 When: 12 June - 13 July; Starts in:
 
 ## 43 days 3 hours 15 minutes
+
+What:
 
 ## 32 teams 64 matches 25 matchdays 12 cities
 
@@ -110,7 +130,7 @@ Open (Free) Data   <=>  Copyright © FIFA 2014. All Rights Reserved.
 
 Example 1:
 
-- A Free One-Page Booklet (PDF) Download for the Match Schedule from [FIFA.com](http://fifa.com/worldcup).
+- A Free One-Page Booklet (PDF) Download for the Match Schedule from [`fifa.com`](http://fifa.com/worldcup/matches).
     - Copyright © FIFA 2014. All Rights Reserved.
 
 ![](i/fifa-match-schedule-download.png)
@@ -130,15 +150,15 @@ Example 2:
 
 Q: Best "License" for Open Data?
 
-A: Public Domain (No License. No Copyright. No Rights Reserved.) [1]
+A: Public Domain¹ (No License. No Copyright. No Rights Reserved.)
 
 Q: Why?
 
-A: Keep it simple. [2]
+A: Keep it simple².
 
-- [1] Also sometimes "rebranded" or known as Creative Commons Zero (CC0) or Unlicense.
-- [2] Full "License" Text Example: The data, schema and scripts are dedicated to the public domain. Use it as you please with no restrictions whatsoever.
-
+____________
+¹ Also sometimes "rebranded" or known as Creative Commons Zero (CC0) or Unlicense.    
+² Full "License" Text Example: The data, schema n scripts are dedicated to the public domain. Use it as you please with no restrictions whatsoever.
 
 
 # Basics - What's Structured Data? Ex. FIFA Web Page
@@ -160,7 +180,7 @@ Structured Data <=> Free-Style Text
 Example 1:
 
 - Match Schedule on FIFA Website
-    - Show Source (Try Screen Scrapping Document Object Model? Why? Why Not?)
+    - Show Source (Try Screen Scrapping Document Object Model Tree? Why? Why Not?)
 
 ![](i/fifa-match-schedule-inside.png)
 
@@ -279,8 +299,8 @@ Example - Open Football Match Schedule Language:
 
 Q: Why? Why invent yet another data format? Why?
 
-A: Best of both worlds, that is, looks almost like free-form plain text - easy-to-read and
-easy-to-write - but offers a 100-% data accuracy guarantee (when loading
+A: Best of both worlds, that is, 1) looks n feels like free-form plain text - easy-to-read and
+easy-to-write - 2) but offers a 100-% data accuracy guarantee (when loading
 into SQL tables, for example).
 
 
@@ -316,6 +336,7 @@ Matchday 3  |  Sat Jun/14
 (19) Match for third place  |  Sat Jul/12
 (20) Final                  |  Sun Jul/13
 
+
 Group A:
 
 (1) Thu Jun/12 17:00   Brazil - Croatia       @ Arena de São Paulo, São Paulo (UTC-3)
@@ -341,45 +362,59 @@ Group B:
 ...
 ~~~
 
-([Source: world-cup/2014/cup.txt](https://github.com/openfootball/world-cup/blob/master/2014/cup.txt))
+(Source: [world-cup/2014/cup.txt](https://github.com/openfootball/world-cup/blob/master/2014/cup.txt))
 
 
 
 # More Basics - Terms of Use (Cont.)
 
-- Linked Data        <=> Semantic Web (3.0) 
-- Ontologies         <=> Schemas
-- Taxonomies         <=> Folksonomies
-- RDF Triplet Stores <=> NoSQL DBs
-- SPARQL Queries     <=> SQL Queries
-
+- Web 3.0, 4.0             <=>  Web 1.0, 2.0
+- Giant Global Graph (GGG) <=>  World Wide Web (WWW)
+- Semantic Web             <=>  Linked Data
+- Ontologies               <=>  Schemas
+- Taxonomies               <=>  Folksonomies
+- RDF Triplet Stores       <=>  SQL DBs
+- SPARQL Queries           <=>  SQL Queries
+- Big Data                 <=>  Micro Data
 
 ## Just Kidding. Let's Dive into Code. Code. Code.
 
 
 
-
-#  Machtday Widget Example -  `footballdb.widget.js`
+#  Matchday Widget Example -  `footballdb.widget.js`
 
 Use like:
 
 ~~~
-var footballdb_widget = footballdb_widget_new( '#widget', '/api/v1' )
-footballdb_widget.update( 'world.2014', '1' )
-footballdb_widget_update( 'world.2014', '2' )
-etc.
+<div id='world'¹></div>
+
+<script>
+  var widget = footballdb_widget_new( '#world'¹, '/api/v1' );
+  widget.update( 'world.2014'², '2'³  );   // world cup in brazil 2014, matchday 2
+  widget.update( 'world.2014'², '20'³ );   // world cup in brazil 2014, final (e.g. round 20)
+</script>
 ~~~
+_________________________
+¹ - selector id for div
+² - event key for world cup in brazil 2014
+³ - round 2 (e.g. matchday 2); round 20 (e.g. final)
+
 
 Results in:
 
 ~~~
-Euro 2012 - Semi-finals
+World Cup 2014 - Matchday 2
 
-2012/06/27 | Portugal (POR) 2-4 iE / 0-0 nV / 0-0 Spain (ESP)
-2012/06/28 | Germany (GER) 1-2 Italy (ITA)
+2014/06/13 | Mexico (MEX) - Cameroon (CMR)
+2014/06/13 | Spain (ESP)  - Netherlands (NED)
+2014/06/13 | Chile (CHI)  - Australia (AUS)
 ~~~
 
-Source:
+(Live: [geraldb.github.io/football.js/samples/starter](http://geraldb.github.io/football.js/samples/starter/index.html))
+
+
+
+#  Matchday Widget Example -  `footballdb.widget.js` - Source
 
 ~~~
 var footballdb_widget_new = function( widget_id, api_path_prefix ) {
@@ -447,12 +482,16 @@ var footballdb_widget_new = function( widget_id, api_path_prefix ) {
 } // fn football_widget_new
 ~~~
 
+(Source: [github.com/geraldb/football.js](https://github.com/geraldb/football.js))
+
 
 
 #  Matchday Widget Example -  `footballdb.widget.js` - v2.0
 
-- Let's use an underscore.js template
+- Let's use templates (w/ underscore.js)
+- Let's use modules (w/ require.js)
 - Let's use a football.db JSON API module / wrapper
+
 
 
 
@@ -468,7 +507,7 @@ The old way in JavaScript. Usage Example:
 <div id='world'></div>
 
 <script>
-  Widget.create( '#world', { event: 'world.2014' } );
+  FootballWidget.create( '#world', { event: 'world.2014' } );
 </script>
 ~~~
 
@@ -489,25 +528,14 @@ What's X-Tag? What's Polymer?
 
 - Polymer (`www.polymer-project.org`) - JavaScript Library by Google - lets you use and build custom tags for all modern browsers
 
-### Custom Elements 
 
-(`<element>`) - [W3C Spec](http://www.w3.org/TR/custom-elements/)
+New Web Standard Building Blocks
 
-### Shadow DOM
-
-(hide DOM subtrees under shadow roots - `createShadowRoot()`) - [W3C Spec](http://www.w3.org/TR/shadow-dom/)
-
-### HTML Imports
-
-(include and reuse HTML documents) - [W3C Spec](http://www.w3.org/TR/html-imports/)
-
-### HTML Templates
-
-(`<template>`) - [W3C Spec](http://www.w3.org/TR/html-templates/)
-
-### MDV (Model Driven Views)
-
-(`repeat='{{{{ greetings }}}}'`) - JavaScript Library
+- Custom Elements          |  (`<element>`) - [W3C Spec](http://www.w3.org/TR/custom-elements/)
+- Shadow DOM               |  (hide DOM subtrees under shadow roots - `createShadowRoot()`) - [W3C Spec](http://www.w3.org/TR/shadow-dom/)
+- HTML Imports             |  (include and reuse HTML documents) - [W3C Spec](http://www.w3.org/TR/html-imports/)
+- HTML Templates           |  (`<template>`) - [W3C Spec](http://www.w3.org/TR/html-templates/)
+- MDV (Model Driven Views) |  (`repeat='{{{{ greetings }}}}'`) - JavaScript Library
 
 
 
@@ -517,7 +545,7 @@ MDV (Model Driven Views):
 
 ~~~
 <template>
-  <div class='football-widget'>
+  <div>
     <h3>
       {{{{ data.event.title }}}}  -  {{{{ data.round.title }}}}
     </h3>
@@ -528,7 +556,7 @@ MDV (Model Driven Views):
     <td>
       {{{{ play_at }}}}
      </td>
-     <td style='text-align: right;'>
+     <td>
        {{{{ team1_title }}}} ({{{{ team1_code }}}})
      </td>
 
