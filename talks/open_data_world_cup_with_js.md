@@ -168,7 +168,7 @@ Q: Why?
 
 A: Keep it simple².
 
-\____________
+\____________    
 ¹ Also sometimes "rebranded" or known as Creative Commons Zero (CC0) or Unlicense.    
 ² Full "License" Text Example: The data, schema n scripts are dedicated to the public domain. Use it as you please with no restrictions whatsoever.
 
@@ -380,6 +380,7 @@ Group B:
 
 # More Basics - Terms of Use (Cont.)
 
+| ------------------------- | --- | --------------------- |
 | Web 3.0, 4.0              | <=> |  Web 1.0, 2.0         |
 | Giant Global Graph (GGG)  | <=> |  World Wide Web (WWW) |
 | Semantic Web              | <=> |  Linked Data          |
@@ -388,6 +389,7 @@ Group B:
 | RDF Triplet Stores        | <=> |  SQL DBs              |
 | SPARQL Queries            | <=> |  SQL Queries          |
 | Big Data                  | <=> |  Micro Data           |
+
 
 ## Just Kidding. Let's Dive into Code. Code. Code.
 
@@ -407,9 +409,9 @@ Use like:
 </script>
 ~~~
 
-\_________________________
-¹ - selector id for div
-² - event key for world cup in brazil 2014
+\_________________________    
+¹ - selector id for div    
+² - event key for world cup in brazil 2014   
 ³ - round 2 (e.g. matchday 2); round 20 (e.g. final)
 
 
@@ -679,9 +681,9 @@ The new way:
 
 What's X-Tag? What's Polymer?
 
-- X-Tag  (`www.x-tags.org`)- JavaScript library by Mozilla - lets you use and build custom tags for all modern browsers
+- **X-Tag**  ([`www.x-tags.org`](http://www.x-tags.org))- JavaScript library by Mozilla - lets you use and build custom tags for all modern browsers
 
-- Polymer (`www.polymer-project.org`) - JavaScript Library by Google - lets you use and build custom tags for all modern browsers
+- **Polymer** ([`www.polymer-project.org`](http://www.polymer-project.org)) - JavaScript Library by Google - lets you use and build custom tags for all modern browsers
 
 
 New Web Standard Building Blocks
