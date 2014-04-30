@@ -1,5 +1,17 @@
 title:  Using Open Football Data - Get Ready for the World Cup in Brazil 2014 w/ Ruby
 
+%css
+
+pre {
+  padding: 4px 4px 4px 4px;
+  border-top: #bbb 1px solid;
+  border-bottom: #bbb 1px solid;
+  background: #f3f3f3;
+}
+
+%end
+
+
 
 # Using Open Football Data - Get Ready for the World Cup in Brazil 2014 w/ JavaScript
 
@@ -156,7 +168,7 @@ Q: Why?
 
 A: Keep it simple².
 
-____________
+\____________
 ¹ Also sometimes "rebranded" or known as Creative Commons Zero (CC0) or Unlicense.    
 ² Full "License" Text Example: The data, schema n scripts are dedicated to the public domain. Use it as you please with no restrictions whatsoever.
 
@@ -295,7 +307,7 @@ Example - Open Football Match Schedule Language:
 (2) Fri Jun/13 13:00   Mexico - Cameroon   @ Estádio das Dunas, Natal (UTC-3)
 ~~~
 
-([Source: world-cup/2014/cup.txt](https://github.com/openfootball/world-cup/blob/master/2014/cup.txt))
+(Source:  [world-cup/2014/cup.txt](https://github.com/openfootball/world-cup/blob/master/2014/cup.txt))
 
 Q: Why? Why invent yet another data format? Why?
 
@@ -368,14 +380,14 @@ Group B:
 
 # More Basics - Terms of Use (Cont.)
 
-- Web 3.0, 4.0             <=>  Web 1.0, 2.0
-- Giant Global Graph (GGG) <=>  World Wide Web (WWW)
-- Semantic Web             <=>  Linked Data
-- Ontologies               <=>  Schemas
-- Taxonomies               <=>  Folksonomies
-- RDF Triplet Stores       <=>  SQL DBs
-- SPARQL Queries           <=>  SQL Queries
-- Big Data                 <=>  Micro Data
+| Web 3.0, 4.0              | <=> |  Web 1.0, 2.0         |
+| Giant Global Graph (GGG)  | <=> |  World Wide Web (WWW) |
+| Semantic Web              | <=> |  Linked Data          |
+| Ontologies                | <=> |  Schemas              |
+| Taxonomies                | <=> |  Folksonomies         |
+| RDF Triplet Stores        | <=> |  SQL DBs              |
+| SPARQL Queries            | <=> |  SQL Queries          |
+| Big Data                  | <=> |  Micro Data           |
 
 ## Just Kidding. Let's Dive into Code. Code. Code.
 
@@ -389,12 +401,13 @@ Use like:
 <div id='world'¹></div>
 
 <script>
-  var widget = footballdb_widget_new( '#world'¹, '/api/v1' );
+  var widget = footballdb_widget_new( '#world'¹ );
   widget.update( 'world.2014'², '2'³  );   // world cup in brazil 2014, matchday 2
   widget.update( 'world.2014'², '20'³ );   // world cup in brazil 2014, final (e.g. round 20)
 </script>
 ~~~
-_________________________
+
+\_________________________
 ¹ - selector id for div
 ² - event key for world cup in brazil 2014
 ³ - round 2 (e.g. matchday 2); round 20 (e.g. final)
@@ -485,13 +498,154 @@ var footballdb_widget_new = function( widget_id, api_path_prefix ) {
 (Source: [github.com/geraldb/football.js](https://github.com/geraldb/football.js))
 
 
-
 #  Matchday Widget Example -  `footballdb.widget.js` - v2.0
 
-- Let's use templates (w/ underscore.js)
-- Let's use modules (w/ require.js)
-- Let's use a football.db JSON API module / wrapper
+- Let's use templates (w/ `underscore.js`)
+- Let's use modules (w/ `require.js`)
+- Let's use a `football.db` JSON API module / wrapper
 
+
+#  Matchday Widget Example -  `footballdb.widget.js` - v2.0 - Templates
+
+`templates/events.html`:
+
+~~~
+<h3>
+ <%= event.title %>
+   -  
+ <%= round.title %>
+</h3>
+~~~
+
+`templates/games.html`:
+
+~~~
+<table>
+ <% _.each( games, function( game, index ) { %>
+  <tr>
+    <td>
+      <%= game.play_at %>
+     </td>
+     <td style='text-align: right;'>
+       <%= game.team1_title %> (<%= game.team1_code %>)
+     </td>
+
+     <td>
+      <% if( game.score1 != null && game.score2 != null ) { %>
+        <% if( game.score1ot != null && game.score2ot != null ) { %>
+          <% if ( game.score1p != null && game.score2p != null ) { %>
+             <%= game.score1p %> - <%= game.score2p %> iE /
+          <% } %>
+           <%= game.score1ot %> - <%= game.score2ot %> nV /
+        <% } %>
+        <%= game.score1 %> - <%= game.score2 %>
+      <% } else { %>
+        - 
+      <% } %>
+     </td>
+     <td>
+      <%= game.team2_title %> (<%= game.team2_code %>)
+     </td>
+   </tr>
+  <% }); %>
+</table>
+~~~
+
+
+#  Matchday Widget Example -  `footballdb.widget.js` - v2.0 - Modules
+
+Modules w/ `require.js`:
+
+~~~
+football/api.js
+football/widget.js
+football/templates/event.html
+football/templates/games.html
+football/templates/rounds.html
+~~~
+
+Template Usage in JavaScript (w/ `require.js` and `underscore.js`):
+
+~~~
+var gamesTpl     = require( 'text!football/templates/games.html' );
+var renderGames  = _.template( gamesTpl );    // returns a fn for reuse
+...
+$games.html(  renderGames( { games: data.games } ) );
+~~~
+
+
+`football/widget.js`:
+
+~~~
+define( function(require) {
+
+            require( 'utils' );
+  var Api = require( 'football/api' );
+
+  var eventTpl   = require( 'text!football/templates/event.html' ),
+      roundsTpl  = require( 'text!football/templates/rounds.html' ),
+      gamesTpl   = require( 'text!football/templates/games.html' );
+
+  var renderEvent  = _.template( eventTpl ),
+      renderRounds = _.template( roundsTpl ),
+      renderGames  = _.template( gamesTpl );
+
+  var Widget = {};
+
+Widget.create = function( id, opts ) {
+
+  var $el,
+      $event,    // used for event header 
+      $rounds,   // used for rounds
+      $games;    // used for round details (matches/games)
+  ...
+~~~
+
+
+#  Matchday Widget Example -  `footballdb.widget.js` - v2.0 - API Wrapper Module
+
+`football/api.js`:
+
+~~~
+define( function() {
+  
+  var Api = {};
+
+Api.create = function( opts ) {
+
+  var defaults = { baseUrl: 'http://footballdb.herokuapp.com/api/v1' };
+  var settings;
+
+  function init( opts )  {
+    settings = _.extend( {}, defaults, opts );
+  }
+
+  function fetch( path, onsuccess )  {
+    var url = settings.baseUrl + path + '?callback=?';
+    $.getJSON( url, onsuccess );
+  }
+
+  function fetchRounds( event, onsuccess )  {
+    fetch( '/event/' + event + '/rounds', onsuccess );
+  }
+
+  function fetchRound( event, round, onsuccess ) {
+    fetch( '/event/' + event + '/round/' + round, onsuccess );
+  }
+
+  init( opts ); // call "c'tor/constructor"
+
+  // return/export public api
+  return {
+     fetchRound:        fetchRound,
+     fetchRounds:       fetchRounds,
+  }
+} // end fn Api.create
+
+  return Api;
+
+}); // end define
+~~~
 
 
 
@@ -507,7 +661,8 @@ The old way in JavaScript. Usage Example:
 <div id='world'></div>
 
 <script>
-  FootballWidget.create( '#world', { event: 'world.2014' } );
+  var widget = footballdb_widget_new( '#world' );
+  widget.update( 'world.2014', '2'  );   // world cup in brazil 2014, matchday 2
 </script>
 ~~~
 
@@ -531,15 +686,32 @@ What's X-Tag? What's Polymer?
 
 New Web Standard Building Blocks
 
-- Custom Elements          |  (`<element>`) - [W3C Spec](http://www.w3.org/TR/custom-elements/)
-- Shadow DOM               |  (hide DOM subtrees under shadow roots - `createShadowRoot()`) - [W3C Spec](http://www.w3.org/TR/shadow-dom/)
-- HTML Imports             |  (include and reuse HTML documents) - [W3C Spec](http://www.w3.org/TR/html-imports/)
-- HTML Templates           |  (`<template>`) - [W3C Spec](http://www.w3.org/TR/html-templates/)
-- MDV (Model Driven Views) |  (`repeat='{{{{ greetings }}}}'`) - JavaScript Library
+- **Custom Elements**          |  (`<element>`) - [W3C Spec](http://www.w3.org/TR/custom-elements/)
+- **Shadow DOM**               |  (hide DOM subtrees under shadow roots - `createShadowRoot()`) - [W3C Spec](http://www.w3.org/TR/shadow-dom/)
+- **HTML Imports**             |  (include and reuse HTML documents) - [W3C Spec](http://www.w3.org/TR/html-imports/)
+- **HTML Templates**           |  (`<template>`) - [W3C Spec](http://www.w3.org/TR/html-templates/)
+- **MDV (Model Driven Views)** |  (`repeat='{{{{ greetings }}}}'`) - JavaScript Library
 
 
 
 # Matchday Widget Example - `<football-js>` - v3.0 (Cont.)
+
+`football-js.html`:
+
+~~~
+<polymer-element name='football-js' attributes='event'>
+  <template>
+     <style>
+        ... [your styles here] ...
+     </style>
+     ... [your (model-driven) views here] ...
+  </template>
+  <script>
+     ... [your scripts here] ...
+  </script>
+</polymer-element>
+~~~
+
 
 MDV (Model Driven Views):
 
@@ -592,6 +764,7 @@ Usage:
 </html>
 ~~~
 
+(Live: [geraldb.github.io/football.js/samples/polymer](http://geraldb.github.io/football.js/samples/polymer/index.html))
 
 
 
