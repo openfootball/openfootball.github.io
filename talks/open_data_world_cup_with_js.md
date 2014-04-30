@@ -380,15 +380,14 @@ Group B:
 
 # More Basics - Terms of Use (Cont.)
 
-| ------------------------- | --- | --------------------- |
-| Web 3.0, 4.0              | <=> |  Web 1.0, 2.0         |
-| Giant Global Graph (GGG)  | <=> |  World Wide Web (WWW) |
-| Semantic Web              | <=> |  Linked Data          |
-| Ontologies                | <=> |  Schemas              |
-| Taxonomies                | <=> |  Folksonomies         |
-| RDF Triplet Stores        | <=> |  SQL DBs              |
-| SPARQL Queries            | <=> |  SQL Queries          |
-| Big Data                  | <=> |  Micro Data           |
+- Web 3.0, 4.0               <=>   Web 1.0, 2.0
+- Giant Global Graph (GGG)   <=>   World Wide Web (WWW)
+- Semantic Web               <=>   Linked Data
+- Ontologies                 <=>   Models n Schemas
+- Taxonomies                 <=>   Folksonomies
+- RDF Triplet Stores         <=>   SQL DBs
+- SPARQL Queries             <=>   SQL Queries
+- Big Data                   <=>   Micro Data
 
 
 ## Just Kidding. Let's Dive into Code. Code. Code.
@@ -681,9 +680,8 @@ The new way:
 
 What's X-Tag? What's Polymer?
 
-- **X-Tag**  ([`www.x-tags.org`](http://www.x-tags.org))- JavaScript library by Mozilla - lets you use and build custom tags for all modern browsers
-
-- **Polymer** ([`www.polymer-project.org`](http://www.polymer-project.org)) - JavaScript Library by Google - lets you use and build custom tags for all modern browsers
+- **X-Tag**  ([`x-tags.org`](http://www.x-tags.org))- JavaScript library by Mozilla - lets you use and build custom tags for all modern browsers
+- **Polymer** ([`polymer-project.org`](http://www.polymer-project.org)) - JavaScript Library by Google - lets you use and build custom tags for all modern browsers
 
 
 New Web Standard Building Blocks
