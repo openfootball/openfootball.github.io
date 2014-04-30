@@ -105,9 +105,9 @@ $ sportdb serve
 
 Services available include:
 
-- `/event/world.2014/teams`    | List all teams
-- `/event/world.2014/rounds`   | List all rounds (matchdays)
-- `/event/world.2014/round/20` | List all matches in a round e.g. - 20th Round (=> Final) 
+- `/event/world.2014/teams`    -- List all teams
+- `/event/world.2014/rounds`   -- List all rounds (matchdays)
+- `/event/world.2014/round/20` -- List all matches in a round e.g. - 20th Round (=> Final) 
 
 ~~~
 GET /event/world.2014/round/1
@@ -234,40 +234,40 @@ Wikipedia Source:
 
 ~~~
 ===Group A===
-{{main|2014 FIFA World Cup Group A}}
-{{Fb cl2 header navbar}}
-{{Fb cl2 team |t={{fb|BRA}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=}}
-{{Fb cl2 team |t={{fb|CRO}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=|border=green}}
-{{Fb cl2 team |t={{fb|MEX}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=}}
-{{Fb cl2 team |t={{fb|CMR}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=}}
+{{{{main|2014 FIFA World Cup Group A}}}}
+{{{{Fb cl2 header navbar}}}}
+{{{{Fb cl2 team |t={{{{fb|BRA}}}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=}}}}
+{{{{Fb cl2 team |t={{{{fb|CRO}}}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=|border=green}}}}
+{{{{Fb cl2 team |t={{{{fb|MEX}}}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=}}}}
+{{{{Fb cl2 team |t={{{{fb|CMR}}}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=}}}}
 |}
 
-{{Football box
+{{{{Football box
 |date=12 June 2014
 |time=17:00
-|team1={{fb-rt|BRA}}
+|team1={{{{fb-rt|BRA}}}}
 |score=[[2014 FIFA World Cup Group A#Brazil v Croatia|Match 1]]
 |report=
-|team2={{fb|CRO}}
+|team2={{{{fb|CRO}}}}
 |goals1=
 |goals2=
 |stadium=[[Arena Corinthians|Arena de São Paulo]], [[São Paulo]]
 |attendance=
 |referee=
-}}
-{{Football box
+}}}}
+{{{{Football box
 |date=13 June 2014
 |time=13:00
-|team1={{fb-rt|MEX}}
+|team1={{{{fb-rt|MEX}}}}
 |score=[[2014 FIFA World Cup Group A#Mexico v Cameroon|Match 2]]
 |report=
-|team2={{fb|CMR}}
+|team2={{{{fb|CMR}}}}
 |goals1=
 |goals2=
 |stadium=[[Arena das Dunas]], [[Natal, Rio Grande do Norte|Natal]]
 |attendance=
 |referee=
-}}
+}}}}
 ~~~
 
 
@@ -512,9 +512,9 @@ var footballdb_widget_new = function( widget_id, api_path_prefix ) {
 
 ~~~
 <h3>
- <%= event.title %>
+ <%%= event.title %>
    -  
- <%= round.title %>
+ <%%= round.title %>
 </h3>
 ~~~
 
@@ -522,33 +522,33 @@ var footballdb_widget_new = function( widget_id, api_path_prefix ) {
 
 ~~~
 <table>
- <% _.each( games, function( game, index ) { %>
+ <%% _.each( games, function( game, index ) { %>
   <tr>
     <td>
-      <%= game.play_at %>
+      <%%= game.play_at %>
      </td>
      <td style='text-align: right;'>
-       <%= game.team1_title %> (<%= game.team1_code %>)
+       <%%= game.team1_title %> (<%%= game.team1_code %>)
      </td>
 
      <td>
-      <% if( game.score1 != null && game.score2 != null ) { %>
-        <% if( game.score1ot != null && game.score2ot != null ) { %>
-          <% if ( game.score1p != null && game.score2p != null ) { %>
-             <%= game.score1p %> - <%= game.score2p %> iE /
-          <% } %>
-           <%= game.score1ot %> - <%= game.score2ot %> nV /
-        <% } %>
-        <%= game.score1 %> - <%= game.score2 %>
-      <% } else { %>
+      <%% if( game.score1 != null && game.score2 != null ) { %>
+        <%% if( game.score1ot != null && game.score2ot != null ) { %>
+          <%% if ( game.score1p != null && game.score2p != null ) { %>
+             <%%= game.score1p %> - <%%= game.score2p %> pen /
+          <%% } %>
+           <%%= game.score1ot %> - <%%= game.score2ot %> a.e.t. /
+        <%% } %>
+        <%%= game.score1 %> - <%%= game.score2 %>
+      <%% } else { %>
         - 
-      <% } %>
+      <%% } %>
      </td>
      <td>
-      <%= game.team2_title %> (<%= game.team2_code %>)
+      <%%= game.team2_title %> (<%%= game.team2_code %>)
      </td>
    </tr>
-  <% }); %>
+  <%% }); %>
 </table>
 ~~~
 
@@ -686,11 +686,11 @@ What's X-Tag? What's Polymer?
 
 New Web Standard Building Blocks
 
-- **Custom Elements**          |  (`<element>`) - [W3C Spec](http://www.w3.org/TR/custom-elements/)
-- **Shadow DOM**               |  (hide DOM subtrees under shadow roots - `createShadowRoot()`) - [W3C Spec](http://www.w3.org/TR/shadow-dom/)
-- **HTML Imports**             |  (include and reuse HTML documents) - [W3C Spec](http://www.w3.org/TR/html-imports/)
-- **HTML Templates**           |  (`<template>`) - [W3C Spec](http://www.w3.org/TR/html-templates/)
-- **MDV (Model Driven Views)** |  (`repeat='{{{{ greetings }}}}'`) - JavaScript Library
+- **Custom Elements**          --  (`<element>`) - [W3C Spec](http://www.w3.org/TR/custom-elements/)
+- **Shadow DOM**               --  (hide DOM subtrees under shadow roots - `createShadowRoot()`) - [W3C Spec](http://www.w3.org/TR/shadow-dom/)
+- **HTML Imports**             --  (include and reuse HTML documents) - [W3C Spec](http://www.w3.org/TR/html-imports/)
+- **HTML Templates**           --  (`<template>`) - [W3C Spec](http://www.w3.org/TR/html-templates/)
+- **MDV (Model Driven Views)** --  (`repeat='{{{{ greetings }}}}'`) - JavaScript Library
 
 
 
