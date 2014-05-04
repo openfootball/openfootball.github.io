@@ -48,14 +48,14 @@ So what? Let's build an open football data project.
 
 ## What's `football.db?`
 
-Let's welcome `football.db`. A open football data project
+Let's welcome `football.db`. An open football data project
 offering - suprise, suprise - free open public domain
 football data for the World Cup in Brazil 2014, and more.
 
 ![](i/worldcup2014-db-download.png)
 
 The open football project also sports a free self-hosted HTTP JSON API service
-for football data. Get started in two steps, for example:
+for football data, for example. Get started in two steps:
 
 - Step 1: Download the `worldcup2014.db` SQLite Database
 - Step 2: Serve up teams, rounds, matches, etc. via HTTP JSON API using the `sportdb` command line tool
@@ -99,17 +99,17 @@ GET /event/world.2014/round/1
 ## How does it work?  Distributed is the new centralized
 
 The open football data project collects public domain data sets
-in plain old text files stored on your hard disk
-that you can share with a distributed version tracker (that is, git repos)
+in plain old text files that you store on your hard disk
+and that you can share with a distributed version tracker (that is, git repos)
 with your friends or the world.
 A free public domain command line tool (that is, `sportdb`)
-lets you read the plain text data sets into your SQL database of choice
-(that is, MySQL, PostgreSQL, SQLite, etc).
+lets you read the plain text data sets into your SQL database of choice 
+(for example, MySQL, PostgreSQL, SQLite, etc).
 
 
 ![](i/github-openfootball-worldcup.png)
 
-###  Comma-separated values - Example: `europe/teams.txt`
+###  Example: `europe/teams.txt` - Comma-separated values
 
 Let's look at a plain text file for national teams in Europe, for example:
 
@@ -130,13 +130,13 @@ The plain text file uses the comma-separated values (CSV) format
 with some extras for comments, blank lines, etc.
 
 
-###  Mini football data language - Example: `worldcup/2014/schedule.txt`
+###  Example: `worldcup/2014/cup.txt` -  Mini football data language 
 
 For match schedules the open football project use a new strutured data format,
 that is, a new domain-specific language (DSL).
-  
+
 Example - Open Football Match Schedule Language:
-  
+
 ~~~
 (1) Thu Jun/12 17:00   Brazil - Croatia    @ Arena de São Paulo, São Paulo (UTC-3)
 (2) Fri Jun/13 13:00   Mexico - Cameroon   @ Estádio das Dunas, Natal (UTC-3)
