@@ -39,7 +39,7 @@ Ideally, there's a free service using open football data from the world football
 from the world's sport cable channels, from the world's sport newspapers, and so on.
 Let's ask the intertubes to find out the state of open football data in the real world - 
 let's google [`json world cup brazil`](http://www.google.com/search?q=json+world+cup+brazil)
-or post a question on the open data stackexchange ['Q: Any Open Data Sets for the (Football) World Cup (in Brazil 2014)?'](http://opendata.stackexchange.com/questions/1791/any-open-data-sets-for-the-football-world-cup-in-brazil-2014)).
+or post a question on the open data stackexchange ['Q: Any Open Data Sets for the (Football) World Cup (in Brazil 2014)?'](http://opendata.stackexchange.com/questions/1791/any-open-data-sets-for-the-football-world-cup-in-brazil-2014).
 
 Nothing. Nada. Nichts. Niente. Zilch. Zero.
 So what? Let's build an open football data project.
@@ -48,13 +48,14 @@ So what? Let's build an open football data project.
 
 ## What's `football.db?`
 
-Let's welcome `football.db`  offering free open public domain
+Let's welcome `football.db`. A open football data project
+offering - suprise, suprise - free open public domain
 football data for the World Cup in Brazil 2014, and more.
 
 ![](i/worldcup2014-db-download.png)
 
 The open football project also sports a free self-hosted HTTP JSON API service
-for football data. Get started, for example, in two steps:
+for football data. Get started in two steps, for example:
 
 - Step 1: Download the `worldcup2014.db` SQLite Database
 - Step 2: Serve up teams, rounds, matches, etc. via HTTP JSON API using the `sportdb` command line tool
@@ -98,25 +99,32 @@ GET /event/world.2014/round/1
 ## How does it work?  Distributed is the new centralized
 
 The open football data project collects public domain data sets
- in plain old text files in git repos that you can
- read into your SQL database of choice with a command line tool (or build script).
+in plain old text files stored on your hard disk
+that you can share with a distributed version tracker (that is, git repos)
+with your friends or the world.
+A free public domain command line tool (that is, `sportdb`)
+lets you read the plain text data sets into your SQL database of choice
+(that is, MySQL, PostgreSQL, SQLite, etc).
+
 
 ![](i/github-openfootball-worldcup.png)
 
-###  Comma-separated values - Example: `north-america/teams.txt`
+###  Comma-separated values - Example: `europe/teams.txt`
 
-Let's look at a plain text file for national teams in North America, for example:
+Let's look at a plain text file for national teams in Europe, for example:
 
 ~~~
-#################
-# North America
+############
+# UEFA (Union of European Football Associations)
+# - 54 members
 
-mex, Mexico,        MEX, mx, fifa|concacaf|nafu
-usa, United States, USA, us, fifa|concacaf|nafu
-can, Canada,        CAN, ca, fifa|concacaf|nafu
+aut, Austria, AUT, at, fifa|uefa
+bel, Belgium, BEL, be, fifa|uefa
+cyp, Cyprus,  CYP, cy, fifa|uefa
+...
 ~~~
 
-(Source:  [north-america/teams.txt](https://github.com/openfootball/national-teams/blob/master/north-america/teams.txt))
+(Source:  [europe/teams.txt](https://github.com/openfootball/national-teams/blob/master/europe/teams.txt))
 
 The plain text file uses the comma-separated values (CSV) format
 with some extras for comments, blank lines, etc.
