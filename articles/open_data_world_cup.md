@@ -4,8 +4,8 @@
 
 
 Football is the world's most popular sport and
-the World Cup in Brazil kicking off next month in São Paulo on June 12th
- (in 38 days 3 hours 15 minutes and counting)
+the World Cup in Brazil - kicking off next month in São Paulo on June 12th
+(in 38 days 3 hours 15 minutes and counting) - 
 is the world's biggest (sport) event with 32 national teams
 from six continents competing in 64 matches in 12 cities for the championship title.
 
@@ -37,7 +37,7 @@ GET /event/worldcup.2014/teams
 
 Ideally, there's a free service using open football data from the world football federation,
 from the world's sport cable channels, from the world's sport newspapers, and so on.
-Let's ask the intertubes for the state of open football data - 
+Let's ask the intertubes to find out the state of open football data - 
 let's google [`json world cup brazil`](http://www.google.com/search?q=json+world+cup+brazil)
 or post a question on the open data stackexchange ['Q: Any Open Data Sets for the (Football) World Cup (in Brazil 2014)?'](http://opendata.stackexchange.com/questions/1791/any-open-data-sets-for-the-football-world-cup-in-brazil-2014)).
 
@@ -45,15 +45,16 @@ Nothing. Nada. Nichts. Niente. Zilch. Zero.
 So what? Let's build an open football data project.
 
 
+
 ## What's `football.db?`
 
-Let's welcome `football.db` offering free open public domain
-football data sets for the World Cup in Brazil 2014, Uruguay 1930 and more.
+Let's welcome `football.db`  offering free open public domain
+football data sets for the World Cup in Brazil 2014, and more.
 
 ![](i/worldcup2014-db-download.png)
 
 The open football project also sports a free self-hosted HTTP JSON API service
-for football data, for example, get started in two steps:
+for football data. For example, get started in two steps:
 
 - Step 1: Download the `worldcup2014.db` SQLite Database
 - Step 2: Serve up teams, rounds, matches, etc. via HTTP JSON API using the `sportdb` command line tool
@@ -100,9 +101,9 @@ The open football data project collects public domain data sets
  in plain old text files in git repos that you can
  read into your SQL database of choice with a command line tool (or build script).
 
-![](i/github/openfootball-worldcup.png)
+![](i/github-openfootball-worldcup.png)
 
-### `north-america/teams.txt`
+### `north-america/teams.txt` - Comma-separated values
 
 Let's look at `north-america/teams.txt`
 listing all national teams in North America:
@@ -121,10 +122,10 @@ with some extras for comments, blank lines, etc.
 
 
 
-### `worldcup/2014/schedule.txt`
+### `worldcup/2014/schedule.txt`  - Mini football data language
 
 For match schedules the open football project use a new strutured data format,
-that is, a domain-specific language (DSL).
+that is, a new domain-specific language (DSL).
   
 Example - Open Football Match Schedule Language:
   
@@ -136,11 +137,11 @@ Example - Open Football Match Schedule Language:
 (Source:  [world-cup/2014/cup.txt](https://github.com/openfootball/world-cup/blob/master/2014--brazil/cup.txt))
 
 
-Why invent yet another data format? Why?
+Why invent yet another data format?
 The new mini language for structured football match schedule data
 offers you the best of both worlds, that is,
 1) looks n feels like free-form plain text - easy-to-read and easy-to-write -
-2) but offers a 100-% data accuracy guarantee (when loading into SQL tables, for example.
+2) but offers a 100-% data accuracy guarantee (when loading into SQL tables, for example).
 
 The mini language also includes
  support for groups, matchdays, grounds, and more. Example:
@@ -197,20 +198,93 @@ Group B:
 ~~~
 
 
+Interested?  Find out more at the project site
+or post your questions or comments to the mailing list/forum. Thanks.
 
 
 
+## Appendix: Basics - What's (Not) Open (Structured) Data?
 
 
+What's (Not) Open (Structured) Data?
 
+Example 1:
 
+- A Free One-Page Booklet (PDF) Download for the Match Schedule from [`fifa.com`](http://fifa.com/worldcup/matches).
+  - Copyright © FIFA 2014. All Rights Reserved.
 
+![](i/fifa-match-schedule-download.png)
 
+Example 2a:
 
+- Match Schedule on FIFA Website
 
+![](i/fifa-match-schedule.png)
 
+Example 2b:
 
+- Match Schedule on FIFA Website (Source - Document Object Model Tree)
 
+![](i/fifa-match-schedule-inside.png)
 
+Example 3a:
 
+- Match Schedule on Wikipedia
+
+![](i/wikipedia-worldcup.png)
+
+Example 3b:
+
+- Match Schedule on Wikipedia (Source - Plain Text or Mediawiki Text)
+
+Cut-n-Paste Text:
+
+~~~
+12 June 2014  17:00   Brazil    Match 1   Croatia    Arena de São Paulo, São Paulo
+13 June 2014  13:00   Mexico    Match 2   Cameroon   Arena das Dunas, Natal
+17 June 2014  16:00   Brazil    Match 17  Mexico     Estádio Castelão, Fortaleza
+18 June 2014  19:00   Cameroon  Match 18  Croatia    Arena Amazônia, Manaus
+23 June 2014  17:00   Cameroon  Match 33  Brazil     Estádio Nacional Mané Garrincha, Brasília
+23 June 2014  17:00   Croatia   Match 34  Mexico     Arena Pernambuco, Recife
+~~~
+
+Wikipedia Source:
+
+~~~
+===Group A===
+{{{{main|2014 FIFA World Cup Group A}}}}
+{{{{Fb cl2 header navbar}}}}
+{{{{Fb cl2 team |t={{{{fb|BRA}}}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=}}}}
+{{{{Fb cl2 team |t={{{{fb|CRO}}}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=|border=green}}}}
+{{{{Fb cl2 team |t={{{{fb|MEX}}}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=}}}}
+{{{{Fb cl2 team |t={{{{fb|CMR}}}} |w=0 |d=0 |l=0 |gf=0 |ga=0 |bc=}}}}
+|}
+
+{{{{Football box
+|date=12 June 2014
+|time=17:00
+|team1={{{{fb-rt|BRA}}}}
+|score=[[2014 FIFA World Cup Group A#Brazil v Croatia|Match 1]]
+|report=
+|team2={{{{fb|CRO}}}}
+|goals1=
+|goals2=
+|stadium=[[Arena Corinthians|Arena de São Paulo]], [[São Paulo]]
+|attendance=
+|referee=
+}}}}
+{{{{Football box
+|date=13 June 2014
+|time=13:00
+|team1={{{{fb-rt|MEX}}}}
+|score=[[2014 FIFA World Cup Group A#Mexico v Cameroon|Match 2]]
+|report=
+|team2={{{{fb|CMR}}}}
+|goals1=
+|goals2=
+|stadium=[[Arena das Dunas]], [[Natal, Rio Grande do Norte|Natal]]
+|attendance=
+|referee=
+}}}}
+~~~
 
