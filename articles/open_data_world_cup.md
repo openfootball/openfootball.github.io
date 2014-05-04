@@ -35,9 +35,9 @@ GET /event/worldcup.2014/teams
 }
 ~~~
 
-Ideally, there's a free service using open football data from the world football federations,
+Ideally, there's a free service using open football data from the world football federation,
 from the world's sport cable channels, from the world's sport newspapers, and so on.
-Let's ask the intertubes, for example,
+Let's ask the intertubes for the state of open football data - 
 let's google [`json world cup brazil`](http://www.google.com/search?q=json+world+cup+brazil)
 or post a question on the open data stackexchange ['Q: Any Open Data Sets for the (Football) World Cup (in Brazil 2014)?'](http://opendata.stackexchange.com/questions/1791/any-open-data-sets-for-the-football-world-cup-in-brazil-2014)).
 
@@ -47,8 +47,10 @@ So what? Let's build an open football data project.
 
 ## What's `football.db?`
 
-Let's welcome `football.db` - free open public domain
-football data sets for the World Cup in Brazil 2014, in Uruguay 1930 and more.
+Let's welcome `football.db` offering free open public domain
+football data sets for the World Cup in Brazil 2014, Uruguay 1930 and more.
+
+![](i/worldcup2014-db-download.png)
 
 The open football project also sports a free self-hosted HTTP JSON API service
 for football data, for example, get started in two steps:
@@ -97,6 +99,8 @@ GET /event/world.2014/round/1
 The open football data project collects public domain data sets
  in plain old text files in git repos that you can
  read into your SQL database of choice with a command line tool (or build script).
+
+![](i/github/openfootball-worldcup.png)
 
 ### `north-america/teams.txt`
 
