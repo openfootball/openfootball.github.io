@@ -1,22 +1,22 @@
 
 
-# Using Open Football Data - Get Ready for the World Cup in Brazil 2014 
+# Using open football data: Get ready for the World Cup in Brazil 2014.
 
 
 Football is the world's most popular sport and
 the World Cup in Brazil kicking off next month in São Paulo on June 12th
  (in 38 days 3 hours 15 minutes and counting)
 is the world's biggest (sport) event with 32 national teams
-from all continents competing in 64 matches in 12 cities for the title.
+from six continents competing in 64 matches in 12 cities for the championship title.
 
 
 ## Where's the open football data? Let's ask the intertubes.
  
 Now lets say you want to build a world cup match day widget for
-your site using a web service (HTTP JSON API) that lets you query
-for all teams, groups, matches, players, and so on.
+your site using a web service (HTTP JSON API) that gets
+you all teams, groups, matches, players, and so on.
 
-Example: HTTP JSON API
+Example - HTTP JSON API:
 
 ~~~
 GET /event/worldcup.2014/teams
@@ -35,23 +35,23 @@ GET /event/worldcup.2014/teams
 }
 ~~~
 
-Let's ask the intertubes and search for free open football data sets or web services,
-for example,
+Ideally, there's a free service using open football data from the world football federations,
+from the world's sport cable channels, from the world's sport newspapers, and so on.
+Let's ask the intertubes, for example,
 let's google [`json world cup brazil`](http://www.google.com/search?q=json+world+cup+brazil)
 or post a question on the open data stackexchange ['Q: Any Open Data Sets for the (Football) World Cup (in Brazil 2014)?'](http://opendata.stackexchange.com/questions/1791/any-open-data-sets-for-the-football-world-cup-in-brazil-2014)).
 
 Nothing. Nada. Nichts. Niente. Zilch. Zero.
-So what to do? Let's build an open football data project.
+So what? Let's build an open football data project.
 
 
 ## What's `football.db?`
 
-Let's welcome `football.db` -  public domain
-football data sets offering free open football data
-for the World Cup in Brazil 2014, the World Cup in Uruguay 1930 and more.
+Let's welcome `football.db` - free open public domain
+football data sets for the World Cup in Brazil 2014, in Uruguay 1930 and more.
 
 The open football project also sports a free self-hosted HTTP JSON API service
-for football data, for example, to get started:
+for football data, for example, get started in two steps:
 
 - Step 1: Download the `worldcup2014.db` SQLite Database
 - Step 2: Serve up teams, rounds, matches, etc. via HTTP JSON API using the `sportdb` command line tool
@@ -91,6 +91,118 @@ GET /event/world.2014/round/1
   ]
 }
 ~~~
+
+## How does it work?  Distributed is the new centralized
+
+The open football data project collects public domain data sets
+ in plain old text files in git repos that you can
+ read into your SQL database of choice with a command line tool (or build script).
+
+### `north-america/teams.txt`
+
+Let's look at `north-america/teams.txt`
+listing all national teams in North America:
+ 
+~~~
+#################
+# North America
+
+mex, Mexico,        MEX, mx, fifa|concacaf|nafu
+usa, United States, USA, us, fifa|concacaf|nafu
+can, Canada,        CAN, ca, fifa|concacaf|nafu
+~~~
+
+The structured data format uses the comma-separated values (CSV) format
+with some extras for comments, blank lines, etc.
+
+
+
+### `worldcup/2014/schedule.txt`
+
+For match schedules the open football project use a new strutured data format,
+that is, a domain-specific language (DSL).
+  
+Example - Open Football Match Schedule Language:
+  
+~~~
+(1) Thu Jun/12 17:00   Brazil - Croatia    @ Arena de São Paulo, São Paulo (UTC-3)
+(2) Fri Jun/13 13:00   Mexico - Cameroon   @ Estádio das Dunas, Natal (UTC-3)
+~~~
+
+(Source:  [world-cup/2014/cup.txt](https://github.com/openfootball/world-cup/blob/master/2014--brazil/cup.txt))
+
+
+Why invent yet another data format? Why?
+The new mini language for structured football match schedule data
+offers you the best of both worlds, that is,
+1) looks n feels like free-form plain text - easy-to-read and easy-to-write -
+2) but offers a 100-% data accuracy guarantee (when loading into SQL tables, for example.
+
+The mini language also includes
+ support for groups, matchdays, grounds, and more. Example:
+
+~~~
+############################
+# World Cup 2014 Brazil
+
+Group A  |  Brazil       Croatia              Mexico         Cameroon
+Group B  |  Spain        Netherlands          Chile          Australia
+Group C  |  Colombia     Greece               Côte d'Ivoire  Japan
+Group D  |  Uruguay      Costa Rica           England        Italy
+Group E  |  Switzerland  Ecuador              France         Honduras
+Group F  |  Argentina    Bosnia-Herzegovina   Iran           Nigeria
+Group G  |  Germany      Portugal             Ghana          United States
+Group H  |  Belgium      Algeria              Russia         South Korea
+
+
+Matchday 1  |  Thu Jun/12
+Matchday 2  |  Fri Jun/13
+Matchday 3  |  Sat Jun/14
+...
+
+(16) Round of 16            |  Sat Jun/28 - Tue Jul/1
+(17) Quarter-finals         |  Fri Jul/4 - Sat Jul/5
+(18) Semi-finals            |  Tue Jul/8 - Wed Jul/9
+(19) Match for third place  |  Sat Jul/12
+(20) Final                  |  Sun Jul/13
+
+
+Group A:
+
+(1) Thu Jun/12 17:00   Brazil - Croatia       @ Arena de São Paulo, São Paulo (UTC-3)
+(2) Fri Jun/13 13:00   Mexico - Cameroon      @ Estádio das Dunas, Natal (UTC-3)
+
+(17) Tue Jun/17 16:00   Brazil - Mexico        @ Estádio Castelão, Fortaleza (UTC-3)
+(18) Wed Jun/18 18:00   Cameroon - Croatia     @ Arena Amazônia, Manaus (UTC-4)
+
+(33) Mon Jun/23 17:00   Cameroon - Brazil      @ Brasília (UTC-3)
+(34) Mon Jun/23 17:00   Croatia  - Mexico      @ Recife (UTC-3)
+
+
+Group B:
+
+(3) Fri Jun/13 16:00   Spain - Netherlands     @ Arena Fonte Nova, Salvador (UTC-3)
+(4) Fri Jun/13 18:00   Chile - Australia       @ Arena Pantanal, Cuiabá (UTC-4)
+
+(19) Wed Jun/18 16:00   Spain - Chile             @ Estádio do Maracanã, Rio de Janeiro (UTC-3)
+(20) Wed Jun/18 13:00   Australia - Netherlands   @ Estádio Beira-Rio, Porto Alegre (UTC-3)
+
+(35) Mon Jun/23 13:00   Australia - Spain         @ Curitiba (UTC-3)
+(36) Mon Jun/23 13:00   Netherlands - Chile       @ São Paulo (UTC-3)
+...
+~~~
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
