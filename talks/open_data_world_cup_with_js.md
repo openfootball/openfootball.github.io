@@ -1,4 +1,4 @@
-title:  Using Open Football Data - Get Ready for the World Cup in Brazil 2014 w/ Ruby
+title:  Using Open Football Data - Get Ready for the World Cup in Brazil 2014 w/ JavaScript
 
 %css
 
@@ -307,7 +307,7 @@ Example - Open Football Match Schedule Language:
 (2) Fri Jun/13 13:00   Mexico - Cameroon   @ Estádio das Dunas, Natal (UTC-3)
 ~~~
 
-(Source:  [world-cup/2014/cup.txt](https://github.com/openfootball/world-cup/blob/master/2014/cup.txt))
+(Source:  [world-cup/2014/cup.txt](https://github.com/openfootball/world-cup/blob/master/2014--brazil/cup.txt))
 
 Q: Why? Why invent yet another data format? Why?
 
@@ -374,7 +374,7 @@ Group B:
 ...
 ~~~
 
-(Source: [world-cup/2014/cup.txt](https://github.com/openfootball/world-cup/blob/master/2014/cup.txt))
+(Source: [world-cup/2014/cup.txt](https://github.com/openfootball/world-cup/blob/master/2014--brazil/cup.txt))
 
 
 
@@ -424,7 +424,7 @@ World Cup 2014 - Matchday 2
 2014/06/13 | Chile (CHI)  - Australia (AUS)
 ~~~
 
-(Live: [geraldb.github.io/football.js/samples/starter](http://geraldb.github.io/football.js/samples/starter/index.html))
+(Live: [footballjs.github.io/starter](http://footballjs.github.io/starter/matchday.html))
 
 
 
@@ -496,7 +496,7 @@ var footballdb_widget_new = function( widget_id, api_path_prefix ) {
 } // fn football_widget_new
 ~~~
 
-(Source: [github.com/geraldb/football.js](https://github.com/geraldb/football.js))
+(Source: [github.com/footballjs/starter](https://github.com/footballjs/starter))
 
 
 #  Matchday Widget Example -  `footballdb.widget.js` - v2.0
@@ -764,7 +764,7 @@ Usage:
 </html>
 ~~~
 
-(Live: [geraldb.github.io/football.js/samples/polymer](http://geraldb.github.io/football.js/samples/polymer/index.html))
+(Live: [footballjs.github.io/football.html/index.html](http://footballjs.github.io/football.html/index.html))
 
 
 

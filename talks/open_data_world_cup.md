@@ -227,7 +227,7 @@ Let's fix it. Welcome CSV v2 ([`github.com/csv2`](https://github.com/csv2)).
 
 DSL - Domain-Specific Language 
 
-[`world-cup/2014/cup.txt`](https://github.com/openfootball/world-cup/blob/master/2014/cup.txt):
+[`world-cup/2014/cup.txt`](https://github.com/openfootball/world-cup/blob/master/2014--brazil/cup.txt):
 
 ~~~
 ##################################
@@ -474,7 +474,7 @@ Any Example Web Apps?
 
 Any Example Web Apps?
 
-- `football.js` - Open Source JavaScript Matchday Widget - still early stage; see [`github.com/geraldb/football.js`](https://github.com/geraldb/football.js)
+- `football.js` - Open Source JavaScript Matchday Widget - still early stage; see [`github.com/footballjs`](https://github.com/footballjs)
 - The Free World Football Almanac - Free public domain e-book - still early stage; see [`github.com/openfootball/book`](https://github.com/openfootball/book)
 
 Anything Else?
