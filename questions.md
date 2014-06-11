@@ -27,9 +27,9 @@ Option 2) Clone the datasets and update your own private or public copies yourse
 ## Download Pre-Built `football.db` Copy or Build Your Own `football.db` Copy
 
 
-Q: Where can I get pre-built `football.db`, `worldcup.cp` etc. copies?
+Q: Where can I get (download) pre-built `football.db`, `worldcup.cp` etc. copies?
 
-A: You can get pre-built single-file SQLite databases (working anywhere, that is, Windows, Mac, Linux, etc.)
+A: You can get (download) pre-built single-file SQLite databases (working anywhere, that is, Windows, Mac, Linux, etc.)
 copies on the [build release page](https://github.com/openfootball/build/releases).
 
 
@@ -40,36 +40,38 @@ some basic build docu [here [1]](http://openfootball.github.io/build.html)
 and [here [2]](https://github.com/openfootball/build).
 Not really a tutorial (step-by-step guide). Sorry, still the early days.
 Just start and if you have questions or commentary as you go along post
-them to forum / mailing list maybe someone can help you out. All the best. Good luck.
+them to forum / mailing list maybe someone can help you out. All the best.
+Good luck. Bonus: Why not write a step-by-step build guide yourself and share
+it with the world?
 
 
-## Export Formats (JSON, CSV)
+## Export Formats (JSON, CSV, SQL)
 
-Q: How can I get datasets in JSON, CSV, SQL or <your data format here>?
+Q: How can I get datasets in JSON, CSV, SQL or _[your data format here]_?
 
 A: Get a copy of a pre-built `football.db` or `worldcup.db` etc.
 It's a single-file SQLite database (working anywhere, that is, Windows, Mac, Linux, etc.).
 
 Option 1) No coding required. Use your SQLite tool of choice to export to CSV, JSON, SQL
-or <your data format here>.
+or _[your data format here]_.
 
 Option 2) Write your own (little) script (in Ruby, Python, etc.) that exports
-to CSV, JSON or <your data format here>. - Bonus: Share your code with the world.
+to CSV, JSON or _[your data format here]_. - Bonus: Share your code with the world.
 
 <!--
 Add Example Script in Ruby
 -->
 
 
-Q: How can I get datasets in JSON or CSV (using <your database here>)?
+Q: How can I get datasets in JSON or CSV using _[your database here]_?
 
 A: Load the datasets into your (SQL) database of choice (PostgreSQL, MySQL, etc.) and
 
 Option 1) use your database tool of choice to export to CSV, JSON, SQL 
-or <your data format here> etc. or
+or _[your data format here]_ etc. or
 
 Option 2) use your language of choice and wipe up some code to export to CSV, JSON 
-or <your data format here> etc.  - Bonus: Share your code with the world.
+or _[your data format here]_ etc.  - Bonus: Share your code with the world.
 
 
 
