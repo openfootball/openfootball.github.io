@@ -99,23 +99,23 @@ Matchday 2  |  Fri Jun/13
 
 Group A:
 
-(1) Thu Jun/12 17:00 Brazil 3-1 (1-1) Croatia    @ Arena de São Paulo, São Paulo (UTC-3)
-                         [Neymar 29', 71' (pen.) Oscar 90+1'; Marcelo 11' (o.g.)]
+(1) Thu Jun/12 17:00 Brazil  3-1 (1-1)  Croatia    @ Arena de São Paulo, São Paulo (UTC-3)
+                      [Neymar 29', 71' (pen.) Oscar 90+1'; Marcelo 11' (o.g.)]
 
-(2) Fri Jun/13 13:00 Mexico 1-0 (0-0) Cameroon   @ Estádio das Dunas, Natal (UTC-3)
-                         [Oribe Peralta 61']
+(2) Fri Jun/13 13:00 Mexico  1-0 (0-0)  Cameroon   @ Estádio das Dunas, Natal (UTC-3)
+                      [Oribe Peralta 61']
 
 ...
 
 Match for third place
 
-(63) Sat Jul/12 17:00 Brazil 0-3 (0-2) Netherlands @ Brasília
-                         [-; Robin Van Persie 3' (pen.) Daley Blind 17' Georginio Wijnaldum 90+1']
+(63) Sat Jul/12 17:00 Brazil  0-3 (0-2)  Netherlands   @ Estádio Nacional Mané Garrincha, Brasília (UTC-3)
+                       [-; Robin Van Persie 3' (pen.) Daley Blind 17' Georginio Wijnaldum 90+1']
 
 Final
 
-(64) Sun Jul/13 16:00 Germany 1-0aet (0-0, 0-0) Argentina @ Rio de Janeiro
-                         [Mario Götze 113']
+(64) Sun Jul/13 16:00 Germany  1-0 a.e.t. (0-0, 0-0)  Argentina  @ Estádio do Maracanã, Rio de Janeiro (UTC-3)
+                        [Mario Götze 113']
 ~~~
 
 Source: [`world-cup/2014/cup.txt`](https://github.com/openfootball/world-cup/blob/master/2014--brazil/cup.txt)
