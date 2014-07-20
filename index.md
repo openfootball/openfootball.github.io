@@ -30,27 +30,34 @@ Contents:
 
 ## What's `football.db`?   {#whatis}
 
-A free open public domain football (soccer) database & schema
-for use in any (programming) language
-(e.g. uses plain text fixtures/data sets). Example:
+A free open public domain football database & schema
+for use in any (programming) language (e.g. uses plain data sets). Example:
 
 ~~~
 ### Teams
 
-barcelona, Barcelona|FC Barcelona|Fútbol Club Barcelona, BAR, city:barcelona
-madrid,    Real Madrid|Real Madrid CF,                   RMD, city:madrid
-malaga,    Málaga|FC Málaga|Málaga CF|CF Málaga,         MAG, city:malaga
+barcelona, Barcelona|FC Barcelona|Fútbol Club Barcelona, BAR
+madrid,    Real Madrid|Real Madrid CF,                   RMD
+malaga,    Málaga|FC Málaga|Málaga CF|CF Málaga,         MAG
 ...
 ~~~
 
 ~~~
 ### Matches
 
-2013-03-12 20:45  Schalke 04      2-3  Galatasaray
-2013-03-12 20:45  Barcelona       4-0  Milan
+Quarter-finals - 1st Leg
 
-2013-03-13 20:45  Málaga          2-0  Porto
-2013-03-13 20:45  Bayern München  0-2  Arsenal
+[Tue Apr/1]
+  20.45   FC Barcelona        1-1  Atlético Madrid     @ Camp Nou, Barcelona
+            [Neymar 71'; Diego 56']
+  20.45   Manchester United   1-1  Bayern München      @ Old Trafford, Manchester
+            [Vidić 58'; Schweinsteiger 67']
+[Wed Apr/2]
+  20.45   Real Madrid         3-0  Borussia Dortmund   @ Santiago Bernabéu, Madrid
+            [Bale 3' Isco 27' Ronaldo 57']
+  20.45   Paris Saint-Germain 3-1  Chelsea FC          @ Parc des Princes, Paris
+            [Lavezzi 4' Luiz 61' (o.g.) Pastore 90+3'; Hazard 27' (pen.)]
+
 ...
 ~~~
 
@@ -88,21 +95,33 @@ Group H  |  Belgium      Algeria              Russia         South Korea
 Matchday 1  |  Thu Jun/12
 Matchday 2  |  Fri Jun/13
 ..
-(16) Round of 16            |  Sat Jun/28 - Tue Jul/1
-(17) Quarter-finals         |  Fri Jul/4 - Sat Jul/5
-(18) Semi-finals            |  Tue Jul/8 - Wed Jul/9
-(19) Match for third place  |  Sat Jul/12
-(20) Final                  |  Sun Jul/13
+Round of 16            |  Sat Jun/28 - Tue Jul/1
+Quarter-finals         |  Fri Jul/4 - Sat Jul/5
+Semi-finals            |  Tue Jul/8 - Wed Jul/9
+Match for third place  |  Sat Jul/12
+Final                  |  Sun Jul/13
 
 
 Group A:
 
-(1) Thu Jun/12 17:00    Brazil - Croatia       @ Arena de São Paulo, São Paulo (UTC-3)
-(2) Fri Jun/13 13:00    Mexico - Cameroon      @ Estádio das Dunas, Natal (UTC-3)
+(1) Thu Jun/12 17:00 Brazil 3-1 (1-1) Croatia    @ Arena de São Paulo, São Paulo (UTC-3)
+                         [Neymar 29', 71' (pen.) Oscar 90+1'; Marcelo 11' (o.g.)]
 
-(17) Tue Jun/17 16:00   Brazil - Mexico        @ Estádio Castelão, Fortaleza (UTC-3)
-(18) Wed Jun/18 18:00   Cameroon - Croatia     @ Arena Amazônia, Manaus (UTC-4)
+(2) Fri Jun/13 13:00 Mexico 1-0 (0-0) Cameroon   @ Estádio das Dunas, Natal (UTC-3)
+                         [Oribe Peralta 61']
+
 ...
+
+
+Match for third place
+
+(63) Sat Jul/12 17:00 Brazil 0-3 (0-2) Netherlands @ Brasília
+                         [-; Robin Van Persie 3' (pen.) Daley Blind 17' Georginio Wijnaldum 90+1']
+
+Final
+
+(64) Sun Jul/13 16:00 Germany 1-0aet (0-0, 0-0) Argentina @ Rio de Janeiro
+                         [Mario Götze 113']
 ~~~
 
 Source: [`world-cup/2014/cup.txt`](https://github.com/openfootball/world-cup/blob/master/2014--brazil/cup.txt)
@@ -181,22 +200,32 @@ Source: [`world-cup/2014/cup.txt`](https://github.com/openfootball/world-cup/blo
 Example - Champions League 2012/13:
 
 ~~~
-####################################
-# Champions League 2012/13 - Finalrunden
+##############################
+# Champions League 2012/13 
 
-(8)  Achtelfinale Rückspiele  // Di./Mi., 5.+6./12.+13. Mär 2013
+Round of 16 - 2nd Leg // Tu+We, 5.+6./12.+13. Mar 2013
 
-2013-03-05 20:45  Manchester United    1-2  Real Madrid
-2013-03-05 20:45  Borussia Dortmund    3-0  Schachtar Donezk
+[Tue Mar/5]
+  20.45 Manchester United 1-2 Real Madrid @ Old Trafford, Manchester
+          [S. Ramos 48' (o.g.); L. Modric 66' C. Ronaldo 69']
+  20.45 Borussia Dortmund 3-0 Schachtar Donezk @ Signal Iduna Park, Dortmund
+          [F. Santana 31' M. Götze 37' J. Blaszczykowski 59']
+[Wed Mar/6]
+  20.45 Paris Saint-Germain 1-1 Valencia @ Parc des Princes, Paris
+           [E. Lavezzi 66'; Jonas 55']
+  20.45 Juventus 2-0 Celtic Glasgow @ Juventus Stadium, Turin
+           [A. Matri 24' F. Quagliarella 65']
 
-2013-03-06 20:45  Paris Saint-Germain  1-1  Valencia
-2013-03-06 20:45  Juventus             2-0  Celtic Glasgow
-
-2013-03-12 20:45  Schalke 04           2-3  Galatasaray
-2013-03-12 20:45  Barcelona            4-0  Milan
-
-2013-03-13 20:45  Málaga               2-0  Porto
-2013-03-13 20:45  Bayern München       0-2  Arsenal
+[Tue Mar/12]
+  20.45 Schalke 04 2-3 Galatasaray @ Veltins-Arena, Gelsenkirchen
+           [R. Neustädter 17' M. Bastos 63'; Hamit Altintop 37' Burak Yilmaz 42' U. Bulut 95']
+  20.45 Barcelona 4-0 Milan @ Camp Nou, Barcelona
+           [L. Messi 5', 40' D. Villa 55' Jordi Alba 92']
+[Wed Mar/13]
+  20.45 Málaga 2-0 Porto @ La Rosaleda, Málaga
+           [Isco 43' R. Santa Cruz 77']
+  20.45 Bayern München 0-2 Arsenal @ Allianz Arena, München
+           [-; Giroud 3' L. Koscielny 86']
 ...
 ~~~
 
@@ -224,6 +253,9 @@ Source: [`europe-champions-league/2012_13/cl_finals.txt`](https://github.com/ope
 and more.
 
 
+## Articles  {#articles}
+
+- [Using open football data - Get ready for the World Cup in Brazil 2014](http://okfnlabs.org/blog/2014/05/06/open-data-world-cup.html), Open Knowledge Foundation (OKFN) Data Wrangling Blog
 
 ## Talks - Slide Decks  {#talks}
 
@@ -257,7 +289,7 @@ The `football.db` includes the following tables:
 
 ## Real World Usage
 
-[sport.db Web Admin](https://github.com/geraldb/sport.db.admin) - `sport.db` Web Admin Tool in Ruby on Rails (version 3.2 and up).
+[sport.db Web Admin](https://github.com/sportdb/sport.db.admin) - `sport.db` Web Admin Tool in Ruby on Rails (version 3.2 and up).
 
 [Sportbook](https://github.com/openbookie/sportbook) - Free, open source sports betting pool in Ruby on Rails (version 3.2 and up). 
 
