@@ -94,12 +94,7 @@ Group H  |  Belgium      Algeria              Russia         South Korea
 
 Matchday 1  |  Thu Jun/12
 Matchday 2  |  Fri Jun/13
-..
-Round of 16            |  Sat Jun/28 - Tue Jul/1
-Quarter-finals         |  Fri Jul/4 - Sat Jul/5
-Semi-finals            |  Tue Jul/8 - Wed Jul/9
-Match for third place  |  Sat Jul/12
-Final                  |  Sun Jul/13
+...
 
 
 Group A:
@@ -111,7 +106,6 @@ Group A:
                          [Oribe Peralta 61']
 
 ...
-
 
 Match for third place
 
@@ -206,25 +200,25 @@ Example - Champions League 2012/13:
 Round of 16 - 2nd Leg // Tu+We, 5.+6./12.+13. Mar 2013
 
 [Tue Mar/5]
-  20.45 Manchester United 1-2 Real Madrid @ Old Trafford, Manchester
+  20.45 Manchester United  1-2  Real Madrid        @ Old Trafford, Manchester
           [S. Ramos 48' (o.g.); L. Modric 66' C. Ronaldo 69']
-  20.45 Borussia Dortmund 3-0 Schachtar Donezk @ Signal Iduna Park, Dortmund
+  20.45 Borussia Dortmund  3-0  Schachtar Donezk   @ Signal Iduna Park, Dortmund
           [F. Santana 31' M. Götze 37' J. Blaszczykowski 59']
 [Wed Mar/6]
-  20.45 Paris Saint-Germain 1-1 Valencia @ Parc des Princes, Paris
+  20.45 Paris Saint-Germain  1-1  Valencia         @ Parc des Princes, Paris
            [E. Lavezzi 66'; Jonas 55']
-  20.45 Juventus 2-0 Celtic Glasgow @ Juventus Stadium, Turin
+  20.45 Juventus             2-0  Celtic Glasgow   @ Juventus Stadium, Turin
            [A. Matri 24' F. Quagliarella 65']
 
 [Tue Mar/12]
-  20.45 Schalke 04 2-3 Galatasaray @ Veltins-Arena, Gelsenkirchen
+  20.45 Schalke 04        2-3  Galatasaray      @ Veltins-Arena, Gelsenkirchen
            [R. Neustädter 17' M. Bastos 63'; Hamit Altintop 37' Burak Yilmaz 42' U. Bulut 95']
-  20.45 Barcelona 4-0 Milan @ Camp Nou, Barcelona
+  20.45 Barcelona         4-0  Milan            @ Camp Nou, Barcelona
            [L. Messi 5', 40' D. Villa 55' Jordi Alba 92']
 [Wed Mar/13]
-  20.45 Málaga 2-0 Porto @ La Rosaleda, Málaga
+  20.45 Málaga            2-0  Porto            @ La Rosaleda, Málaga
            [Isco 43' R. Santa Cruz 77']
-  20.45 Bayern München 0-2 Arsenal @ Allianz Arena, München
+  20.45 Bayern München    0-2  Arsenal          @ Allianz Arena, München
            [-; Giroud 3' L. Koscielny 86']
 ...
 ~~~
