@@ -12,12 +12,12 @@ title: Frequently Asked Questions and Answers (FAQs)
 #### Q: Where can I get (download) pre-built `football.db`, `worldcup.db`, `england.db` etc. copies?
 
 A: You can get (download) pre-built single-file SQLite databases (working anywhere, that is, Windows, Mac, Linux, etc.)
-copies on the ["Build Releases"](https://github.com/openfootball/build/releases) page.
+copies on the [Build Releases](https://github.com/openfootball/build/releases) page.
 
 
 #### Q: How can I get started building my own up-to-date copy using the latest datasets?
 
-A: See the ["How to Build Your Own Copy"](http://openfootball.github.io/build.html) page
+A: See the [How to Build Your Own Copy](http://openfootball.github.io/build.html) page
 to get started building your own copy. Not really a tutorial (step-by-step guide). Sorry, still the early days.
 Just start and if you have questions or commentary as you go along post
 them to the forum / mailing list maybe someone can help you out. All the best.
@@ -28,12 +28,13 @@ it with the world?
 
 ## Real-Time Result / Score HTTP JSON API Web Services
 
-#### Q: Is there any HTTP JSON API (web service) to get live scores for _[your event here]_ e.g. the World Cup 2014 in Brazil?
+#### Q: Is there any HTTP JSON API (web service) to get live scores for _[your event here]_ e.g. the World Cup 2014 in Brazil, the English Premier League, the Euro 2016 in France, etc.?
 
 A: `football.db` does **NOT OFFER ANY REAL-TIME** live football results / scores services.
-However, you can run your own HTTP JSON API (web service).
+
+However, you can run your own HTTP JSON API service.
 See the [`sport.db.api.starter` kit](https://github.com/sportdb/sport.db.api.starter) to get started, for example,
-or try the [example HTTP JSON API (web service) running on Heroku](http://footballdb.herokuapp.com).
+or try the [example HTTP JSON API service running on Heroku](http://footballdb.herokuapp.com).
 (Note: The scores get updated once a day, that is, every 24 hours.)
 
 
@@ -68,9 +69,9 @@ Add Example Script in Ruby
 -->
 
 
-#### Q: How can I get datasets in JSON, CSV or _[your data format here]_ using _[your database here]_?
+#### Q: How can I get datasets in JSON, CSV or _[your data format here]_ using _[your database here]_ e.g. PostgreSQL, MySQL, etc.?
 
-A: Load the datasets into your (SQL) database of choice (PostgreSQL, MySQL, etc.) and
+A: Load the datasets into your (SQL) database of choice e.g. PostgreSQL, MySQL, etc. and
 
 Option 1) use your database tool of choice to export to CSV, JSON, SQL 
 or _[your data format here]_ etc. or

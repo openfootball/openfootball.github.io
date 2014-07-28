@@ -26,10 +26,10 @@ You have at least three options:
 Use the Ruby make build tool, that is, rake. Example:
 
 ~~~
-$ rake build DATA=worldcup2014   # build the database for the World Cup in Brazil 2014 (from scratch)
+$ rake build DATA=en   # let's build all leagues n seasons for England
 ~~~
 
-See the [`/build`](https://github.com/openfootball/build) repo to get started.
+See the [`/build` repo](https://github.com/openfootball/build) to get started.
 
 
 
@@ -42,7 +42,7 @@ Use a shell script to build your own `football.db' copy from the plain text data
 $ ./downloadAndBuild.sh
 ~~~
 
-See the [`/build-shell`](https://github.com/openfootball/build-shell) repo to get started.
+See the [`/build-shell` repo](https://github.com/openfootball/build-shell) to get started.
 
 
 
