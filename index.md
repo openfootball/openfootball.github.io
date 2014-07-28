@@ -222,7 +222,7 @@ Round of 16 - 2nd Leg // Tu+We, 5.+6./12.+13. Mar 2013
 ...
 ~~~
 
-Source: [`europe-champions-league/2012_13/cl_finals.txt`](https://github.com/openfootball/europe-champions-league/blob/master/2012_13/cl_finals.txt)
+Source: [`europe-champions-league/2012-13/cl_finals.txt`](https://github.com/openfootball/europe-champions-league/blob/master/2012-13/cl_finals.txt)
 
 
 ### National Leagues & Cups
