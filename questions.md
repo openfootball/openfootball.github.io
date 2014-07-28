@@ -5,8 +5,29 @@ title: Frequently Asked Questions and Answers (FAQs)
 
 # {{ page.title }}
 
-## Real-Time Result / Score Services
 
+## Download Pre-Built `football.db` Copy or Build Your Own
+
+
+#### Q: Where can I get (download) pre-built `football.db`, `worldcup.db` etc. copies?
+
+A: You can get (download) pre-built single-file SQLite databases (working anywhere, that is, Windows, Mac, Linux, etc.)
+copies on the [build releases](https://github.com/openfootball/build/releases) page.
+
+
+#### Q: How can I get started building my own up-to-date copy using the latest data sets?
+
+A: To build your own copy you can find
+some basic build docu [here [1]](http://openfootball.github.io/build.html).
+Not really a tutorial (step-by-step guide). Sorry, still the early days.
+Just start and if you have questions or commentary as you go along post
+them to the forum / mailing list maybe someone can help you out. All the best.
+Good luck. Bonus: Why not write a step-by-step build guide yourself and share
+it with the world?
+
+
+
+## Real-Time Result / Score Services
 
 #### Q: Is there any API (web service) to get live scores for the World Cup 2014 in Brazil?
 
@@ -23,27 +44,6 @@ Option 1) Contribute your updates to the data sets.
 
 Option 2) Clone the data sets and update your own private or public copies yourself.
 
-
-
-## Download Pre-Built `football.db` Copy or Build Your Own
-
-
-#### Q: Where can I get (download) pre-built `football.db`, `worldcup.db` etc. copies?
-
-A: You can get (download) pre-built single-file SQLite databases (working anywhere, that is, Windows, Mac, Linux, etc.)
-copies on the [build releases](https://github.com/openfootball/build/releases) page.
-
-
-#### Q: How can I get started building my own up-to-date copy using the latest data sets?
-
-A: To build your own copy you can find
-some basic build docu [here [1]](http://openfootball.github.io/build.html)
-and [here [2]](https://github.com/openfootball/build).
-Not really a tutorial (step-by-step guide). Sorry, still the early days.
-Just start and if you have questions or commentary as you go along post
-them to the forum / mailing list maybe someone can help you out. All the best.
-Good luck. Bonus: Why not write a step-by-step build guide yourself and share
-it with the world?
 
 
 ## Export Formats (JSON, CSV, SQL)

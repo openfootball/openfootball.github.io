@@ -21,7 +21,6 @@ Contents:
         * [Copa Sudamericana](#clubs)
         * [Champions League](#clubs)
         * [Europa League](#clubs)
-* [Tables, Schema](#schema)
 * [Talks - Slide Decks](#talks)
 * [About, License](#license)
 * [Questions? Comments?](#questions)
@@ -63,7 +62,7 @@ Quarter-finals - 1st Leg
 
 
 
-## Web Admin Site {#webadmin}
+## Web Admin Site Example {#webadmin}
 
 Try the `football.db` web admin app running
 on Heroku [`footballdb.herokuapp.com`](http://footballdb.herokuapp.com).
@@ -234,7 +233,6 @@ Source: [`europe-champions-league/2012_13/cl_finals.txt`](https://github.com/ope
 - English Permier League
 - Deutsche Bundesliga
 - Spanish La Liga
-- Romania Liga 1
 
 #### North America
 
@@ -247,37 +245,11 @@ Source: [`europe-champions-league/2012_13/cl_finals.txt`](https://github.com/ope
 and more.
 
 
-## Articles  {#articles}
-
-- [Using open football data - Get ready for the World Cup in Brazil 2014](http://okfnlabs.org/blog/2014/05/06/open-data-world-cup.html), Open Knowledge Foundation (OKFN) Data Wrangling Blog
-
 ## Talks - Slide Decks  {#talks}
 
 - [Using Open Football Data - Get Ready for the World Cup in Brazil 2014 w/ JavaScript](https://github.com/openfootball/openfootball.github.io/blob/master/talks/open_data_world_cup_with_js.md)  (Vienna.js, 2014)
 - [Using Open Football Data - Get Ready for the World Cup in Brazil 2014 w/ Ruby](https://github.com/openfootball/openfootball.github.io/blob/master/talks/open_data_world_cup.md) (Vienna.rb, 2014)
 - [`football.db` - Using Open Football Data in JavaScript](https://github.com/openfootball/openfootball.github.io/blob/master/talks/football_db_intro.md)  (Vienna.js, 2013)
-
-
-
-## Tables, Schema  {#schema}
-
-The `football.db` includes the following tables:
-
-* teams
-* games
-* events
-    * events_teams (join table)
-* rounds
-* groups
-    * groups_teams (join table)
-* leagues
-* seasons
-* players
-* rosters (join table)
-* goals
-
-(add schema pic here)
-
 
 
 
@@ -291,15 +263,6 @@ The `football.db` includes the following tables:
 
 Any others? Let us know on the [mailing list/forum](http://groups.google.com/group/opensport). Thanks!
 
-
-## Alternatives
-
-[openLigaDB](http://www.openligadb.de) -  free community-contributed sport results available via XML/SOAP HTTP web service; database not available for download
-
-[SportsDB](http://www.sportsdb.org)  - archive (no more activity); open database schema for sports data (formerly known as XTOSS: The XML Team Open Sports Schema.)
-
-
-Any others? Let us know on the [mailing list/forum](http://groups.google.com/group/opensport). Thanks!
 
 
 ## License {#license}
