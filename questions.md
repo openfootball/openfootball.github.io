@@ -9,17 +9,16 @@ title: Frequently Asked Questions and Answers (FAQs)
 ## Download Pre-Built `football.db` Copy or Build Your Own
 
 
-#### Q: Where can I get (download) pre-built `football.db`, `worldcup.db` etc. copies?
+#### Q: Where can I get (download) pre-built `football.db`, `worldcup.db`, `england.db` etc. copies?
 
 A: You can get (download) pre-built single-file SQLite databases (working anywhere, that is, Windows, Mac, Linux, etc.)
-copies on the [build releases](https://github.com/openfootball/build/releases) page.
+copies on the ["Build Releases"](https://github.com/openfootball/build/releases) page.
 
 
-#### Q: How can I get started building my own up-to-date copy using the latest data sets?
+#### Q: How can I get started building my own up-to-date copy using the latest datasets?
 
-A: To build your own copy you can find
-some basic build docu [here [1]](http://openfootball.github.io/build.html).
-Not really a tutorial (step-by-step guide). Sorry, still the early days.
+A: See the ["How to Build Your Own Copy"](http://openfootball.github.io/build.html) page
+to get started building your own copy. Not really a tutorial (step-by-step guide). Sorry, still the early days.
 Just start and if you have questions or commentary as you go along post
 them to the forum / mailing list maybe someone can help you out. All the best.
 Good luck. Bonus: Why not write a step-by-step build guide yourself and share
@@ -27,28 +26,33 @@ it with the world?
 
 
 
-## Real-Time Result / Score Services
+## Real-Time Result / Score HTTP JSON API Web Services
 
-#### Q: Is there any API (web service) to get live scores for the World Cup 2014 in Brazil?
+#### Q: Is there any HTTP JSON API (web service) to get live scores for _[your event here]_ e.g. the World Cup 2014 in Brazil?
 
-A: `football.db` does **NOT** offer any real-time live football results / scores services.
+A: `football.db` does **NOT OFFER ANY REAL-TIME** live football results / scores services.
+However, you can run your own HTTP JSON API (web service).
+See the [`sport.db.api.starter` kit](https://github.com/sportdb/sport.db.api.starter) to get started, for example,
+or try the [example HTTP JSON API (web service) running on Heroku](http://footballdb.herokuapp.com).
+(Note: The scores get updated once a day, that is, every 24 hours.)
 
 
-#### Q: What's the update frequency of the data sets?
+
+#### Q: What's the update frequency of the datasets?
 
 A: It's an open source (public domain) volunteer effort.
-Data sets get updated when they get updated, that is, there's no schedule and no guarantee.
+Datasets get updated when they get updated, that is, there's no schedule and no guarantee.
 If you need updates today you have at least two options:
 
-Option 1) Contribute your updates to the data sets.
+Option 1) Contribute your updates to the datasets.
 
-Option 2) Clone the data sets and update your own private or public copies yourself.
+Option 2) Clone the datasets and update your own private or public copies yourself.
 
 
 
 ## Export Formats (JSON, CSV, SQL)
 
-#### Q: How can I get data sets in JSON, CSV, SQL or _[your data format here]_?
+#### Q: How can I get datasets in JSON, CSV, SQL or _[your data format here]_?
 
 A: Get a copy of a pre-built `football.db` or `worldcup.db` etc.
 It's a single-file SQLite database (working anywhere, that is, Windows, Mac, Linux, etc.).
@@ -64,9 +68,9 @@ Add Example Script in Ruby
 -->
 
 
-#### Q: How can I get data sets in JSON, CSV or _[your data format here]_ using _[your database here]_?
+#### Q: How can I get datasets in JSON, CSV or _[your data format here]_ using _[your database here]_?
 
-A: Load the data sets into your (SQL) database of choice (PostgreSQL, MySQL, etc.) and
+A: Load the datasets into your (SQL) database of choice (PostgreSQL, MySQL, etc.) and
 
 Option 1) use your database tool of choice to export to CSV, JSON, SQL 
 or _[your data format here]_ etc. or
@@ -81,9 +85,9 @@ or _[your data format here]_ etc.  - Bonus: Share your code with the world.
 
 #### Q: Any real world apps using this?
 
-A: There's no API key, there's no registration, there's no license for the data sets.
+A: There's no API key, there's no registration, there's no license for the datasets.
 You're free to use whatever you need - no questions asked, no rights reserved.
-If you're using the football.db data sets in your app, you're welcome to tell the world (on the mailing list/forum)
+If you're using the football.db datasets in your app, you're welcome to tell the world (on the mailing list/forum)
 and you get listed here:
 
 - [BITKUP.COM](http://bitkup.com) - new app for betting with Bitcoins on the Brazil's World Cup 2014 by Oriol Franquesa Cortés

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: How To Build Your Own Copy
+title: How to Build Your Own Copy
 ---
 
 # {{ page.title }}
@@ -11,13 +11,14 @@ Contents:
 
 * [Use Build Script (`/build`)](#build)
 * [Use Shell Script (`/build-shell`)](#build-shell)
-* [Do-It-Yourself - Your Own Script from Scratch](#build-diy)
+* [Do-It-Yourself - Write Your Own Script from Scratch](#build-diy)
 * [Troubleshooting](#troubleshooting)
 * [Questions? Comments?](#questions)
 </div>
 
 
 You have at least three options:
+
 
 ## Option 1  - Use Build Script (`/build`)    {#build}
 
@@ -28,21 +29,27 @@ Use the Ruby make build tool, that is, rake. Example:
 $ rake build DATA=worldcup2014   # build the database for the World Cup in Brazil 2014 (from scratch)
 ~~~
 
+See the [`/build`](https://github.com/openfootball/build) repo to get started.
 
-More info at the [`/build`](https://github.com/openfootball/build) repo.
+
 
 
 ## Option 2  - Use Shell Script (`/build-shell`)   {#build-shell}
 
-Use a shell script to build your own `football.db' copy from the plain text datasets.
+Use a shell script to build your own `football.db' copy from the plain text datasets. Example:
 
-More info at the [`/build-shell`](https://github.com/openfootball/build-shell) repo.
+~~~
+$ ./downloadAndBuild.sh
+~~~
+
+See the [`/build-shell`](https://github.com/openfootball/build-shell) repo to get started.
 
 
 
-## Option 3  - Do-It-Yourself - Create Your Own Script from Scratch     {#build-diy}
 
-Create your own build script from scratch. See the documentation to get started.
+## Option 3  - Do-It-Yourself - Write Your Own Script from Scratch     {#build-diy}
+
+Write your own build script from scratch. See the documentation to get started.
 
 
 

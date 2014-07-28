@@ -30,7 +30,7 @@ Contents:
 ## What's `football.db`?   {#whatis}
 
 A free open public domain football database & schema
-for use in any (programming) language (e.g. uses plain data sets). Example:
+for use in any (programming) language (e.g. uses plain datasets). Example:
 
 ~~~
 ### Teams

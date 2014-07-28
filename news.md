@@ -6,7 +6,7 @@ title: News n Updates
 # {{ page.title }}
 
 
-### New Repo for Documentation - `/docs` - Articles, Tips, Notes, Examples, etc.
+## New Repo for Documentation - `/docs` - Articles, Tips, Notes, Examples, etc.
 
 Added a new repo, that is, [`/docs`](https://github.com/openfootball/docs)  - to collect 
 all the documentation in one place and make it easier to contribute.
@@ -20,33 +20,34 @@ Thanks again to Joe Kampschmidt for the first docu contribution,
 that is, notes on a couple of SQL query examples. 
 
 
-### sportdb command line update v1.9.4 - adds `clubs.txt`, Week 1, `en/2013-14/pl.txt`, etc.
+## sportdb command line update v1.9.4 - adds `clubs.txt`, Week 1, `en/2013-14/pl.txt`, etc.
 
 Added some minor changes/updates sportdb command line tool. What's news? 
 
 - Now you can use `clubs.txt` as an alternative for `teams.txt` (actually recommended for football clubs
     otherwise clubs might get flagged as national teams and not as clubs). 
-- Now you now can use `2013-14` as an alterantive for `2013_14` in your 
+- Now you can use `2013-14` as an alterantive for `2013_14` in your 
     fixture path (e.g. `2013-14/1-premierleague-i.txt` now works).
-- Now you now can use Week 1 or Week 5 and so on in your match schedule (in 
+- Now you can use Week 1 or Week 5 and so on in your match schedule (in 
     English/en) for matchday/round headers. 
 
 
-### New Org `football.csv` - Football Match Data in CSV (Comma-Separated Values) e.g. `Arsenal, Liverpool, 2-0, 1-0`
+## New Org `football.csv` - Football Match Data in CSV (Comma-Separated Values) Format e.g. `Arsenal, Liverpool, 2-0, 1-0`
 
-Aded a new sister GitHub org, that is, [`football.csv`](https://github.com/footballcsv),
+Added a new sister GitHub org, that is, [`football.csv`](https://github.com/footballcsv),
 that collects football match data in the CSV (comma-separated  values) format for easy (re)use. 
 
-To get started all seasons for the English Premier League, Championship League, League 1, League 2 etc.
-added to the new [`/en-england`](https://github.com/footballcsv/en-england) repo.
+Added all seasons for the English Premier League, Championship League, League 1, League 2 etc.
+to the new [`/en-england`](https://github.com/footballcsv/en-england) repo to get started.
 
 
-### New Country Repo Switzerland (`/ch-confoederatio-helvetica`) - Super League 2014/15 etc.
 
-Added a new country repo for Switzerland( Schweiz, Suisse, 
-Svizzera, Svizra) incl. Lichtenstein, that is, 
-[/ch-confoederatio-helvetica](https://github.com/openfootball/ch-confoederatio-helvetica).
-To get started added the Super League Match Schedule for 2014/15. Example: 
+## New Country Repo Switzerland (`/ch-confoederatio-helvetica`) - Super League 2014/15 etc.
+
+Added a new country repo for Switzerland (Schweiz, Suisse, Svizzera, Svizra)
+incl. Lichtenstein, that is, 
+[`/ch-confoederatio-helvetica`](https://github.com/openfootball/ch-confoederatio-helvetica).
+Added the Super League Match Schedule for 2014/15 to get started. Example: 
 
 ~~~
 Spieltag 1 
@@ -60,10 +61,10 @@ Spieltag 1
 ~~~
 
 
-### New Season - English Premier League 2014/15 Schedule (and Some Squads) Added
+## New Season - English Premier League 2014/15 Schedule (and Some Squads) Added
 
 Added the new 2014/15 season for the English Premier League plus
-started to add the squads for Arsenal, as an example. 
+started adding the squads for Arsenal, as an example. 
 
 ~~~
 (1)     Wojciech Szczęsny (POL)      GK  2007-
@@ -94,7 +95,7 @@ started to add the squads for Arsenal, as an example.
 ...
 ~~~
 
-### sportdb update (v1.9.3) - Now Includes Better Squads Reader (Auto-Creates Missing Players)
+## sportdb update (v1.9.3) - Now Includes Better Squads Reader (Auto-Creates Missing Players)
 
 Uploaded a new sportdb version, that is, v1.9.3   What's new? 
 
@@ -110,12 +111,18 @@ and missing players get auto-added to the persons table. Still a little rough an
 
 
 
+## New repo for Shell Script Build Option, that is, `/build-shell`
 
-### `ojogo` gem - another world cup command line tool - prints today's matches
+Added new repo, that is, `/build-shell` for a new build option using a shell script.
+Thanks to Joe Kampschmidt to get it all started and the write-up and the shell script.
 
-An example using the football.db HTTP JSON API
-put together [another command line tool, that is, `ojogo`](https://github.com/sportdb/ojogo.ruby) -
-for the World Cup 2014 in Brazil that prints today's matches. For example, typing on Jun/29 
+
+
+## `ojogo` gem - another world cup command line tool - prints today's matches
+
+Added [another command line tool, that is, `ojogo`](https://github.com/sportdb/ojogo.ruby)
+using the football.db HTTP JSON API web service
+that prints today's matches for the World Cup 2014 in Brazil. For example, typing on Jun/29 
 
 ~~~
 $ ojogo    # defaults to today's world cup 2014 matches 
@@ -129,7 +136,7 @@ Costa Rica (CRC) vs Greece (GRE)
 ~~~
 
 
-### sportdb update (v1.9.2) - Now Includes Match Goals Reader e.g. `[Messi 3', 45+1']` etc.
+## sportdb update (v1.9.2) - Now Includes Match Goals Reader e.g. `[Messi 3', 45+1']` etc.
 
 Uploaded a new sportdb version, that is, v1.9.2. What's new? 
 
@@ -142,7 +149,7 @@ players). All still a little rough but working without any (extra) configuration
 ~~~
 
 Will add four goal records (see the table goals w/ fields such as 
-player_id, team_id, minute, offset, score1, score2 etc.): 
+`player_id`, `team_id`, `minute`, `offset`, `score1`, `score2` etc.): 
 
 ~~~
 1 |   Marcelo  11'   (o.g.)   1-0   Croatia (Team 2) 
