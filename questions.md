@@ -49,6 +49,143 @@ Option 1) Contribute your updates to the datasets.
 Option 2) Clone the datasets and update your own private or public copies yourself.
 
 
+#### Q: How can I contribute / update match scores, schedules, leagues, etc.?
+
+A: You're contributions are welcome.
+It works like a wiki, that is, the datasets are plain text documents that anybody can update
+(if you're an openfootball team member - you can update it directly in your browser or via commits;
+otherwise you may use a pull request).
+
+For example, to add the result for the Brazil v Croatia match:
+
+~~~
+Thu Jun/12 17.00   Brazil  v  Croatia 
+~~~
+
+change it to:
+
+~~~
+Thu Jun/12 17.00   Brazil  3-1 (1-1)  Croatia
+~~~
+
+As a bonus - you can add the goal scores too. Example:
+
+~~~
+Thu Jun/12 17.00   Brazil  3-1 (1-1)  Croatia
+                     [Neymar 29', 71' (pen.) Oscar 90+1';  Marcelo 11' (o.g.)]
+~~~
+
+That's it.
+
+
+
+## League Standings / Stats
+
+#### Q: How can I add league standings (e.g. number of match played, win-draw-lose, goal scored, etc.)?
+
+A: That's the big plus using structured data. You can auto-calculate
+league standings using SQL queries and updates.
+Another big plus: Your standinga will be always up-to-date (just recalculate - if out-of-date). 
+
+Note, you can use the built-in sportdb standing calculations. Still early and rough.
+For auto-calculating all league standings use in your build script, for example:
+
+~~~
+EventStanding.recalc!   # and for all groups
+GroupStanding.recalc!
+~~~
+
+You can see the calc "engine" here [1](https://github.com/sportdb/sport.db.ruby/blob/master/lib/sportdb/calc.rb).
+The "engine" calculates:
+
+- `pos` (ranking e.g. 1st place, 2nd place etc.)
+- `played` (matches played)
+- `won`
+- `drawn`
+- `lost`
+- `goals_for`
+- `goals_against`
+
+Stats tables included in the sportdb schema include:
+
+- `AlltimeStanding` / `AlltimeStandingEntry`
+- `EventStanding` / `EventStandingEntry`
+- `GroupStanding` / `GroupStandingEntry`
+
+
+
+## Text Formtas (Match Schedule Mini Language, Player Mini Language, Squads Mini Language)
+
+#### Q: What kind of text format are you using? Why not use CSV, JSON, or _[your data format here]_?
+
+A: Most `football.db` documents use "standard" formats such as CSV or YAML with some exceptions.
+
+The match schedules use a mini structured data language. Example:
+
+~~~
+Group A    |  Brazil    Croatia       Mexico     Cameroon
+
+Matchday 1 |  Thu Jun/12
+
+Group A:
+
+(1) Thu Jun/12 17:00   Brazil  3-1 (1-1)  Croatia    @ Arena de São Paulo, São Paulo
+                        [Neymar 29', 71' (pen.) Oscar 90+1'; Marcelo 11' (o.g.)]
+~~~
+
+
+The player documents use a mini structured data language. Example:
+
+~~~
+Júlio César|Júlio César SOARES DE ESPINDOLA,     3 Sep 1979, 186
+T. Silva|Thiago SILVA|Thiago EMILIANO DA SILVA, 22 Sep 1984, 183
+David Luiz|David Luiz MOREIRA MARINHO,          22 Apr 1987, 189
+Marcelo|Marcelo VIEIRA DA SILVA JUNIOR,         12 May 1988, 174
+Dante|Dante BONFIM COSTA SANTOS,                18 Oct 1983, 188
+~~~
+
+
+The squads / lineups documents use a mini structured data language. Example:
+
+~~~
+(12)  GK  Júlio César                        #  79, Toronto (CAN)
+ (3)  DF  Thiago Silva                       #  45, Paris Saint-Germain (FRA)
+ (4)  DF  David Luiz                         #  35, Chelsea (ENG)
+ (6)  DF  Marcelo                            #  30, Real Madrid (ESP)
+(13)  DF  Dante                              #  12, Bayern Munich (GER)
+~~~
+
+
+#### Q: Why? Why? Why?
+
+The sources are plain old text documents designed to be easy-to-read and easy-to-write.
+The idea is to make it work like a wiki, that is, just plain old text documents anyone can update.
+
+Why like a wiki?
+
+Question - What's the best source for open "unstructured" football information in the real world in 2014?
+Of course, the Wikipedia! See, for example,
+the [World Cup 2014](http://en.wikipedia.org/wiki/2014_FIFA_World_Cup) page,
+the [World Cup 2014 squads](http://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads) page,
+or the [World Cup 2014 Qualifiers](http://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification) page.
+
+Thus, the idea is - why not build on what works and let's build a wiki for "structured" data e.g.
+
+- Wikipedia     - wiki w/ free-form text => mostly unstructured data
+- `football.db` - wiki w/ mostly free-form text => always 100% structured data (ready for easy import into SQL tables)
+
+
+
+#### Q: What about Wikidata - Wikipedia's Data Project?
+
+[Wikidata](http://www.wikidata.org) is a great initiative.
+Wikidata like the `football.db` uses "license-free" data, that is,
+data dedicated to the public domain, thus, an idea is to work on syncying the data
+(from Wikidata to `football.db` and from `football.db` to Wikidata).
+Still very early. If you're interested in making it happen or if you have any ideas, suggestions or insight,
+say hello on the [mailing list](http://groups.google.com/group/opensport). 
+
+
 
 ## Export Formats (JSON, CSV, SQL)
 
