@@ -19,7 +19,8 @@ on the [Build Releases](https://github.com/openfootball/build/releases) page.
 A: See the [How to Build Your Own Copy](http://openfootball.github.io/build.html) page
 to get started building your own copy. Not really a tutorial (step-by-step guide). Sorry, still the early days.
 Just start and if you have questions or commentary as you go along post
-them to the forum / mailing list maybe someone can help you out. All the best.
+them to the [forum / mailing list](http://groups.google.com/group/opensport)
+maybe someone can help you out. All the best.
 Good luck. Bonus: Why not write a step-by-step build guide yourself and share
 it with the world?
 
@@ -51,7 +52,7 @@ Option 2) Clone the datasets and update your own private or public copies yourse
 
 #### Q: How can I contribute / update match scores, schedules, leagues, etc.?
 
-A: You're contributions are welcome.
+A: Your contributions are welcome.
 It works like a wiki, that is, the datasets are plain text documents that anybody can update
 (if you're an openfootball team member - you can update it directly in your browser or push your commits;
 otherwise you may use a pull request).
@@ -62,13 +63,13 @@ For example, to add the result for the Brazil vs Croatia match:
 Thu Jun/12 17:00   Brazil  vs  Croatia 
 ~~~
 
-change it to:
+change the line to:
 
 ~~~
 Thu Jun/12 17:00   Brazil  3-1 (1-1)  Croatia
 ~~~
 
-As a bonus - let's add the goal scores too. Example:
+Bonus: Let's add the goal getters too. Example:
 
 ~~~
 Thu Jun/12 17:00   Brazil  3-1 (1-1)  Croatia
@@ -81,9 +82,9 @@ That's it.
 
 ## League Standings / Stats
 
-#### Q: How can I add league standings (e.g. number of match played, win-draw-lose, goal scored, etc.)?
+#### Q: How can I add league standings / tables (e.g. number of matches played, won-drawn-lost, goals scored, etc.)?
 
-A: That's the big plus using structured data. You can auto-calculate
+A: That's the big plus using structured data. You can (auto-)calculate
 league standings using SQL queries and updates.
 Another big plus: Your standings will be always up-to-date (just recalculate - if out-of-date). 
 
@@ -105,20 +106,38 @@ The "engine" calculates:
 - `lost`
 - `goals_for`
 - `goals_against`
+- `pts` (points e.g. +3 for wins, +1 fro draws etc.)
 
-Stats tables included in the sportdb schema include:
+
+Standing tables in the sportdb schema include:
 
 - `AlltimeStanding` / `AlltimeStandingEntry`
 - `EventStanding` / `EventStandingEntry`
 - `GroupStanding` / `GroupStandingEntry`
 
+For example, using the world cup datasets you can (auto-)calculate the all time standings:
+
+~~~
+ 1  Brazil (BRA)                 97   67  15  15  210:88   216  19
+ 2  Germany (GER)                99   60  19  20  206:117  199  17
+ 3  Italy (ITA)                  80   44  21  15  126:74   153  17
+ 4  Argentina (ARG)              70   37  13  20  123:80   124  15
+ 5  England (ENG)                59   26  19  14   77:52    97  13
+ 6  Spain (ESP)                  56   28  12  16   88:59    96  13
+ 7  France (FRA)                 54   25  11  18   96:68    86  13
+ 8  Netherlands (NED)            43   22  10  11   71:44    76   9
+ 9  Uruguay (URU)                47   18  12  17   76:65    66  11
+10  Sweden (SWE)                 46   16  13  17   74:69    61  11
+...
+~~~
 
 
 ## Text Formtas (Match Schedule / Player / Squads Mini Languages)
 
 #### Q: What kind of text format are you using? Why not use CSV, JSON, or _[your data format here]_?
 
-A: Most `football.db` documents use "standard" plain text formats such as CSV or YAML with some exceptions.
+A: Most `football.db` documents use "standard" plain text formats such as
+comma-separated values or key-value pairs with some exceptions.
 
 The match schedules use a mini structured data language. Example:
 
@@ -128,7 +147,7 @@ Group B    |  Spain     Netherlands   Chile      Australia
 ...
 
 Matchday 1 |  Thu Jun/12
-Matchday 2  |  Fri Jun/13
+Matchday 2 |  Fri Jun/13
 ...
 
 Group A:
@@ -139,7 +158,7 @@ Group A:
 
 Final
 
-(64) Sun Jul/13 16:00 Germany  1-0 a.e.t. (0-0, 0-0)  Argentina  @ Estádio do Maracanã, Rio de Janeiro
+(64) Sun Jul/13 16:00  Germany  1-0 a.e.t. (0-0, 0-0)  Argentina  @ Estádio do Maracanã, Rio de Janeiro
                         [Mario Götze 113']
 ~~~
 
@@ -165,10 +184,11 @@ The squads / lineups documents use a mini structured data language. Example:
 (13)  DF  Dante                 #  12, Bayern Munich (GER)
 ~~~
 
-Bonus Exercise: Try to add by hand matchday-by-matchday the schedule for the English Premier League,
-for example? Did you enjoy writing the match schedule in JSON? in CSV? in XML? in _[your data format here]_?
+Bonus Exercise: Try to write by hand the schedule for the English Premier League -
+week-by-week - 380 matches all together, for example?
+Are you enjoying writing the match schedule in JSON? in CSV? in XML? in _[your data format here]_?
 Why not post an example (e.g. a link to a gist or to your document)
-to the [mailing list](http://groups.google.com/group/opensport) for comparison?
+to the [forum / mailing list](http://groups.google.com/group/opensport) for comparison?
 
 Now retry the exercise using the new mini language designed for making
 hand-crafting schedules as easy as possible. Any difference?
@@ -191,7 +211,7 @@ or the [World Cup 2014 Qualifiers](http://en.wikipedia.org/wiki/2014_FIFA_World_
 Thus, the idea is - why not build on what works and build a wiki for "structured" data e.g.
 
 - Wikipedia     - wiki w/ free-form text => mostly unstructured data
-- `football.db` - wiki w/ mostly free-form text => always 100% structured data (ready for easy import into SQL tables)
+- `football.db` - wiki w/ mostly free-form text => always 100% structured data (ready for easy loading into SQL tables with a 100% data accuracy guarantee)
 
 
 
@@ -203,7 +223,7 @@ Wikidata like the `football.db` uses "license-free" data, that is, data dedicate
 Thus, an idea (and goal) is to work on syncying the data
 (from Wikidata to `football.db` and from `football.db` to Wikidata).
 Still very early. If you're interested in making it happen or if you have any ideas, suggestions or insight,
-say hello on the [mailing list](http://groups.google.com/group/opensport). 
+say hello on the [forum / mailing list](http://groups.google.com/group/opensport). 
 
 
 
@@ -244,7 +264,7 @@ or _[your data format here]_ etc.  - Bonus: Share your code with the world.
 
 A: There's no API key, there's no registration, there's no license for the datasets.
 You're free to use whatever you need - no questions asked, no rights reserved.
-If you're using the football.db datasets in your app, you're welcome to tell the world (on the mailing list/forum)
+If you're using the football.db datasets in your app, you're welcome to tell the world (on the [mailing list/forum](http://groups.google.com/group/opensport))
 and you get listed here:
 
 - [BITKUP.COM](http://bitkup.com) - new app for betting with Bitcoins on the Brazil's World Cup 2014 by Oriol Franquesa Cortés

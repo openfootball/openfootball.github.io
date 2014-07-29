@@ -8,7 +8,7 @@ title: News and Updates
 
 ## New Repo for Documentation - `/docs` - Articles, Tips & Tricks, Notes, Examples, etc.
 
-Added a new repo, that is, [`/docs`](https://github.com/openfootball/docs)  - to collect 
+Added a [new repo, that is, `/docs`](https://github.com/openfootball/docs) - to collect 
 all the documentation in one place and make it easier to contribute.
 Still in an early stage the first pages include:
 
@@ -34,16 +34,16 @@ What's news? sportdb command line tool updates:
 
 ## New Org `football.csv` - Football Match Data in CSV (Comma-Separated Values) Format e.g. `Arsenal, Liverpool, 2-0, 1-0`
 
-- Added a new sister GitHub org, that is, [`football.csv`](https://github.com/footballcsv),
+- Added a [new GitHub org, that is, `football.csv`](https://github.com/footballcsv),
     that collects football match data in the CSV (comma-separated  values) format for easy (re)use.
 - Added all seasons for the English Premier League, Championship League, League 1, League 2, etc.
-    to the new [`/en-england`](https://github.com/footballcsv/en-england) repo to get started.
+    to the [new `/en-england` repo](https://github.com/footballcsv/en-england) to get started.
 
 
 
 ## New Country Repo Switzerland - `/ch-confoederatio-helvetica` - Super League 2014/15 etc.
 
-Added a new country repo, that is, [`/ch-confoederatio-helvetica`](https://github.com/openfootball/ch-confoederatio-helvetica) -
+Added a [new country repo, that is, `/ch-confoederatio-helvetica`](https://github.com/openfootball/ch-confoederatio-helvetica) -
 for Switzerland (Schweiz, Suisse, Svizzera, Svizra) incl. Lichtenstein.
 Added the Super League Match Schedule for 2014/15. Example: 
 
@@ -112,7 +112,7 @@ and missing players get auto-added to the persons table. Still a little rough an
 
 ## New Repo - `/build-shell` - for Building your own `football.db` Copy using Shell Scripts
 
-Added new repo, that is, [`/build-shell`](https://github.com/openfootball/build-shell) for
+Added [new repo, that is, `/build-shell`](https://github.com/openfootball/build-shell) for
 building your own up-to-date `football.db` copy from the latest datasets using shell scripts.
 Thanks to Joe Kampschmidt to get it all started and the write-up and the shell script.
 
@@ -120,7 +120,7 @@ Thanks to Joe Kampschmidt to get it all started and the write-up and the shell s
 
 ## `ojogo` gem - another world cup command line tool - who's playing today?
 
-Added new command line tool, that is, [`ojogo`](https://github.com/sportdb/ojogo.ruby)
+Added [new command line tool, that is, `ojogo`](https://github.com/sportdb/ojogo.ruby)
 that prints today's matches for the World Cup 2014 in Brazil
 using the football.db HTTP JSON API service. For example, typing on Jun/29 
 
@@ -157,4 +157,61 @@ The reader will add four goal records (see the table goals w/ fields such as
 3 |   Neymar   71'   (pen.)   2-1   Brazil  (Team 1) 
 4 |   Oscar    90'+1'         3-1   Brazil  (Team 1)
 ~~~
+
+
+## New Org `wikiscript` - Open Data Scripts for Wikipedia (e.g `football.squads.ruby` - World Cup 2014 Squads Update)
+
+Added a [new GitHub org, that is, `wikiscript`](https://github.com/wikiscript)  
+that collects scripts that let you turn free-style or semi-structured 
+wiki text into open structured data. 
+
+A first example is the new [football squads reader](https://github.com/wikiscript/football.squads.ruby)
+that reads in a wikitext page e.g 
+
+~~~
+{% raw %}
+{{nat fs player|no=1|pos=GK|name=[[Jefferson de Oliveira 
+Galvão|Jefferson]]|age={{Birth date and 
+age2|2014|6|12|1983|1|2|df=y}}|caps=9|club=[[Botafogo de Futebol e 
+Regatas|Botafogo]]|clubnat=BRA}} 
+{{nat fs player|no=2|pos=DF|name=[[Dani Alves]]|age={{Birth date and 
+age2|2014|6|12|1983|5|6|df=y}}|caps=74|club=[[FC 
+Barcelona|Barcelona]]|clubnat=ESP}} 
+...
+{% endraw %}
+~~~
+
+and outputs all squads files in the `football.db` format:
+
+~~~
+(1)  GK   Jefferson        #   9, Botafogo (BRA)
+(2)  DF   Dani Alves       #  74, Barcelona (ESP)
+... 
+~~~
+
+
+## New Org `rsssf` -  RSSSF (Rec.Sport.Soccer Statistics Foundation) Archive Data Imports for `football.db`
+
+What's the [RSSSF (Rec.Sport.Soccer Statistics Foundation)](http://www.rsssf.com)?
+
+The RSSSF collects and offers football league tables from all over the world in plain text. Example: 
+
+~~~
+Round 1
+[May 25]
+Vasco da Gama   1-0 Portuguesa
+ [Carlos Tenório 47']
+Vitória         2-2 Internacional
+ [Maxi Biancucchi 2', Gabriel Paulista 11'; Diego Forlán 29', Fred 63']
+Corinthians     1-1 Botafogo
+ [Paulinho 73'; Rafael Marques 24']
+... 
+~~~
+
+Now of course the question is - if it's all plain text - why not 
+read the match fixtures and add the results to the `football.db` (that is, to SQL tables)? 
+
+If you're interested a [new GitHub org, that is, `rsssf`](https://github.com/rsssf) - now hosts 
+RSSSF archive data that you can read into your SQL database of choice (SQLite, PostgreSQL, etc.).
+Still early and a little rough - as always expect surprises. 
 
