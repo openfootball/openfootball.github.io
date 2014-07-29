@@ -1,12 +1,12 @@
 ---
 layout: default
-title: News n Updates
+title: News and Updates
 ---
 
 # {{ page.title }}
 
 
-## New Repo for Documentation - `/docs` - Articles, Tips, Notes, Examples, etc.
+## New Repo for Documentation - `/docs` - Articles, Tips & Tricks, Notes, Examples, etc.
 
 Added a new repo, that is, [`/docs`](https://github.com/openfootball/docs)  - to collect 
 all the documentation in one place and make it easier to contribute.
@@ -17,18 +17,18 @@ Still in an early stage the first pages include:
 - HTTP JSON API Intro 
 
 Thanks again to Joe Kampschmidt for the first docu contribution, 
-that is, notes on a couple of SQL query examples. 
+that is, notes on a couple of SQL query examples for the world cup.
 
 
-## sportdb command line update v1.9.4 - adds `clubs.txt`, Week 1, `en/2013-14/pl.txt`, etc.
+## sportdb update v1.9.4 - Adds `clubs.txt`, Week 1 Round Headers, `en/2013-14/pl.txt`, etc.
 
-Added some minor changes/updates sportdb command line tool. What's news? 
+What's news? sportdb command line tool updates:
 
-- Now you can use `clubs.txt` as an alternative for `teams.txt` (actually recommended for football clubs
+- Added `clubs.txt` as an alternative for `teams.txt` (recommended for football clubs
     otherwise clubs might get flagged as national teams and not as clubs). 
-- Now you can use `2013-14` as an alterantive for `2013_14` in your 
+- Added `2013-14` as an alternative for `2013_14` in your 
     fixture path (e.g. `2013-14/1-premierleague-i.txt` now works).
-- Now you can use Week 1 or Week 5 and so on in your match schedule (in 
+- Added Week 1 or Week 5 and so on in your match schedule (in 
     English/en) for matchday/round headers. 
 
 
@@ -37,17 +37,17 @@ Added some minor changes/updates sportdb command line tool. What's news?
 Added a new sister GitHub org, that is, [`football.csv`](https://github.com/footballcsv),
 that collects football match data in the CSV (comma-separated  values) format for easy (re)use. 
 
-Added all seasons for the English Premier League, Championship League, League 1, League 2 etc.
+Added all seasons for the English Premier League, Championship League, League 1, League 2, etc.
 to the new [`/en-england`](https://github.com/footballcsv/en-england) repo to get started.
 
 
 
-## New Country Repo Switzerland (`/ch-confoederatio-helvetica`) - Super League 2014/15 etc.
+## New Country Repo Switzerland - `/ch-confoederatio-helvetica` - Super League 2014/15 etc.
 
 Added a new country repo for Switzerland (Schweiz, Suisse, Svizzera, Svizra)
 incl. Lichtenstein, that is, 
 [`/ch-confoederatio-helvetica`](https://github.com/openfootball/ch-confoederatio-helvetica).
-Added the Super League Match Schedule for 2014/15 to get started. Example: 
+Added the Super League Match Schedule for 2014/15. Example: 
 
 ~~~
 Spieltag 1 
@@ -61,10 +61,10 @@ Spieltag 1
 ~~~
 
 
-## New Season - English Premier League 2014/15 Schedule (and Some Squads) Added
+## New Season - English Premier League 2014/15 Schedule (and Some Club Squads e.g. `arsenal.txt`) Added
 
 Added the new 2014/15 season for the English Premier League plus
-started adding the squads for Arsenal, as an example. 
+started adding the squad players for Arsenal, as an example: 
 
 ~~~
 (1)     Wojciech Szczęsny (POL)      GK  2007-
@@ -95,15 +95,15 @@ started adding the squads for Arsenal, as an example.
 ...
 ~~~
 
-## sportdb update (v1.9.3) - Now Includes Better Squads Reader (Auto-Creates Missing Players)
+## sportdb update v1.9.3 - Added Better Squads Reader (Auto-Creates Missing Players)
 
-Uploaded a new sportdb version, that is, v1.9.3   What's new? 
+What's news? sportdb command line updates: 
 
-The sportdb reader for squads (rosters) will now auto-add missing players.
-You can try it for example using the World Cup 1930 squads e.g. 
+The squads (rosters)reader will now auto-add missing players.
+Try it, for example, using the World Cup 1930 squads e.g.:
 
 ~~~
-$ rake update DATA=history     # loads/reads/parses all world cup from 1930 to 2010 
+$ rake update DATA=history     # reads all world cups from 1930 to 2010 
 ~~~
 
 Squads get added to the rosters join table (one record per player) 
@@ -111,14 +111,15 @@ and missing players get auto-added to the persons table. Still a little rough an
 
 
 
-## New repo for Shell Script Build Option, that is, `/build-shell`
+## New Repo for Building your own `football.db` Copy using Shell Scripts, that is, `/build-shell`
 
-Added new repo, that is, `/build-shell` for a new build option using a shell script.
+Added new repo, that is, `/build-shell` for building your own up-to-date `football.db` copy
+from the latest datasets using shell scripts.
 Thanks to Joe Kampschmidt to get it all started and the write-up and the shell script.
 
 
 
-## `ojogo` gem - another world cup command line tool - prints today's matches
+## `ojogo` gem - another world cup command line tool - who's playing today?
 
 Added new command line tool, that is, [`ojogo`](https://github.com/sportdb/ojogo.ruby)
 that prints today's matches for the World Cup 2014 in Brazil

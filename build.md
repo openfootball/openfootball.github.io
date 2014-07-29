@@ -59,13 +59,13 @@ Write your own build script from scratch. See the documentation to get started.
 ### Error "sportdb: command not found"
 
 If you get the error "sportdb: command not found" double check if you have the `sportdb` command line tool installed.
-Use the `gem` command; issue:
+Use the `gem` command; type:
 
 ~~~
 $ gem list sportdb
 ~~~
 
-If not listed install the gem; issue:
+If not listed install the gem; type:
 
 ~~~
 $ gem install sportdb
