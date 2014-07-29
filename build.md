@@ -36,7 +36,7 @@ See the [`/build` repo](https://github.com/openfootball/build) to get started.
 
 ## Option 2  - Use Shell Script (`/build-shell`)   {#build-shell}
 
-Use a shell script to build your own `football.db` copy from the plain text datasets. Example:
+Use a shell script to build your own up-to-date `football.db` copy from the latest plain text datasets. Example:
 
 ~~~
 $ ./downloadAndBuild.sh

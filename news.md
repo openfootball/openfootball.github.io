@@ -10,13 +10,13 @@ title: News and Updates
 
 Added a new repo, that is, [`/docs`](https://github.com/openfootball/docs)  - to collect 
 all the documentation in one place and make it easier to contribute.
-Still in an early stage the first pages include: 
+Still in an early stage the first pages include:
 
 - Intro - football.db - What? Why? 
 - SQL Queries Examples 
 - HTTP JSON API Intro 
 
-Thanks again to Joe Kampschmidt for the first docu contribution, 
+Thanks again to Joe Kampschmidt for the first docu contribution,
 that is, notes on a couple of SQL query examples for the world cup.
 
 
@@ -34,19 +34,17 @@ What's news? sportdb command line tool updates:
 
 ## New Org `football.csv` - Football Match Data in CSV (Comma-Separated Values) Format e.g. `Arsenal, Liverpool, 2-0, 1-0`
 
-Added a new sister GitHub org, that is, [`football.csv`](https://github.com/footballcsv),
-that collects football match data in the CSV (comma-separated  values) format for easy (re)use. 
-
-Added all seasons for the English Premier League, Championship League, League 1, League 2, etc.
-to the new [`/en-england`](https://github.com/footballcsv/en-england) repo to get started.
+- Added a new sister GitHub org, that is, [`football.csv`](https://github.com/footballcsv),
+    that collects football match data in the CSV (comma-separated  values) format for easy (re)use.
+- Added all seasons for the English Premier League, Championship League, League 1, League 2, etc.
+    to the new [`/en-england`](https://github.com/footballcsv/en-england) repo to get started.
 
 
 
 ## New Country Repo Switzerland - `/ch-confoederatio-helvetica` - Super League 2014/15 etc.
 
-Added a new country repo for Switzerland (Schweiz, Suisse, Svizzera, Svizra)
-incl. Lichtenstein, that is, 
-[`/ch-confoederatio-helvetica`](https://github.com/openfootball/ch-confoederatio-helvetica).
+Added a new country repo, that is, [`/ch-confoederatio-helvetica`](https://github.com/openfootball/ch-confoederatio-helvetica) -
+for Switzerland (Schweiz, Suisse, Svizzera, Svizra) incl. Lichtenstein.
 Added the Super League Match Schedule for 2014/15. Example: 
 
 ~~~
@@ -67,14 +65,14 @@ Added the new 2014/15 season for the English Premier League plus
 started adding the squad players for Arsenal, as an example: 
 
 ~~~
-(1)     Wojciech Szczęsny (POL)      GK  2007-
+(1)     Wojciech Szczęsny (POL)    GK  2007-
 
-(3)     Kieran Gibbs               DF   2007-
-(4)     Per Mertesacker (GER)      DF   2011-
-(5)  (c) Thomas Vermaelen (BEL)    DF   2009-
-(6)     Laurent Koscielny (FRA)    DF   2010- 
-(18)    Nacho Monreal (ESP)        DF   2013- 
-(25)    Carl Jenkinson             DF   2011- 
+(3)     Kieran Gibbs               DF  2007-
+(4)     Per Mertesacker (GER)      DF  2011-
+(5)  (c) Thomas Vermaelen (BEL)    DF  2009-
+(6)     Laurent Koscielny (FRA)    DF  2010- 
+(18)    Nacho Monreal (ESP)        DF  2013- 
+(25)    Carl Jenkinson             DF  2011- 
 
 (7)     Tomáš Rosický (CZE)        MF  2006-  
 (8)     Mikel Arteta (ESP)         MF  2011-
@@ -87,13 +85,14 @@ started adding the squad players for Arsenal, as an example:
 (35)    Gedion Zelalem (GER)       MF  2013-
         Francis Coquelin (FRA)     MF  2008-
 
-(9)     Lukas Podolski (GER)       FW   2012-
-(12)    Olivier Giroud (FRA)       FW   2012-
-(14)    Theo Walcott               FW   2006-
-(15)    Alex Oxlade-Chamberlain    FW   2011-
-(17)    Alexis Sánchez (CHI)       FW   2014-
+(9)     Lukas Podolski (GER)       FW  2012-
+(12)    Olivier Giroud (FRA)       FW  2012-
+(14)    Theo Walcott               FW  2006-
+(15)    Alex Oxlade-Chamberlain    FW  2011-
+(17)    Alexis Sánchez (CHI)       FW  2014-
 ...
 ~~~
+
 
 ## sportdb update v1.9.3 - Added Better Squads Reader (Auto-Creates Missing Players)
 
@@ -111,10 +110,10 @@ and missing players get auto-added to the persons table. Still a little rough an
 
 
 
-## New Repo for Building your own `football.db` Copy using Shell Scripts, that is, `/build-shell`
+## New Repo - `/build-shell` - for Building your own `football.db` Copy using Shell Scripts
 
-Added new repo, that is, `/build-shell` for building your own up-to-date `football.db` copy
-from the latest datasets using shell scripts.
+Added new repo, that is, [`/build-shell`](https://github.com/openfootball/build-shell) for
+building your own up-to-date `football.db` copy from the latest datasets using shell scripts.
 Thanks to Joe Kampschmidt to get it all started and the write-up and the shell script.
 
 
@@ -137,11 +136,11 @@ Costa Rica (CRC) vs Greece (GRE)
 ~~~
 
 
-## sportdb update (v1.9.2) - Now Includes Match Goals Reader e.g. `[Messi 3', 45+1']` etc.
+## sportdb update v1.9.2 - Added Match Goals Reader e.g. `[Messi 3', 45+1']` etc.
 
-Uploaded a new sportdb version, that is, v1.9.2. What's new? 
+What's news? sportdb command line updates: 
 
-The sportdb reader now will add goals (plus auto-add missing 
+The match schedule reader now will add goals (plus auto-add missing 
 players). All still a little rough but working without any (extra) configuration. Example: 
 
 ~~~
@@ -149,7 +148,7 @@ players). All still a little rough but working without any (extra) configuration
         [Neymar 29', 71' (pen.) Oscar 90+1';  Marcelo 11' (o.g.)] 
 ~~~
 
-Will add four goal records (see the table goals w/ fields such as 
+The reader will add four goal records (see the table goals w/ fields such as 
 `player_id`, `team_id`, `minute`, `offset`, `score1`, `score2` etc.): 
 
 ~~~
@@ -158,5 +157,4 @@ Will add four goal records (see the table goals w/ fields such as
 3 |   Neymar   71'   (pen.)   2-1   Brazil  (Team 1) 
 4 |   Oscar    90'+1'         3-1   Brazil  (Team 1)
 ~~~
-
 
