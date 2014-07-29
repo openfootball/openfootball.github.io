@@ -106,7 +106,7 @@ The "engine" calculates:
 - `lost`
 - `goals_for`
 - `goals_against`
-- `pts` (points e.g. +3 for wins, +1 fro draws etc.)
+- `pts` (points e.g. +3 for wins, +1 for draws etc.)
 
 
 Standing tables in the sportdb schema include:
@@ -222,7 +222,7 @@ Wikidata like the `football.db` uses "license-free" data, that is, data dedicate
 
 Thus, an idea (and goal) is to work on syncying the data
 (from Wikidata to `football.db` and from `football.db` to Wikidata).
-Still very early. If you're interested in making it happen or if you have any ideas, suggestions or insight,
+Still very early. If you're interested in making it happen or if you have any ideas, suggestions or insights,
 say hello on the [forum / mailing list](http://groups.google.com/group/opensport). 
 
 
