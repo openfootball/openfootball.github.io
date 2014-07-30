@@ -5,8 +5,23 @@ title: Frequently Asked Questions and Answers (FAQs)
 
 # {{ page.title }}
 
+<div class="toc" markdown="1">
+Contents:
 
-## Download Pre-Built Copies or Build Your Own
+* [Download Pre-Built Copies or Build Your Own](#downloads)
+* [Real-Time Result / Score HTTP JSON API Web Services](#services)
+* [Contribute / Update Match Scores, Schedules, Leagues](#contribute)
+* [League Standings / Stats](#stats)
+* [Text Formtas (Match Schedule / Player / Squads Mini Languages)](#formats)
+* [Export Formats (JSON, CSV, SQL)](#export)
+* [Apps, Apps, Apps](#apps)
+* [Questions? Comments?](#questions)
+</div>
+
+
+
+
+## Download Pre-Built Copies or Build Your Own  {#downloads}
 
 #### Q: Where can I get (download) pre-built copies e.g. `football.db`, `worldcup.db`, `england.db` etc.?
 
@@ -26,7 +41,7 @@ it with the world?
 
 
 
-## Real-Time Result / Score HTTP JSON API Web Services
+## Real-Time Result / Score HTTP JSON API Web Services  {#services}
 
 #### Q: Is there any HTTP JSON API service to get live scores for _[your event here]_ e.g. the World Cup 2014 in Brazil, the English Premier League 2015/16, the Euro 2016 in France, etc.?
 
@@ -49,6 +64,9 @@ Option 1) Contribute your updates to the datasets.
 
 Option 2) Clone the datasets and update your own private or public copies yourself.
 
+
+
+## Contribute / Update Match Scores, Schedules, Leagues    {#contribute}
 
 #### Q: How can I contribute / update match scores, schedules, leagues, etc.?
 
@@ -80,7 +98,7 @@ That's it.
 
 
 
-## League Standings / Stats
+## League Standings / Stats    {#stats}
 
 #### Q: How can I add league standings / tables (e.g. number of matches played, won-drawn-lost, goals scored, etc.)?
 
@@ -132,7 +150,7 @@ For example, using the world cup datasets you can (auto-)calculate the all time 
 ~~~
 
 
-## Text Formtas (Match Schedule / Player / Squads Mini Languages)
+## Text Formtas (Match Schedule / Player / Squads Mini Languages)   {#formats}
 
 #### Q: What kind of text format are you using? Why not use CSV, JSON, or _[your data format here]_?
 
@@ -197,7 +215,7 @@ hand-crafting schedules as easy as possible. Any difference?
 
 #### Q: Why? Why? Why?
 
-A: The sources are plain old text documents designed to be easy-to-read and easy-to-write.
+A: The dataset sources are plain old text documents designed to be easy-to-read and easy-to-write.
 The idea is to make it work like a wiki, that is, just plain old text documents anyone can update.
 
 Why like a wiki?
@@ -227,7 +245,7 @@ say hello on the [forum / mailing list](http://groups.google.com/group/opensport
 
 
 
-## Export Formats (JSON, CSV, SQL)
+## Export Formats (JSON, CSV, SQL)    {#export}
 
 #### Q: How can I get datasets in JSON, CSV, SQL or _[your data format here]_?
 
@@ -258,7 +276,7 @@ or _[your data format here]_ etc.  - Bonus: Share your code with the world.
 
 
 
-## Apps, Apps, Apps
+## Apps, Apps, Apps    {#apps}
 
 #### Q: Any real world apps using this?
 
