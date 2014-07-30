@@ -161,7 +161,7 @@ The reader will add four goal records (see the table goals w/ fields such as
 
 ## New Org - `wikiscript` - Open Data Scripts for Wikipedia (e.g `football.squads.ruby` - World Cup 2014 Squads Update)
 
-Added a new GitHub org, that is, [`wikiscript`](https://github.com/wikiscript)  
+Added a new GitHub org, that is, [`wikiscript`](https://github.com/wikiscript)
 that collects scripts that let you turn free-style or semi-structured 
 wiki text into open structured data. 
 
