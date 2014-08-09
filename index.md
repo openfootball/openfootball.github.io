@@ -247,9 +247,9 @@ and more.
 
 ## Talks - Slide Decks  {#talks}
 
-- [Using Open Football Data - Get Ready for the World Cup in Brazil 2014 w/ JavaScript](https://github.com/openfootball/openfootball.github.io/blob/master/talks/open_data_world_cup_with_js.md)  (Vienna.js, 2014)
-- [Using Open Football Data - Get Ready for the World Cup in Brazil 2014 w/ Ruby](https://github.com/openfootball/openfootball.github.io/blob/master/talks/open_data_world_cup.md) (Vienna.rb, 2014)
-- [`football.db` - Using Open Football Data in JavaScript](https://github.com/openfootball/openfootball.github.io/blob/master/talks/football_db_intro.md)  (Vienna.js, 2013)
+- [Using Open Football Data - Get Ready for the World Cup in Brazil 2014 w/ JavaScript](https://github.com/openfootball/talks/blob/master/open_data_world_cup_with_js.md)  (Vienna.js, 2014)
+- [Using Open Football Data - Get Ready for the World Cup in Brazil 2014 w/ Ruby](https://github.com/openfootball/talks/blob/master/open_data_world_cup.md) (Vienna.rb, 2014)
+- [`football.db` - Using Open Football Data in JavaScript](https://github.com/openfootball/talks/blob/master/football_db_intro.md)  (Vienna.js, 2013)
 
 
 
