@@ -48,7 +48,7 @@ it with the world?
 A: `football.db` does **NOT OFFER ANY REAL-TIME LIVE** football results / scores services.
 
 However, you can run your own HTTP JSON API service.
-See the [`sport.db.api.starter` kit](https://github.com/sportdb/sport.db.api.starter) to get started, for example,
+See the [`sport.db.starter` kits](https://github.com/sportkit) to get started, for example,
 or try the [example HTTP JSON API service running on Heroku](http://footballdb.herokuapp.com).
 (Note: The scores get updated once a day, that is, every 24 hours.)
 
