@@ -285,6 +285,7 @@ You're free to use whatever you need - no questions asked, no rights reserved.
 If you're using the football.db datasets in your app, you're welcome to tell the world (on the [mailing list/forum](http://groups.google.com/group/opensport))
 and you get listed here:
 
+- [Major League Soccer Almanac](http://mls-almanac.herokuapp.com) - [(Source)](https://github.com/cecomp64/mls-almanac) query-able, historical data for Major League Soccer in the US and Canada by Carl-Erik Svensson 
 - [BITKUP.COM](http://bitkup.com) - new app for betting with Bitcoins on the Brazil's World Cup 2014 by Oriol Franquesa Cortés
 
 
