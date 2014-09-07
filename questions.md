@@ -286,8 +286,10 @@ If you're using the football.db datasets in your app, you're welcome to tell the
 and you get listed here:
 
 - [Major League Soccer Almanac](http://mls-almanac.herokuapp.com) - [(Source)](https://github.com/cecomp64/mls-almanac) query-able, historical data for Major League Soccer in the US and Canada by Carl-Erik Svensson 
-- [BITKUP.COM](http://bitkup.com) - new app for betting with Bitcoins on the Brazil's World Cup 2014 by Oriol Franquesa Cortés
 
+<!--  no longer availabe?
+- [BITKUP.COM](http://bitkup.com) - new app for betting with Bitcoins on the Brazil's World Cup 2014 by Oriol Franquesa Cortés
+-->
 
 
 {% include questions.md %}
