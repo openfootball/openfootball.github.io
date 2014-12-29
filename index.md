@@ -10,7 +10,7 @@ Contents:
 
 * [What's `football.db`?](#whatis)
 * [Web Admin Site](#webadmin)
-* [Leaguges and Tournaments](#national-teams)
+* [Leagues and Tournaments](#national-teams)
     * [National Teams](#national-teams)
         * [World Cup](#national-teams)
         * [Copa América](#national-teams)
@@ -29,7 +29,7 @@ Contents:
 
 ## What's `football.db`?   {#whatis}
 
-A free open public domain football database & schema
+A free and open public domain football database & schema
 for use in any (programming) language (e.g. uses plain datasets). Example:
 
 ~~~
@@ -74,7 +74,7 @@ on Heroku [`footballdb.herokuapp.com`](http://footballdb.herokuapp.com).
 ### World
 
 - FIFA World Cup
-- FIFA World Cup Quali
+- FIFA World Cup Qualifiers
 - FIFA Confederations Cup
 
 [More »](https://github.com/openfootball/world-cup)
@@ -230,7 +230,7 @@ Source: [`europe-champions-league/2012-13/cl_finals.txt`](https://github.com/ope
 #### Europe
 
 - Österreichische Bundesliga + ÖFB Cup
-- English Permier League
+- English Premier League
 - Deutsche Bundesliga
 - Spanish La Liga
 
