@@ -1,8 +1,13 @@
 
+###########
+## site.url, site.title
 
 url:   'http://openfootball.github.io'
-title: 'football.db - Open Football Database'
+title: 'football.db - Open Football Data'
 
+
+########
+# more settings
 
 ## markdown: redcarpet
 markdown: kramdown

@@ -1,0 +1,30 @@
+---
+layout: default
+title: News and Updates
+---
+
+# {{ page.title }}
+
+<!--
+<ul>
+{% for post in site.posts %}
+  <li>{{ post.title }}</li>
+{% endfor %}
+</ul>
+-->
+
+{% for post in site.posts %}
+<div class='post'>
+  <header class='post-header'>
+    <h2 class='post-title'>{{ post.title }}</h2>
+    <!--
+      <p class='post-meta'>{{ post.date | date: "%b %-d, %Y" }}</p>
+     -->
+  </header>
+
+  <article class='post-content'>
+    {{ post.content }}
+  </article>
+</div>
+{% endfor %}
+
