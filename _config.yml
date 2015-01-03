@@ -1,6 +1,10 @@
 
-## markdown: redcarpet
 
+url:   'http://openfootball.github.io'
+title: 'football.db - Open Football Database'
+
+
+## markdown: redcarpet
 markdown: kramdown
 
 
