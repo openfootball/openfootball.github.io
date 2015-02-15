@@ -32,11 +32,6 @@ Contents:
 A free and open public domain football database & schema
 for use in any (programming) language (e.g. uses plain datasets).
 
-**Schema Diagram**
-
-![](i/footballdb-models.png)
-
-
 **Dataset Examples**
 
 ~~~
@@ -67,6 +62,9 @@ Quarter-finals - 1st Leg
 ...
 ~~~
 
+**Schema Diagram**
+
+![](i/footballdb-models.png)
 
 
 ## Web Admin Site Example {#webadmin}
