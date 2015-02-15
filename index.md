@@ -30,7 +30,14 @@ Contents:
 ## What's `football.db`?   {#whatis}
 
 A free and open public domain football database & schema
-for use in any (programming) language (e.g. uses plain datasets). Example:
+for use in any (programming) language (e.g. uses plain datasets).
+
+**Schema Diagram**
+
+![](i/footballdb-models.png)
+
+
+**Dataset Examples**
 
 ~~~
 ### Teams
