@@ -269,6 +269,10 @@ and more.
 Any others? Let us know on the [mailing list/forum](http://groups.google.com/group/opensport). Thanks!
 
 
+## Alternatives
+
+See the [`awesome-football`](https://github.com/planetopendata/awesome-football) page at the Planet Open Data.
+
 
 ## License {#license}
 
