@@ -3,8 +3,8 @@
 <head>
    <meta charset="utf-8">
    <title>{{ page.title }} - {{ site.title }}</title>
-   <link rel="stylesheet" type="text/css" href="/css/openfootball.css" >
-   <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="News Feed (Atom)">
+   <link rel="stylesheet" type="text/css" href="{{ site.path }}/css/style.css" >
+   <link rel="alternate" type="application/atom+xml" href="{{ site.path }}/atom.xml" title="News Feed">
 </head>
 <body>
 
@@ -18,19 +18,19 @@
 
   <div id="nav">
 
-    <a href="/index.html">Home</a> |
+    <a href="{{ site.path }}/index.html">Home</a> |
 
     <a href="https://github.com/openfootball">Datasets, Repos (Edit Me!)</a> |
 
-    <a href="/questions.html">Frequently Asked Questions &amp; Answers (FAQs)</a> |
+    <a href="{{ site.path }}/questions.html">Frequently Asked Questions &amp; Answers (FAQs)</a> |
 
-    <a href="/news.html">News &amp; Updates</a> |
+    <a href="{{ site.path }}/news.html">News &amp; Updates</a> |
 
     <a href="http://groups.google.com/group/opensport">Forum (Questions? Comments?)</a> |
 
-    <a href="/build.html">How to Build Your Own Copy</a> |
+    <a href="{{ site.path }}/build.html">How to Build Your Own Copy</a> |
 
-    <a href="/docs/">Documentation (Articles, Tips &amp; Tricks, Formats, etc.)</a> |
+    <a href="{{ site.path }}/docs/">Documentation (Articles, Tips &amp; Tricks, Formats, etc.)</a> |
 
     <a href="https://github.com/sportdb">Tools &amp; Scripts</a> |
 

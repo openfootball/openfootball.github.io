@@ -1,0 +1,18 @@
+
+.banner {
+  color: white;
+  background-color: #333333;
+  font-size: 12px;
+  padding: 6px 6px 4px 8px;   // top right bottom left
+  margin:  0   0   8px 0;
+
+  a, a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    background-color: #333333;
+    text-decoration: underline;
+  }
+}
+
