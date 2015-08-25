@@ -2,10 +2,12 @@
 layout: default
 ---
 
+ <h1>News and Updates</h1>
+
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
+    <h2 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</p>
   </header>
 
@@ -13,4 +15,13 @@ layout: default
     {{ content }}
   </article>
 
+</div>
+
+<div>
+    <b>More News</b>
+    <ul>
+      {% for post in site.posts %}
+        <li><a href="{{post.url}}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
 </div>
