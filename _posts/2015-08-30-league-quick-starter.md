@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "sport.db League Quick Starter Sample - Mauritius Premier League - Create Your Own Repo/League(s) from Scratch"
+title:  "football.db - League Quick Starter Sample - Mauritius Premier League - Create Your Own Repo/League(s) from Scratch"
 ---
 
-Added a new [sport.db quick starter sample](https://github.com/sportkit/mu-mauritius) 
+Added a new [quick starter sample](https://github.com/sportkit/mu-mauritius) 
 using the Mauritius Premier League to get you started creating 
 your own leagues/cups/etc. from scratch. 
 
 You can test drive the quick starter sample with a single command e.g.:
 
-```
+~~~
 $ sportdb build 
-```
+~~~
 
 To start from scratch follow these six steps: 
 
@@ -24,7 +24,7 @@ To start from scratch follow these six steps:
 
 Using a file structure like: 
 
-```
+~~~
   ├── 2014-15              # 2014-15 season folder 
   |   ├── league-i.txt     #   match fixtures / results - matchdays  1-18 
   |   ├── league-ii.txt    #                            - matchdays 19-36 
@@ -34,11 +34,11 @@ Using a file structure like:
   ├── leagues.txt          # all leagues 
   ├── clubs.txt            # all clubs 
   └── Datafile             # build script 
-```
+~~~
 
 That's it. Now try: 
 
-```
+~~~
 $ sqlite3 sport.db 
 
 SQLite version 3.7.16 
@@ -51,6 +51,6 @@ sqlite> select * from countries;
 sqlite> select * from teams; 
 1|joachim|Cercle de Joachim||CDJ|Cercle de Joachim SC|Joachim|1||t|||||f| 
 2|chamarel|Chamarel SC||CHA|Chamarel|Chamarel Sport Club|1||t|||||f| 
-```
+~~~
 
 and so on and so forth. 
