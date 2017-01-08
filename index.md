@@ -21,6 +21,7 @@ Contents:
         * [Copa Sudamericana](#clubs)
         * [Champions League](#clubs)
         * [Europa League](#clubs)
+* [More](#more)
 * [Talks - Slide Decks](#talks)
 * [About, License](#license)
 * [Questions? Comments?](#questions)
@@ -132,7 +133,7 @@ Source: [`world-cup/2014/cup.txt`](https://github.com/openfootball/world-cup/blo
 
 <!-- use "handmade" footnotes; always work no fallback needed -->
 
-¹ CONMEBOL = South America; 
+¹ CONMEBOL = South America;
 
 [More »](https://github.com/openfootball/copa-america)
 
@@ -163,7 +164,7 @@ Source: [`world-cup/2014/cup.txt`](https://github.com/openfootball/world-cup/blo
 
 ## Football Clubs / Leagues and Tournaments  {#clubs}
 
-### Intn'l Club Tournaments (Champions Leagues & Friends) 
+### Intn'l Club Tournaments (Champions Leagues & Friends)
 
 #### Amercia (South America; North America, Central America and the Caribbeans)
 
@@ -172,12 +173,12 @@ Source: [`world-cup/2014/cup.txt`](https://github.com/openfootball/world-cup/blo
 
 <!-- use "handmade" footnotes; always work no fallback needed -->
 
-¹ CONMEBOL = South America; 
+¹ CONMEBOL = South America;
 
-[More »](https://github.com/openfootball/copa-libertadores) | 
+[More »](https://github.com/openfootball/copa-libertadores) |
 [More »](https://github.com/openfootball/copa-sudamericana)
 
-- CONCACAF¹ Champions League 
+- CONCACAF¹ Champions League
 
 <!-- use "handmade" footnotes; always work no fallback needed -->
 
@@ -199,7 +200,7 @@ Example - Champions League 2012/13:
 
 ~~~
 ##############################
-# Champions League 2012/13 
+# Champions League 2012/13
 
 Round of 16 - 2nd Leg // Tu+We, 5.+6./12.+13. Mar 2013
 
@@ -250,11 +251,18 @@ Source: [`europe-champions-league/2012-13/cl_finals.txt`](https://github.com/ope
 and more.
 
 
+## More {#more}
+
+- [Starter Kits](https://github.com/sportkit)
+- [football.js (Widgets)](https://github.com/footballjs)    
+- [The Free World Football Almanac](https://github.com/footballbook)
+
+
 ## Talks - Slide Decks  {#talks}
 
-- [Using Open Football Data - Get Ready for the World Cup in Brazil 2014 w/ JavaScript](https://github.com/openfootball/talks/blob/master/open_data_world_cup_with_js.md)  (Vienna.js, 2014)
-- [Using Open Football Data - Get Ready for the World Cup in Brazil 2014 w/ Ruby](https://github.com/openfootball/talks/blob/master/open_data_world_cup.md) (Vienna.rb, 2014)
-- [`football.db` - Using Open Football Data in JavaScript](https://github.com/openfootball/talks/blob/master/football_db_intro.md)  (Vienna.js, 2013)
+- [Using Open Football Data - Get Ready for the World Cup in Brazil 2014 w/ JavaScript](https://github.com/geraldb/talks/blob/master/open_data_world_cup_with_js.md)  (Vienna.js, 2014)
+- [Using Open Football Data - Get Ready for the World Cup in Brazil 2014 w/ Ruby](https://github.com/geraldb/talks/blob/master/open_data_world_cup.md) (Vienna.rb, 2014)
+- [`football.db` - Using Open Football Data in JavaScript](https://github.com/geraldb/talks/blob/master/football_db_intro.md)  (Vienna.js, 2013)
 
 
 
@@ -262,7 +270,7 @@ and more.
 
 [sport.db Web Admin](https://github.com/sportdb/sport.db.admin) - `sport.db` Web Admin Tool in Ruby on Rails (version 3.2 and up).
 
-[Sportbook](https://github.com/openbookie/sportbook) - Free, open source sports betting pool in Ruby on Rails (version 3.2 and up). 
+[Sportbook](https://github.com/openbookie/sportbook) - Free, open source sports betting pool in Ruby on Rails (version 3.2 and up).
 
 [football.js](https://github.com/footballjs) - Free, open source football widgets - matchday, today's rounds, team of the day, etc.
 
