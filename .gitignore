@@ -1,13 +1,3 @@
 ## Jekyll-Generated Site
 
 _site/
-
-
-## Komodo Project Files
-
-*.kpf
-
-## ignore generated talks
-
-talks/o
-
