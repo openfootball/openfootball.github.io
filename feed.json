@@ -3,7 +3,7 @@ layout: null
 
 #  thanks to Alexandre Vallières-Lagacé
 #   copied from repo; see https://github.com/vallieres/jekyll-json-feed
-#   note: made simpler e.g. removed some entries
+#   note: made simpler e.g. removed some entries; set limit to 10
 ---
 {
     "version": "https://jsonfeed.org/version/1",
@@ -11,16 +11,12 @@ layout: null
     "home_page_url": "{{ "/" | absolute_url }}",
     "feed_url": "{{ "/feed.json" | absolute_url }}",
     "items": [
-    {% for post in site.posts limit:36 %}
+    {% for post in site.posts limit:10 %}
         {
             "id": "{{ post.url | absolute_url | sha1 }}",
             "title": {{ post.title | jsonify }},
-            "content_html": {{ post.content | strip_newlines | jsonify }},
+            "content_html": {{ post.content | jsonify }},
             "url": "{{ post.url | absolute_url }}",
-            {% if post.image.size > 1 %}"image": "{{ post.image }}",{% endif %}
-            {% if post.link.size > 1 %}"external_url": "{{ post.link }}",{% endif %}
-            {% if post.banner.size > 1 %}"banner_image": "{{ post.banner }}",{% endif %}
-            {% if post.tags.size > 1 %}"tags": {{ post.tags | jsonify }},{% endif %}
             "date_published": "{{ post.date | date_to_xmlschema }}"
         }{% if forloop.last == false %},{% endif %}
     {% endfor %}
