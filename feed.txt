@@ -1,6 +1,0 @@
----
-#  feed.txt format; see https://feedtxt.github.io for more
-
-layout: null
----
-{% include feed.txt %}
