@@ -3,7 +3,7 @@
 
 title: 'football.db - Open Football Data'
 
-## note: 
+## note:
 #  use site.path in your templates to make it work for both protocols e.g. http and https
 #  use site.url only inside the web feed template (e.g. requires full url incl. protocol)
 #    note: for root path use empty string e.g. '' - do NOT include trailing slash e.g. /
@@ -11,23 +11,19 @@ path:  ''
 url:   'http://openfootball.github.io'
 
 
+remote_theme: openfootball/opendata-theme
+
 ########
 # more settings
 
-gems:
+plugins:
 - jekyll-feed
 
 
 markdown: kramdown
 
 sass:
-  sass_dir: css
   style:    expanded
 
 exclude:
 - README.md
-
-
-safe: true
-lsi: false
-
