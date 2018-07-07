@@ -35,14 +35,15 @@ for use in any (programming) language (e.g. uses plain datasets).
 
 **Dataset Examples**
 
-~~~
+```
 ### Teams
 
 barcelona, Barcelona|FC Barcelona|Fútbol Club Barcelona, BAR
 madrid,    Real Madrid|Real Madrid CF,                   RMD
 malaga,    Málaga|FC Málaga|Málaga CF|CF Málaga,         MAG
 ...
-~~~
+```
+
 
 ~~~
 ### Matches
