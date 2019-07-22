@@ -45,7 +45,7 @@ malaga,    Málaga|FC Málaga|Málaga CF|CF Málaga,         MAG
 ```
 
 
-~~~
+```
 ### Matches
 
 Quarter-finals - 1st Leg
@@ -62,7 +62,7 @@ Quarter-finals - 1st Leg
             [Lavezzi 4' Luiz 61' (o.g.) Pastore 90+3'; Hazard 27' (pen.)]
 
 ...
-~~~
+```
 
 **Schema Diagram**
 
