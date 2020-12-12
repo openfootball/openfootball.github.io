@@ -288,9 +288,11 @@ See the [`awesome-football`](https://github.com/planetopendata/awesome-football)
 
 _Thanks for helping with match updates! Come back soon._
 
-{% include thanks.html %}
+<!-- note/hack: try warp in div to avoid misterious broken div in include -->
 
-<!-- break -->
+<div>
+{% include thanks.html %}
+</div>
 
 
 
