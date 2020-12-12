@@ -283,6 +283,15 @@ Any others? Let us know on the [mailing list/forum](http://groups.google.com/gro
 See the [`awesome-football`](https://github.com/planetopendata/awesome-football) page at the Planet Open Data.
 
 
+
+## Alumnis - Thank You!
+
+_Thanks for helping with match updates! Come back soon._
+
+{% include thanks.html %}
+
+
+
 ## License {#license}
 
 The `football.db` schema, data and scripts are dedicated to the public domain.
