@@ -18,6 +18,8 @@ remote_theme: openfootball/opendata-theme
 
 plugins:
 - jekyll-feed
+- jekyll-avatar
+- jemoji
 
 
 markdown: kramdown
