@@ -3,9 +3,7 @@ layout: post
 title:  "football.csv - Now Auto-Updated Every 24 Hours via GitHub Actions Workflow / Build"
 ---
 
-A first little experiment using [GitHub Actions](https://github.com/features/actions) for more automation:
-
-The [football.csv datasets](https://github.com/footballcsv) for
+A first little experiment using [GitHub Actions](https://github.com/features/actions) for more automation. The [football.csv datasets](https://github.com/footballcsv) for
 
 - `/england`
 - `/deutschland`
