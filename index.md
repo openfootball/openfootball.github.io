@@ -28,6 +28,32 @@ Contents:
 </div>
 
 
+## What's News?
+
+Football.TXT Format Updates
+
+Note - to make parsing of match schedules easier - the following rules are now mandatory:
+
+1) round lines (outlines) MUST start with `»`  or `>>`  e.g.
+
+```
+» Quarter-finals - 1st Leg
+» Group A
+» Match for third place
+...
+```
+
+2) goal (scorer) lines MUST be enclosed with `()` and, thus, start with `(` e.g.
+
+```
+(Neymar 71'; Diego 56')
+(Lavezzi 4' Luiz 61'og Pastore 90+3'; Hazard 27'pen)
+...
+```
+
+  
+
+
 ## What's `football.db`?   {#whatis}
 
 A free and open public domain football database & schema
@@ -35,6 +61,8 @@ for use in any (programming) language (e.g. uses plain datasets).
 
 **Dataset Examples**
 
+
+<!--
 ```
 ### Teams
 
@@ -43,23 +71,24 @@ madrid,    Real Madrid|Real Madrid CF,                   RMD
 malaga,    Málaga|FC Málaga|Málaga CF|CF Málaga,         MAG
 ...
 ```
+-->
 
 
 ```
 ### Matches
 
-Quarter-finals - 1st Leg
+» Quarter-finals - 1st Leg
 
-[Tue Apr/1]
+Tue Apr/1
   20.45   FC Barcelona        1-1  Atlético Madrid     @ Camp Nou, Barcelona
-            [Neymar 71'; Diego 56']
+            (Neymar 71'; Diego 56')
   20.45   Manchester United   1-1  Bayern München      @ Old Trafford, Manchester
-            [Vidić 58'; Schweinsteiger 67']
-[Wed Apr/2]
+            (Vidić 58'; Schweinsteiger 67')
+Wed Apr/2
   20.45   Real Madrid         3-0  Borussia Dortmund   @ Santiago Bernabéu, Madrid
-            [Bale 3' Isco 27' Ronaldo 57']
+            (Bale 3' Isco 27' Ronaldo 57')
   20.45   Paris Saint-Germain 3-1  Chelsea FC          @ Parc des Princes, Paris
-            [Lavezzi 4' Luiz 61' (o.g.) Pastore 90+3'; Hazard 27' (pen.)]
+            (Lavezzi 4' Luiz 61'og Pastore 90+3'; Hazard 27'pen)
 
 ...
 ```
@@ -88,7 +117,7 @@ on Heroku [`footballdb.herokuapp.com`](http://footballdb.herokuapp.com).
 
 Example - FIFA World Cup 2014:
 
-~~~
+```
 Group A  |  Brazil       Croatia              Mexico         Cameroon
 Group B  |  Spain        Netherlands          Chile          Australia
 Group C  |  Colombia     Greece               Côte d'Ivoire  Japan
@@ -103,26 +132,26 @@ Matchday 2  |  Fri Jun/13
 ...
 
 
-Group A:
+» Group A
 
 (1) Thu Jun/12 17:00 Brazil  3-1 (1-1)  Croatia    @ Arena de São Paulo, São Paulo (UTC-3)
-                      [Neymar 29', 71' (pen.) Oscar 90+1'; Marcelo 11' (o.g.)]
+                      (Neymar 29', 71'pen Oscar 90+1'; Marcelo 11' og)
 
 (2) Fri Jun/13 13:00 Mexico  1-0 (0-0)  Cameroon   @ Estádio das Dunas, Natal (UTC-3)
-                      [Oribe Peralta 61']
+                      (Oribe Peralta 61')
 
 ...
 
-Match for third place
+» Match for third place
 
 (63) Sat Jul/12 17:00 Brazil  0-3 (0-2)  Netherlands   @ Estádio Nacional Mané Garrincha, Brasília (UTC-3)
-                       [-; Robin Van Persie 3' (pen.) Daley Blind 17' Georginio Wijnaldum 90+1']
+                       (-; Robin Van Persie 3'pen Daley Blind 17' Georginio Wijnaldum 90+1')
 
-Final
+» Final
 
-(64) Sun Jul/13 16:00 Germany  1-0 a.e.t. (0-0, 0-0)  Argentina  @ Estádio do Maracanã, Rio de Janeiro (UTC-3)
-                        [Mario Götze 113']
-~~~
+(64) Sun Jul/13 16:00 Germany  1-0 aet (0-0, 0-0)  Argentina  @ Estádio do Maracanã, Rio de Janeiro (UTC-3)
+                        (Mario Götze 113')
+```
 
 Source: [`world-cup/2014/cup.txt`](https://github.com/openfootball/world-cup/blob/master/2014--brazil/cup.txt)
 
@@ -203,29 +232,29 @@ Example - Champions League 2012/13:
 ##############################
 # Champions League 2012/13
 
-Round of 16 - 2nd Leg // Tu+We, 5.+6./12.+13. Mar 2013
+» Round of 16 - 2nd Leg    # Tu+We, 5.+6./12.+13. Mar 2013
 
-[Tue Mar/5]
+Tue Mar/5
   20.45 Manchester United  1-2  Real Madrid        @ Old Trafford, Manchester
-          [S. Ramos 48' (o.g.); L. Modric 66' C. Ronaldo 69']
+          (S. Ramos 48' og; L. Modric 66' C. Ronaldo 69')
   20.45 Borussia Dortmund  3-0  Schachtar Donezk   @ Signal Iduna Park, Dortmund
-          [F. Santana 31' M. Götze 37' J. Blaszczykowski 59']
-[Wed Mar/6]
+          (F. Santana 31' M. Götze 37' J. Blaszczykowski 59')
+Wed Mar/6
   20.45 Paris Saint-Germain  1-1  Valencia         @ Parc des Princes, Paris
-           [E. Lavezzi 66'; Jonas 55']
+           (E. Lavezzi 66'; Jonas 55')
   20.45 Juventus             2-0  Celtic Glasgow   @ Juventus Stadium, Turin
-           [A. Matri 24' F. Quagliarella 65']
+           (A. Matri 24' F. Quagliarella 65')
 
-[Tue Mar/12]
+Tue Mar/12
   20.45 Schalke 04        2-3  Galatasaray      @ Veltins-Arena, Gelsenkirchen
-           [R. Neustädter 17' M. Bastos 63'; Hamit Altintop 37' Burak Yilmaz 42' U. Bulut 95']
+           (R. Neustädter 17' M. Bastos 63'; Hamit Altintop 37' Burak Yilmaz 42' U. Bulut 95')
   20.45 Barcelona         4-0  Milan            @ Camp Nou, Barcelona
-           [L. Messi 5', 40' D. Villa 55' Jordi Alba 92']
-[Wed Mar/13]
+           (L. Messi 5', 40' D. Villa 55' Jordi Alba 92')
+Wed Mar/13
   20.45 Málaga            2-0  Porto            @ La Rosaleda, Málaga
-           [Isco 43' R. Santa Cruz 77']
+           (Isco 43' R. Santa Cruz 77')
   20.45 Bayern München    0-2  Arsenal          @ Allianz Arena, München
-           [-; Giroud 3' L. Koscielny 86']
+           (-; Giroud 3' L. Koscielny 86')
 ...
 ~~~
 
