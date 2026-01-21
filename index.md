@@ -234,35 +234,35 @@ Source: [`world-cup/2014/cup.txt`](https://github.com/openfootball/world-cup/blo
 
 Example - Champions League 2012/13:
 
-~~~
+```
 ##############################
 # Champions League 2012/13
 
 » Round of 16 - 2nd Leg    # Tu+We, 5.+6./12.+13. Mar 2013
 
 Tue Mar/5
-  20.45 Manchester United  1-2  Real Madrid        @ Old Trafford, Manchester
+  20.45 Manchester United   v Real Madrid   1-2      @ Old Trafford, Manchester
           (S. Ramos 48' og; L. Modric 66' C. Ronaldo 69')
-  20.45 Borussia Dortmund  3-0  Schachtar Donezk   @ Signal Iduna Park, Dortmund
+  20.45 Borussia Dortmund   v Schachtar Donezk  3-0   @ Signal Iduna Park, Dortmund
           (F. Santana 31' M. Götze 37' J. Blaszczykowski 59')
 Wed Mar/6
-  20.45 Paris Saint-Germain  1-1  Valencia         @ Parc des Princes, Paris
+  20.45 Paris Saint-Germain  v Valencia  1-1         @ Parc des Princes, Paris
            (E. Lavezzi 66'; Jonas 55')
-  20.45 Juventus             2-0  Celtic Glasgow   @ Juventus Stadium, Turin
+  20.45 Juventus             v Celtic Glasgow  2-0   @ Juventus Stadium, Turin
            (A. Matri 24' F. Quagliarella 65')
 
 Tue Mar/12
-  20.45 Schalke 04        2-3  Galatasaray      @ Veltins-Arena, Gelsenkirchen
+  20.45 Schalke 04           v Galatasaray  2-3      @ Veltins-Arena, Gelsenkirchen
            (R. Neustädter 17' M. Bastos 63'; Hamit Altintop 37' Burak Yilmaz 42' U. Bulut 95')
-  20.45 Barcelona         4-0  Milan            @ Camp Nou, Barcelona
+  20.45 Barcelona            v Milan  4-0            @ Camp Nou, Barcelona
            (L. Messi 5', 40' D. Villa 55' Jordi Alba 92')
 Wed Mar/13
-  20.45 Málaga            2-0  Porto            @ La Rosaleda, Málaga
+  20.45 Málaga               v Porto  2-0            @ La Rosaleda, Málaga
            (Isco 43' R. Santa Cruz 77')
-  20.45 Bayern München    0-2  Arsenal          @ Allianz Arena, München
+  20.45 Bayern München       v Arsenal  0-2          @ Allianz Arena, München
            (-; Giroud 3' L. Koscielny 86')
 ...
-~~~
+```
 
 Source: [`europe-champions-league/2012-13/cl_finals.txt`](https://github.com/openfootball/europe-champions-league/blob/master/2012-13/cl_finals.txt)
 
