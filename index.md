@@ -9,7 +9,6 @@ title: Welcome
 Contents:
 
 * [What's `football.db`?](#whatis)
-* [Web Admin Site](#webadmin)
 * [Leagues and Tournaments](#national-teams)
     * [National Teams](#national-teams)
         * [World Cup](#national-teams)
@@ -87,22 +86,9 @@ tip: to add stages in your match schedules and round lines (outlines) use:
 ## What's `football.db`?   {#whatis}
 
 A free and open public domain football database & schema
-for use in any (programming) language (e.g. uses plain datasets).
+for use in any (programming) language - with (structured) text datasets using the (future-proof and evergreen) Football.TXT format.
 
-**Dataset Examples**
-
-
-<!--
-```
-### Teams
-
-barcelona, Barcelona|FC Barcelona|Fútbol Club Barcelona, BAR
-madrid,    Real Madrid|Real Madrid CF,                   RMD
-malaga,    Málaga|FC Málaga|Málaga CF|CF Málaga,         MAG
-...
-```
--->
-
+**Football.TXT Dataset Examples**
 
 ```
 ### Matches
@@ -110,14 +96,14 @@ malaga,    Málaga|FC Málaga|Málaga CF|CF Málaga,         MAG
 » Quarter-finals - 1st Leg
 
 Tue Apr/1
-  20.45   FC Barcelona        1-1  Atlético Madrid     @ Camp Nou, Barcelona
+  20.45   FC Barcelona        v Atlético Madrid    1-1  @ Camp Nou, Barcelona
             (Neymar 71'; Diego 56')
-  20.45   Manchester United   1-1  Bayern München      @ Old Trafford, Manchester
+  20.45   Manchester United   v Bayern München     1-1  @ Old Trafford, Manchester
             (Vidić 58'; Schweinsteiger 67')
 Wed Apr/2
-  20.45   Real Madrid         3-0  Borussia Dortmund   @ Santiago Bernabéu, Madrid
+  20.45   Real Madrid         v Borussia Dortmund  3-0  @ Santiago Bernabéu, Madrid
             (Bale 3' Isco 27' Ronaldo 57')
-  20.45   Paris Saint-Germain 3-1  Chelsea FC          @ Parc des Princes, Paris
+  20.45   Paris Saint-Germain v Chelsea FC         3-1  @ Parc des Princes, Paris
             (Lavezzi 4' Luiz 61'og Pastore 90+3'; Hazard 27'pen)
 
 ...
@@ -126,12 +112,6 @@ Wed Apr/2
 **Schema Diagram**
 
 ![](i/footballdb-models.png)
-
-
-## Web Admin Site Example {#webadmin}
-
-Try the `football.db` web admin app running
-on Heroku [`footballdb.herokuapp.com`](http://footballdb.herokuapp.com).
 
 
 
@@ -157,30 +137,26 @@ Group F  |  Argentina    Bosnia-Herzegovina   Iran           Nigeria
 Group G  |  Germany      Portugal             Ghana          United States
 Group H  |  Belgium      Algeria              Russia         South Korea
 
-Matchday 1  |  Thu Jun/12
-Matchday 2  |  Fri Jun/13
-...
 
-
-» Group A
-
-(1) Thu Jun/12 17:00 Brazil  3-1 (1-1)  Croatia    @ Arena de São Paulo, São Paulo (UTC-3)
-                      (Neymar 29', 71'pen Oscar 90+1'; Marcelo 11' og)
-
-(2) Fri Jun/13 13:00 Mexico  1-0 (0-0)  Cameroon   @ Estádio das Dunas, Natal (UTC-3)
-                      (Oribe Peralta 61')
+» Group A, Matchday 1
+Thu Jun/12
+  17:00  Brazil   v Croatia   3-1 (1-1)     @ Arena de São Paulo, São Paulo (UTC-3)
+           (Neymar 29', 71'pen Oscar 90+1'; Marcelo 11' og)
+Fri Jun/13
+  13:00 Mexico    v Cameroon  1-0 (0-0)     @ Estádio das Dunas, Natal (UTC-3)
+           (Oribe Peralta 61')
 
 ...
 
 » Match for third place
-
-(63) Sat Jul/12 17:00 Brazil  0-3 (0-2)  Netherlands   @ Estádio Nacional Mané Garrincha, Brasília (UTC-3)
-                       (-; Robin Van Persie 3'pen Daley Blind 17' Georginio Wijnaldum 90+1')
+Sat Jul/12 
+   17:00 Brazil   v Netherlands   0-3 (0-2)   @ Estádio Nacional Mané Garrincha, Brasília (UTC-3)
+          (-; Robin Van Persie 3'pen Daley Blind 17' Georginio Wijnaldum 90+1')
 
 » Final
-
-(64) Sun Jul/13 16:00 Germany  1-0 aet (0-0, 0-0)  Argentina  @ Estádio do Maracanã, Rio de Janeiro (UTC-3)
-                        (Mario Götze 113')
+Sun Jul/13
+   16:00 Germany  v Argentina   1-0 aet (0-0, 0-0)   @ Estádio do Maracanã, Rio de Janeiro (UTC-3)
+          (Mario Götze 113')
 ```
 
 Source: [`world-cup/2014/cup.txt`](https://github.com/openfootball/world-cup/blob/master/2014--brazil/cup.txt)
