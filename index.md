@@ -43,6 +43,36 @@ Note - to make parsing of match schedules easier - the following rules are now m
 ...
 ```
 
+tip: to add stages in your match schedules and round lines (outlines) use:
+
+```
+» Matchday 1                  # no stage (assumes regular season)
+» Matchday 2
+...  
+» Championship, Matchday 1    # Championship stage
+» Championship, Matchday 2
+...
+» Europe, Matchday 1          # Europe stage
+» Europe, Matchday 2
+...
+
+# -or-
+
+» League, Matchday 1         # League stage
+» League, Matchday 2
+...
+» Playoffs, Matchday 1       # Playoffs stage
+» Playoffs, Matchday 2
+...
+» Finals, Round of 16        # Finals stage
+» Finals, Quarterfinals
+» Finals, Semifinals
+» Finals, Final
+```
+
+
+
+
 2) goal (scorer) lines MUST be enclosed with `()` and, thus, start with `(` e.g.
 
 ```
