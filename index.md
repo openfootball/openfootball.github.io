@@ -63,8 +63,6 @@ for use in any (programming) language - with (structured) text datasets using th
 **Football.TXT Dataset Examples**
 
 ```
-### Matches
-
 » Quarter-finals - 1st Leg
 
 Tue Apr/1
@@ -109,6 +107,7 @@ Group F  |  Argentina    Bosnia-Herzegovina   Iran           Nigeria
 Group G  |  Germany      Portugal             Ghana          United States
 Group H  |  Belgium      Algeria              Russia         South Korea
 
+...
 
 » Group A
 Thu Jun/12
@@ -208,9 +207,6 @@ Source: [`world-cup/2014/cup.txt`](https://github.com/openfootball/world-cup/blo
 Example - Champions League 2012/13:
 
 ```
-##############################
-# Champions League 2012/13
-
 » Round of 16 - 2nd Leg    # Tu+We, 5.+6./12.+13. Mar 2013
 
 Tue Mar/5
