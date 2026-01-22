@@ -27,7 +27,8 @@ Contents:
 </div>
 
 
-## What's News?
+
+## What's News (in 2026)?
 
 Football.TXT Format Updates
 
@@ -42,36 +43,6 @@ Note - to make parsing of match schedules easier - the following rules are now m
 ...
 ```
 
-tip: to add stages in your match schedules and round lines (outlines) use:
-
-```
-» Matchday 1                  # no stage (assumes regular season)
-» Matchday 2
-...  
-» Championship, Matchday 1    # Championship stage
-» Championship, Matchday 2
-...
-» Europe, Matchday 1          # Europe stage
-» Europe, Matchday 2
-...
-
-# -or-
-
-» League, Matchday 1         # League stage
-» League, Matchday 2
-...
-» Playoffs, Matchday 1       # Playoffs stage
-» Playoffs, Matchday 2
-...
-» Finals, Round of 16        # Finals stage
-» Finals, Quarterfinals
-» Finals, Semifinals
-» Finals, Final
-```
-
-
-
-
 2) goal (scorer) lines MUST be enclosed with `()` and, thus, start with `(` e.g.
 
 ```
@@ -80,7 +51,8 @@ tip: to add stages in your match schedules and round lines (outlines) use:
 ...
 ```
 
-  
+For more on the format updates, see the [Football.TXT format, level 1 & 2 specs »](https://openfootball.github.io/spec/)
+
 
 
 ## What's `football.db`?   {#whatis}
@@ -123,7 +95,7 @@ Wed Apr/2
 - FIFA World Cup Qualifiers
 - FIFA Confederations Cup
 
-[More »](https://github.com/openfootball/world-cup)
+[More »](https://github.com/openfootball/worldcup)
 
 Example - FIFA World Cup 2014:
 
@@ -138,7 +110,7 @@ Group G  |  Germany      Portugal             Ghana          United States
 Group H  |  Belgium      Algeria              Russia         South Korea
 
 
-» Group A, Matchday 1
+» Group A
 Thu Jun/12
   17:00  Brazil   v Croatia   3-1 (1-1)     @ Arena de São Paulo, São Paulo (UTC-3)
            (Neymar 29', 71'pen Oscar 90+1'; Marcelo 11' og)
@@ -183,18 +155,19 @@ Source: [`world-cup/2014/cup.txt`](https://github.com/openfootball/world-cup/blo
 [More »](https://github.com/openfootball/north-america-gold-cup)
 
 
-
+<!--
 ### Africa
 
 - CAF Africa Cup of Nations
 
 [More »](https://github.com/openfootball/africa-cup)
+-->
 
 ### Europe
 
 - UEFA Euro / European Football Championship
 
-[More »](https://github.com/openfootball/euro-cup)
+[More »](https://github.com/openfootball/euro)
 
 
 
@@ -211,8 +184,7 @@ Source: [`world-cup/2014/cup.txt`](https://github.com/openfootball/world-cup/blo
 
 ¹ CONMEBOL = South America;
 
-[More »](https://github.com/openfootball/copa-libertadores) |
-[More »](https://github.com/openfootball/copa-sudamericana)
+[More »](https://github.com/openfootball/south-america) 
 
 - CONCACAF¹ Champions League
 
@@ -220,7 +192,7 @@ Source: [`world-cup/2014/cup.txt`](https://github.com/openfootball/world-cup/blo
 
 ¹ CONCACAF = North America, Central America and the Caribbeans
 
-[More »](https://github.com/openfootball/north-america-champions-league)
+[More »](https://github.com/openfootball/world)
 
 
 
@@ -228,8 +200,9 @@ Source: [`world-cup/2014/cup.txt`](https://github.com/openfootball/world-cup/blo
 
 - UEFA Champions League
 - UEFA Europa League
+- UEFA Conference League
 
-[More »](https://github.com/openfootball/europe-champions-league)
+[More »](https://github.com/openfootball/champions-league)
 
 
 Example - Champions League 2012/13:
@@ -264,7 +237,7 @@ Wed Mar/13
 ...
 ```
 
-Source: [`europe-champions-league/2012-13/cl_finals.txt`](https://github.com/openfootball/europe-champions-league/blob/master/2012-13/cl_finals.txt)
+Source: [`champions-league/2012-13/cl.txt`](https://github.com/openfootball/champions-league/blob/master/2012-13/cl.txt)
 
 
 ### National Leagues & Cups
@@ -287,11 +260,13 @@ Source: [`europe-champions-league/2012-13/cl_finals.txt`](https://github.com/ope
 and more.
 
 
+<!--
 ## More {#more}
 
 - [Starter Kits](https://github.com/sportkit)
 - [football.js (Widgets)](https://github.com/footballjs)    
 - [The Free World Football Almanac](https://github.com/footballbook)
+-->
 
 
 ## Talks - Slide Decks  {#talks}
