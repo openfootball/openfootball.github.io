@@ -51,7 +51,7 @@ Note - to make parsing of match schedules easier - the following rules are now m
 ...
 ```
 
-For more on the format updates, see the [Football.TXT format, level 1 & 2 specs »](https://openfootball.github.io/spec/)
+For more see the [Football.TXT format, level 1 & 2 specs »](https://openfootball.github.io/spec/)
 
 
 
