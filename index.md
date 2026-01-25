@@ -34,12 +34,12 @@ Football.TXT Format Updates
 
 Note - to make parsing of match schedules easier - the following rules are now mandatory:
 
-1) round lines (outlines) MUST start with `»`  or `>>`  e.g.
+1) round lines (outlines) MUST start with `▪` (BLACK SMALL SQUARE) or `»`  or `>>`  e.g.
 
 ```
-» Quarter-finals - 1st Leg
-» Group A
-» Match for third place
+▪ Quarter-finals - 1st Leg
+▪ Group A
+▪ Match for third place
 ...
 ```
 
@@ -63,7 +63,7 @@ for use in any (programming) language - with (structured) text datasets using th
 **Football.TXT Dataset Examples**
 
 ```
-» Quarter-finals - 1st Leg
+▪ Quarter-finals - 1st Leg
 
 Tue Apr/1
   20.45   FC Barcelona        v Atlético Madrid    1-1  @ Camp Nou, Barcelona
@@ -109,7 +109,7 @@ Group H  |  Belgium      Algeria              Russia         South Korea
 
 ...
 
-» Group A
+▪ Group A
 Thu Jun/12
   17:00  Brazil   v Croatia   3-1 (1-1)     @ Arena de São Paulo, São Paulo (UTC-3)
            (Neymar 29', 71'pen Oscar 90+1'; Marcelo 11' og)
@@ -119,12 +119,12 @@ Fri Jun/13
 
 ...
 
-» Match for third place
+▪ Match for third place
 Sat Jul/12 
    17:00 Brazil   v Netherlands   0-3 (0-2)   @ Estádio Nacional Mané Garrincha, Brasília (UTC-3)
           (-; Robin Van Persie 3'pen Daley Blind 17' Georginio Wijnaldum 90+1')
 
-» Final
+▪ Final
 Sun Jul/13
    16:00 Germany  v Argentina   1-0 aet (0-0, 0-0)   @ Estádio do Maracanã, Rio de Janeiro (UTC-3)
           (Mario Götze 113')
@@ -207,7 +207,7 @@ Source: [`world-cup/2014/cup.txt`](https://github.com/openfootball/world-cup/blo
 Example - Champions League 2012/13:
 
 ```
-» Round of 16 - 2nd Leg    # Tu+We, 5.+6./12.+13. Mar 2013
+▪ Round of 16 - 2nd Leg    # Tu+We, 5.+6./12.+13. Mar 2013
 
 Tue Mar/5
   20.45 Manchester United   v Real Madrid   1-2      @ Old Trafford, Manchester
