@@ -8,6 +8,7 @@ title: Welcome
 <div class="toc" markdown="1">
 Contents:
 
+* [What's News (in 2026)?](#news)
 * [What's `football.db`?](#whatis)
 * [Leagues and Tournaments](#national-teams)
     * [National Teams](#national-teams)
@@ -28,13 +29,13 @@ Contents:
 
 
 
-## What's News (in 2026)?
+## What's News (in 2026)?  {#news}
 
 Football.TXT Format Updates
 
 Note - to make parsing of match schedules easier - the following rules are now mandatory:
 
-1) round lines (outlines) MUST start with `▪` (BLACK SMALL SQUARE) or `»`  or `>>`  e.g.
+1) round lines (outlines) MUST start with `▪` (BLACK SMALL SQUARE) or `::` (ASCII-style)  e.g.
 
 ```
 ▪ Quarter-finals - 1st Leg
@@ -65,15 +66,15 @@ for use in any (programming) language - with (structured) text datasets using th
 ```
 ▪ Quarter-finals - 1st Leg
 
-Tue Apr/1
-  20.45   FC Barcelona        v Atlético Madrid    1-1  @ Camp Nou, Barcelona
+Tue Apr 1
+  20:45   FC Barcelona        v Atlético Madrid    1-1  @ Camp Nou, Barcelona
             (Neymar 71'; Diego 56')
-  20.45   Manchester United   v Bayern München     1-1  @ Old Trafford, Manchester
+  20:45   Manchester United   v Bayern München     1-1  @ Old Trafford, Manchester
             (Vidić 58'; Schweinsteiger 67')
-Wed Apr/2
-  20.45   Real Madrid         v Borussia Dortmund  3-0  @ Santiago Bernabéu, Madrid
+Wed Apr 2
+  20:45   Real Madrid         v Borussia Dortmund  3-0  @ Santiago Bernabéu, Madrid
             (Bale 3' Isco 27' Ronaldo 57')
-  20.45   Paris Saint-Germain v Chelsea FC         3-1  @ Parc des Princes, Paris
+  20:45   Paris Saint-Germain v Chelsea FC         3-1  @ Parc des Princes, Paris
             (Lavezzi 4' Luiz 61'og Pastore 90+3'; Hazard 27'pen)
 
 ...
@@ -110,24 +111,22 @@ Group H  |  Belgium      Algeria              Russia         South Korea
 ...
 
 ▪ Group A
-Thu Jun/12
-  17:00  Brazil   v Croatia   3-1 (1-1)     @ Arena de São Paulo, São Paulo (UTC-3)
-           (Neymar 29', 71'pen Oscar 90+1'; Marcelo 11' og)
-Fri Jun/13
-  13:00 Mexico    v Cameroon  1-0 (0-0)     @ Estádio das Dunas, Natal (UTC-3)
-           (Oribe Peralta 61')
-
+Thu Jun 12
+  17:00 UTC-3   Brazil   v Croatia   3-1 (1-1)      @ Arena de São Paulo, São Paulo
+                 (Neymar 29', 71'pen Oscar 90+1'; Marcelo 11' og)
+Fri Jun 13
+  13:00 UTC-3   Mexico    v Cameroon  1-0 (0-0)     @ Estádio das Dunas, Natal 
+                  (Oribe Peralta 61')
 ...
 
 ▪ Match for third place
-Sat Jul/12 
-   17:00 Brazil   v Netherlands   0-3 (0-2)   @ Estádio Nacional Mané Garrincha, Brasília (UTC-3)
-          (-; Robin Van Persie 3'pen Daley Blind 17' Georginio Wijnaldum 90+1')
-
+Sat Jul 12 
+  17:00 UTC-3   Brazil   v Netherlands   0-3 (0-2)   @ Estádio Nacional Mané Garrincha, Brasília
+                  (Robin Van Persie 3'pen Daley Blind 17' Georginio Wijnaldum 90+1')
 ▪ Final
-Sun Jul/13
-   16:00 Germany  v Argentina   1-0 aet (0-0, 0-0)   @ Estádio do Maracanã, Rio de Janeiro (UTC-3)
-          (Mario Götze 113')
+Sun Jul 13
+  16:00 UTC-3   Germany  v Argentina   1-0 a.e.t. (0-0, 0-0)   @ Estádio do Maracanã, Rio de Janeiro
+                  (Mario Götze 113')
 ```
 
 Source: [`world-cup/2014/cup.txt`](https://github.com/openfootball/world-cup/blob/master/2014--brazil/cup.txt)
@@ -204,32 +203,33 @@ Source: [`world-cup/2014/cup.txt`](https://github.com/openfootball/world-cup/blo
 [More »](https://github.com/openfootball/champions-league)
 
 
-Example - Champions League 2012/13:
+Example - Champions League:
 
 ```
-▪ Round of 16 - 2nd Leg    # Tu+We, 5.+6./12.+13. Mar 2013
+▪ Round of 16 - 2nd Leg 
 
-Tue Mar/5
-  20.45 Manchester United   v Real Madrid   1-2      @ Old Trafford, Manchester
-          (S. Ramos 48' og; L. Modric 66' C. Ronaldo 69')
-  20.45 Borussia Dortmund   v Schachtar Donezk  3-0   @ Signal Iduna Park, Dortmund
-          (F. Santana 31' M. Götze 37' J. Blaszczykowski 59')
-Wed Mar/6
-  20.45 Paris Saint-Germain  v Valencia  1-1         @ Parc des Princes, Paris
+Tue Mar 5
+  20:45  Manchester United   v Real Madrid   1-2      @ Old Trafford, Manchester
+           (S. Ramos 48' og; L. Modric 66' C. Ronaldo 69')
+         Borussia Dortmund   v Schachtar Donezk  3-0   @ Signal Iduna Park, Dortmund
+           (F. Santana 31' M. Götze 37' J. Blaszczykowski 59')
+Wed Mar 6
+  20:45  Paris Saint-Germain  v Valencia  1-1         @ Parc des Princes, Paris
            (E. Lavezzi 66'; Jonas 55')
-  20.45 Juventus             v Celtic Glasgow  2-0   @ Juventus Stadium, Turin
+         Juventus             v Celtic Glasgow  2-0   @ Juventus Stadium, Turin
            (A. Matri 24' F. Quagliarella 65')
 
-Tue Mar/12
-  20.45 Schalke 04           v Galatasaray  2-3      @ Veltins-Arena, Gelsenkirchen
-           (R. Neustädter 17' M. Bastos 63'; Hamit Altintop 37' Burak Yilmaz 42' U. Bulut 95')
-  20.45 Barcelona            v Milan  4-0            @ Camp Nou, Barcelona
+Tue Mar 12
+  20:45  Schalke 04           v Galatasaray  2-3      @ Veltins-Arena, Gelsenkirchen
+           (R. Neustädter 17' M. Bastos 63';
+            Hamit Altintop 37' Burak Yilmaz 42' U. Bulut 95')
+         Barcelona            v Milan  4-0            @ Camp Nou, Barcelona
            (L. Messi 5', 40' D. Villa 55' Jordi Alba 92')
-Wed Mar/13
-  20.45 Málaga               v Porto  2-0            @ La Rosaleda, Málaga
+Wed Mar 13
+  20:45  Málaga               v Porto  2-0            @ La Rosaleda, Málaga
            (Isco 43' R. Santa Cruz 77')
-  20.45 Bayern München       v Arsenal  0-2          @ Allianz Arena, München
-           (-; Giroud 3' L. Koscielny 86')
+         Bayern München       v Arsenal  0-2          @ Allianz Arena, München
+           (Giroud 3' L. Koscielny 86')
 ...
 ```
 
