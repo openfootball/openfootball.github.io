@@ -3,9 +3,9 @@ layout: post
 title:  "Hello, World Cup 2026!"
 ---
 
-Long time no news. Let's restart and celebrate the World Cup 2026 kick off in Mexico, United States and Canada.
+Long time no news. Let's restart and celebrate the World Cup 2026 kick-off in Mexico, the United States and Canada.
 
-Did you know? While it's usually just me (Gerald Bauer) writing and generation match schedules (fixtures, results, & reports) 
+Did you know? While it's usually just me (Gerald Bauer) writing and generation match schedules (incl. fixtures, results, reports, & more) 
 in the Football.TXT format - it's great to see that [Salah Salim](https://github.com/salah23222) 
 has generated live world cup fixtures & results in Football.TXT, see [wcup2026.org/football.php](https://wcup2026.org/football.php).
 Reading:
@@ -47,19 +47,14 @@ Sun Jul 19
 and a quick lexer & parser check with `fbtree` reads:
 
 ```
-<Heading1 FIFA World Cup 2026>,
+[<Heading1 FIFA World Cup 2026>,
  <BlankLine>,
  <BlankLine>,
- <GroupDef Group A teams=["Mexico",
-      "South Africa",
-      "South Korea",
-      "Czech Republic"]>,
-..
+ <GroupDef Group A teams=["Mexico", "South Africa", "South Korea", "Czech Republic"]>,
+ ...
  <MatchLine L101 v L102 geo=["Miami (Miami Gardens)"]>,
- <BlankLine>,
  <RoundOutline Final, level=1>,
- <DateHeader {:m=>7, :d=>19, :wday=>7}
->,
+ <DateHeader {:m=>7, :d=>19, :wday=>7}>,
  <MatchLine W101 v W102 geo=["New York/New Jersey (East Rutherford)"]>]
    104 MatchLine(s)
 
