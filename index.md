@@ -256,13 +256,6 @@ Source: [`champions-league/2012-13/cl.txt`](https://github.com/openfootball/cham
 and more.
 
 
-<!--
-## More {#more}
-
-- [Starter Kits](https://github.com/sportkit)
-- [football.js (Widgets)](https://github.com/footballjs)    
-- [The Free World Football Almanac](https://github.com/footballbook)
--->
 
 
 ## Genesis (Historic) Talks (Anno 2014) - Slide Decks  {#talks}
@@ -284,10 +277,18 @@ and more.
 Any others? Let us know on the [forum](https://github.com/openfootball/help/issues). Thanks!
 -->
 
+<!--
+## More {#more}
+
+- [Starter Kits](https://github.com/sportkit)
+- [football.js (Widgets)](https://github.com/footballjs)    
+- [The Free World Football Almanac](https://github.com/footballbook)
+-->
+
+
 ## Alternatives
 
-See the [`awesome-football`](https://github.com/planetopendata/awesome-football) page at the Planet Open Data.
-
+See the [`awesome-football`](https://github.com/openfootball/awesome-football) page.
 
 
 ## Alumnis - Thank You!
@@ -295,7 +296,6 @@ See the [`awesome-football`](https://github.com/planetopendata/awesome-football)
 _Thanks for helping with match updates! Come back soon._
 
 {% include thanks.html %}
-
 
 
 ## License {#license}
