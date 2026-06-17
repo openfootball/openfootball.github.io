@@ -265,14 +265,14 @@ and more.
 -->
 
 
-## Talks - Slide Decks  {#talks}
+## Genesis (Historic) Talks (Anno 2014) - Slide Decks  {#talks}
 
 - [Using Open Football Data - Get Ready for the World Cup in Brazil 2014 w/ JavaScript](https://github.com/geraldb/talks/blob/master/open_data_world_cup_with_js.md)  (Vienna.js, 2014)
 - [Using Open Football Data - Get Ready for the World Cup in Brazil 2014 w/ Ruby](https://github.com/geraldb/talks/blob/master/open_data_world_cup.md) (Vienna.rb, 2014)
 - [`football.db` - Using Open Football Data in JavaScript](https://github.com/geraldb/talks/blob/master/football_db_intro.md)  (Vienna.js, 2013)
 
 
-
+<!--
 ## Real World Usage
 
 [sport.db Web Admin](https://github.com/sportdb/sport.db.admin) - `sport.db` Web Admin Tool in Ruby on Rails (version 3.2 and up).
@@ -281,8 +281,8 @@ and more.
 
 [football.js](https://github.com/footballjs) - Free, open source football widgets - matchday, today's rounds, team of the day, etc.
 
-Any others? Let us know on the [mailing list/forum](http://groups.google.com/group/opensport). Thanks!
-
+Any others? Let us know on the [forum](https://github.com/openfootball/help/issues). Thanks!
+-->
 
 ## Alternatives
 
@@ -301,6 +301,6 @@ _Thanks for helping with match updates! Come back soon._
 ## License {#license}
 
 The `football.db` schema, data and scripts are dedicated to the public domain.
-Use it as you please with no restrictions whatsoever.
+Use as you please with no restrictions whatsoever.
 
 {% include questions.md %}
