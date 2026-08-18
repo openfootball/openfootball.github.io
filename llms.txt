@@ -3,12 +3,12 @@
 > Football.txt is a plain text data format (in unicode / utf-8) 
 for football (soccer) match schedules (with fixtures & results, lineups, bookings, and more). 
 Designed to be easy to read & write by humans while
-staying machine-parsable with a context-free LRLA(1) grammar into JSON, CSV & SQL. 
+staying machine-parsable with a context-free LALR(1) grammar into JSON, CSV & SQL. 
 
 
 ## Football.TXT Format Specs
 
-- [Football.txt Grammar](https://github.com/sportdb/sport.db.v2/tree/master/parser/fbtxt/grammar): The LRLA(1) grammar rules / productions in yacc-like source files
+- [Football.txt Grammar](https://github.com/sportdb/sport.db.v2/tree/master/parser/fbtxt/grammar): The LALR(1) grammar rules / productions in yacc-like source files
 - [Football.TXT Specification](http://openfootball.github.io/spec/): The syntax rules for round & date headers, match blocks, and goal lines, and more.
 
 Tips:
