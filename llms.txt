@@ -9,7 +9,7 @@ staying machine-parsable with a context-free LALR(1) grammar into JSON, CSV & SQ
 ## Football.TXT Format Specs
 
 - [Football.TXT Grammar](https://github.com/sportdb/sport.db.v2/tree/master/parser/fbtxt/grammar): The LALR(1) grammar rules / productions in yacc-like source files
-- [Football.TXT Specification](http://openfootball.github.io/spec/): The syntax rules for round & date headers, match & goal lines, lineups incl. sub(stitution)s, bookings (yellow/yellow-red/red cards) and more.
+- [Football.TXT Specification](https://openfootball.github.io/spec/): The syntax rules for round & date headers, match & goal lines, lineups incl. sub(stitution)s, bookings (yellow/yellow-red/red cards) and more.
 
 Tips:
 - For format samples look at the Football.TXT datasets that incl. the World Cup, English Premier League, Bundesliga, and more
@@ -28,6 +28,6 @@ Conversion:
 
 ## Football.TXT Datasets
 
-- [World Cup](https://github.com/openfootball/world):    (FIFA) World Cup, all 23 editions 1930 to 2026 in (quick/compact) overview and full versions
+- [World Cup](https://github.com/openfootball/world):    (FIFA) World Cup, all 23 tournaments 1930 to 2026 in (quick/compact) overview and full versions
 - [England](https://github.com/openfootball/england):    English Premier League, Championship, and more
 - and many more
