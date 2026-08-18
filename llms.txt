@@ -28,6 +28,6 @@ Conversion:
 
 ## Football.TXT Datasets
 
-- [World Cup](https://github.com/openfootball/world):    (FIFA) World Cup, all 23 tournaments 1930 to 2026 in (quick/compact) overview and full versions
-- [England](https://github.com/openfootball/england):    English Premier League, Championship, and more
+- [World Cup](https://github.com/openfootball/worldcup):    (FIFA) World Cup, all 23 tournaments 1930 to 2026 in (quick/compact) overview and full versions
+- [England](https://github.com/openfootball/england):       English Premier League, Championship, and more
 - and many more
