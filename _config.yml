@@ -29,3 +29,5 @@ sass:
 
 exclude:
 - README.md
+- NOTES.md
+- TODO.md
